@@ -1,0 +1,449 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>民教网_民办教育服务信息网</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="民办教育服务信息网,民教网,中国民办高等教育学生信息网,民办网官网"/>
+<meta name="description" content="民教网是民办教育服务信息网的简称，又称民教官网，由民办教育机构，行业协会，科研院所和有关专家学者共同组建，是民办高等教育机构学生信息服务官方网站。"/>
+    <link type="text/css" rel="stylesheet" href="../static/css/style5.css">
+    <link href="../static/css/lbiao.css" type="text/css" rel="stylesheet">
+    <!--<script src="/static/js/tab.js" type="text/javascript"></script>-->
+    <script language="javascript" src="../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/tabpic.js"></script>
+
+</head>
+<body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrap {
+        width: 100%;
+        height: 50px;
+        background-color: #127de1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pics {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .text {
+        display: inline-block;
+        vertical-align: middle;
+        color: white;
+        font-size: 16px;
+    }
+
+    .you {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+
+<div class="wrap" id="toop">
+    <div class="zuo">
+        <div class="pics" style="background-image: url(../static/images/trusted-web1_01.png);width: 30px;height: 38px; background-size: 100%; background-repeat: no-repeat;"></div>
+        <h2 class="text">该网站工信部已备案,唯一百度官方认证(民教网)官方网站www.cmhxi.com.cn，请放心访问</h2>
+    </div>
+
+    <div class="you">
+        <div style="vertical-align: middle;">
+            <a href="../person/21">
+                <p class="aaa" style="color: #ffe6ae;font-size: 18px;">了解详情&gt;</p >
+            </a >
+        </div>
+        <div style="vertical-align: middle; margin-right: 10px;">
+            <a href="../person/21">
+                <img src="../static/images/trusted-real-name.png">
+            </a >
+        </div>
+        <div style="vertical-align: middle;">
+            <img id="toop2" src="../static/images/la.png" title="收起" style="width: 50px;height: 70px;" onclick="shou()">
+            <img id="toop3" src="../static/images/zhan.png" title="展开" style="width: 50px;height: 70px;display: none;" onclick="zhan()">
+        </div>
+    </div>
+</div>
+
+<div class="toop" style="display: none;">
+    <div class="topleft">欢迎光临中国民办高等教育学生信息网(中国民办教育学生信息网(官网)-民教信息网)www.cmhxi.com.cn！</div>
+    <div class="topright"></div>
+</div>
+<script>
+    function shou() {
+        $('.toop').css("display", "block");
+        $('#toop3').css("display", "block");
+        $('#toop').css("display", "none");
+        $('#toop2').css("display", "none");
+    }
+
+    function zhan() {
+        $('.toop').css("display", "none");
+        $('#toop3').css("display", "none");
+        $('#toop').css("display", "block");
+        $('#toop2').css("display", "block");
+    }
+</script>
+    <div class="beiji-01" style="background-color:#f1f1f1;background-image: url(https://www.cmhxi.com.cn/show/static/images/bj.jpeg);
+          background-size: cover;
+        background-repeat: no-repeat;">
+        <div style="background-color:#f1f1f1;width:1004px;margin:0 auto;">
+        <div class="box2">
+    <div id="banner">
+                    <img src="../static/images/banner1.png"/>
+            </div>
+    <style>
+        .t_nav {
+            width: 100%;
+            min-width: 1000px;
+            height: 40px;
+            line-height: 40px;
+            background: #2EAFBB;
+            color: #FFFFFF;
+            overflow: hidden;
+        }
+
+        .width1000 {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .t_nav li {
+            float: left;
+            display: inline;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .t_nav a, .t_nav a:link, .t_nav a:visited {
+            color: #FFFFFF;
+            font: 17px/38px "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", HELVETICA;
+        }
+    </style>
+    <div class="t_nav">
+        <ul class="width1000">
+            <li style="padding-left:40px;"><a href="../person/21" target="_parent">首页</a></li>
+            <li><a href="../list/3">平台介绍</a></li>
+            <li><a href="../list/17">资质批文</a></li>
+            <li><a href="../list/20">政策法规</a></li>
+            <li><a href="../list/5">通知公告</a></li>
+            <li><a href="../list/4">新闻中心</a></li>
+            <li><a href="../list/21">民教人物</a></li>
+            <li><a href="../list/6">院校列表</a></li>
+            <li style="padding-right: 0;"><a href="http://xy.cmhni.com.cn">查询中心</a></li>
+        </ul>
+    </div>
+    <div id="announ">
+        <div class="announ_l">
+            <em><img src="../static/picture/announce.gif" width="18" height="18"></em>
+            <b></b>
+            <div id="scrollDiv">
+                <script language="javascript">
+                    $(function () {
+                        //单行应用@Mr.Think
+                        var _wrap = $('ul.line');//定义滚动区域
+                        var _interval = 2000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时，停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                    $(function () {
+                        //多行应用@Mr.Think
+                        var _wrap = $('ul.mulitline');//定义滚动区域
+                        var _interval = 3000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时,停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                </script>
+                <ul class="line">
+                                            <li style="margin-top: 0px;"><a href="33"
+                                                        target="_blank">民教网声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="32"
+                                                        target="_blank">民教网免责严正声明！</a></li>
+                                            <li style="margin-top: 0px;"><a href="31"
+                                                        target="_blank">关于非法网站仿冒我司民教信息网严正声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="17"
+                                                        target="_blank">资质批文</a></li>
+                                    </ul>
+            </div>
+        </div>
+        <div class="clearboth"></div>
+    </div>
+</div>
+<style>
+    #trusted_container {
+        display: none;
+    }
+</style>
+        <div class="w960">
+
+
+
+            <div class="content">
+				<!-- Breadcrumb begin -->
+				<div class="breadcrumb" style="margin-top: 1px;"> <strong>当前位置：</strong><a href="../person/21">首页</a> &gt;&gt; <a href="../list/27">求职就业</a> &gt;&gt; 浏览文章</div>
+				<!-- 列表开始 -->
+				<div class="listbox">
+					<!--图文-->
+					<div class="single">
+						<h1>民教信息网就业资讯2014年，727万大学毕业生能否马上有工作？</h1>
+						<div class="meta singlemeta"><span>作者:admin</span>
+							<span>2019-08-27</span>
+							<span>来源:民教网 </span>
+							<span>浏览:<span id="mys_show_hits_16">4158</span></span> </div>
+						<!-- PostContent begin -->
+						<div class="entry">
+							<div class="entrycontent">
+								<!-- SingleAd begin -->
+								<div id="MyContent">
+                                <p><strong>中国<a href="../person/21">民教网</a>《就业资讯》</strong></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>　　<strong>编者按：</strong></p>
+
+<p>&nbsp;</p>
+
+<p>　　2014年，727万大学毕业生涌入就业市场，这一群怀揣梦想的千里马能否马上找到工作？驰骋千里？连续几年大学毕业生供大于求的就业市场会让他们对就业有什么样的期待？2014，迈入就业市场的大学生将面临哪些新的机遇和挑战？今年的大学生就业市场又有哪些新的动向？</p>
+
+<p>&nbsp;</p>
+
+<p>　　2013年全国大学毕业生达699万，被一些人称为&ldquo;史上最难就业季&rdquo;。2014年，高校毕业生有727万，或者只有网络那句老话&ldquo;没有最难，只有更难&rdquo;才能描述这种情况。事实上，除了727万这个规模之外，今年的毕业生面临的挑战还包括连续几年饱和的市场以及往届&ldquo;剩&rdquo;下的师兄师姐们。</p>
+
+<p>&nbsp;</p>
+
+<p>　　据人力资源服务机构前程无忧前不久发布的《2013典范企业人才招聘状况报告》显示，该机构认定的100家&ldquo;最佳人力资源典范企业&rdquo;计划招聘2014年大学毕业生的数量比2013年下降7.3%。这意味着2014年大学毕业生的求职难度与去年相比还会加剧。</p>
+
+<p>&nbsp;</p>
+
+<p>　　上述报告显示，100家企业计划招聘2014届本科应届毕业生45577人，面向大学本科以上应届生的招聘职位主要为技术（产品）研发和销售。这100家企业是该机构从中国30万家活跃雇主中评选出的，这些企业平均拥有雇员18700名。因此数据具有一定的代表性。</p>
+
+<p>&nbsp;</p>
+
+<p>　　该机构人力资源专家分析：这是由于多数行业在2010至2012年期间招募的大学毕业生规模较大，加上全球经济依然不景气，诸如IT、机械和汽车等行业的招聘遇冷。</p>
+
+<p>&nbsp;</p>
+
+<p>　　不过报告同时指出，2013年大学实习生的招聘高过2012年17.2%，显示出企业仍有旺盛的人才需求。业内人士分析：随着新劳动法对企业用工市场的进一步规范，有的企业贪图&ldquo;降低成本&rdquo;，故意使用实习生，成本低廉而且不用支付&ldquo;三险一金&rdquo;等，实习到期，再换一批。</p>
+
+<p>&nbsp;</p>
+
+<p>　　与大学生就业困难相对应的，据媒体报道，春节过后，人才市场虽然渐次活跃起来，但是用工荒的状况仍然存在。北京市赵公口人才市场一家餐饮企业需要12个岗位40名员工，但是工作人员一上午只招到两位洗碗大叔。&ldquo;现在我们这儿后厨最高工资开到4000元，服务员最高开到2800元了，但应聘者还是寥寥无几。&rdquo;负责招聘的女士说。</p>
+
+<p>&nbsp;</p>
+
+<p>　　南京安德门民工就业市场春节后开门以来，已经有100多名大学生到此登记求职。这些务实的大学生与农民工站在一起求职，或者会成为2014就业市场的新动向，这对于大学生就业和整个人才市场的健康有序发展可谓有益无害。</p>
+
+<p>&nbsp;</p>
+
+<p>　　<strong>在家乡就职的吸引力越来越大</strong></p>
+
+<p>&nbsp;</p>
+
+<p>　　&ldquo;家乡省移动和北京电信的offer（指录用通知）都到了，该去哪个？&rdquo;年前，北京邮电大学一位计算机硕士纠结自己该选择哪个工作，在网上求助大家。5年前，根本不会出现这样的比较，北京电信是毫无疑问的选择。</p>
+
+<p>&nbsp;</p>
+
+<p>　　&ldquo;其实仔细想想自己目前最大的纠结还在于是否要留京，家里人还是一致倾向我留京，我自己的话觉得五五开吧，一方面觉得北京电信平台不错，待遇也还行，还有户口，另一方面又想着北京的房子、交通压力，如果回省会城市的话很快就可以安定下来。留北京的话不忍心把父母一辈子的积蓄都掏空给我付首付。&rdquo;这位硕士的纠结体现了新一代大学毕业生对大城市的态度。</p>
+
+<p>&nbsp;</p>
+
+<p>　　马年春节前夕，宁夏回族自治区党校、广电总台、发改委、教育厅、科技厅等22家事业单位和神华宁煤集团公司、中色（宁夏）东方集团公司、宁夏银行股份有限公司等13家企业专程到清华大学举行了&ldquo;宁夏赴清华大学人才专场招聘会&rdquo;。江苏省无锡市到清华大学举行大学生就业创业政策宣传推介会，中国船舶重工集团公司第七〇二研究所、一汽解放汽车有限公司无锡柴油机厂、江南大学、无锡广播电视集团等23家无锡市重点企事业单位、科研院所共提供858个优质岗位招聘。四川省定向北京大学招录选调生座谈会在北大举行。四川方面表示希望通过此次选调工作吸引紧缺专业人才，加强干部、人才资源的战略储备，优化干部队伍结构。据了解，北京大学同重庆、广西、甘肃、吉林、福建、新疆、河南、黑龙江、宁夏、贵州、河北、青海等省份都有类似合作，促进毕业生就业&hellip;&hellip;与这些虽在地方但全国知名的单位相比，更多地方中小企业急需大量人才，正在翘首期盼。</p>
+
+<p>&nbsp;</p>
+
+<p>　　前程无忧的人力资源报告指出，二、三线城市人才需求旺盛，并逐渐向四线城市推进。几乎所有的企业在一线城市之外的区域都有着迫切的人才需求，缺口较大的区域包括武汉、沈阳和西安等地，新疆、内蒙古和宁夏等也成为人才导入的新区域。</p>
+
+<p>&nbsp;</p>
+
+<p>　　生活成本低，薪水并不低，二三线甚至西部地区的就业机会正在使京沪等大城市在求职者眼中失去魅力。据了解，在京高校毕业生的留京率正在逐年降低。根据清华大学就业指导中心的统计，每年约3000名学生选择就业，选择到京外就业的学生，从10年前的不到30%，到2012年近1500名学生离京，已经接近50%。</p>
+
+<p>&nbsp;</p>
+
+<p>　　<strong>公务员热会不会降温？</strong></p>
+
+<p>&nbsp;</p>
+
+<p>　　据报道，2月中旬结束的浙江省公务员考试，与往年的节节攀升不同，报名人数大幅下降。2014年浙江省各级机关考试录用公务员注册报名人数为27.34万人。比去年36.34万人直降9万。招录人数比去年小幅减少。不过今年浙江省首次放开了考生的户籍和生源限制，允许外省籍全日制普通高校2014年应届本科毕业生报考，这部分考生有一万多人。</p>
+
+<p>&nbsp;</p>
+
+<p>　　无独有偶，江苏招录公务员报名首日也遇冷，据了解，第一天全省仅18550人报名，725人缴费成功。提交报名人数比去年首日减了约一半，缴费成功人数更是不到去年的四成，出现如此大的落差，近年来还是首次。</p>
+
+<p>&nbsp;</p>
+
+<p>　　是不是近来公务员频频诉苦令考公务员热降温？</p>
+
+<p>&nbsp;</p>
+
+<p>　　2012年底以来中央连下禁令，整顿风气，&ldquo;八项规定&rdquo;、反对&ldquo;四风&rdquo;等，这些旨在重塑公务员形象的规定确实带来变化。各地甚至国家部委的公务员&ldquo;吐槽&rdquo;工资低、升职难等帖子成为网络热点。这些公务员根据切身经历所写的帖子使众多找工作的大学生对公务员这个职业有了进一步的认识。</p>
+
+<p>&nbsp;</p>
+
+<p>　　一位工作了7年的部委公务员说：&ldquo;工资低，虽然理论上可以&lsquo;分&rsquo;到经济适用房，但是真正能分到的时候，得奔着40岁了。职业发展困难，一辈子就在机关干，耗掉了多少青年的朝气。长期加班无补贴，还得背着&lsquo;一茶一报纸&rsquo;，甚至贪腐的帽子，谁苦谁知道啊。不如凭自己的本事干点事，成败也自得其乐。&rdquo;</p>
+
+<p>&nbsp;</p>
+
+<p>　　在京某高校一位找工作的女生小方放弃了两个公务员的面试机会（一个是某国家部委，一个是北京市某局），选择了已经确定录用她的高校，去做行政管理类职位。用她自己的话说是一个&ldquo;勤杂，就是类似图书馆大妈的那种岗位。&rdquo;</p>
+
+<p>&nbsp;</p>
+
+<p>　　虽然放弃两个面试有些遗憾，但是小方的决定并没有纠结太多，因为她觉得&ldquo;公务员又苦又累又没钱，作为女生，我要的是户口、编制、时间自由度，比较下来，勤杂归勤杂吧，还是高校。&rdquo;</p>
+
+<p>&nbsp;</p>
+
+<p>　　&ldquo;以往人才向公务员岗位过度集聚，现在大家把眼光投向社会，人力资源配置会更合理。&rdquo;浙江大学公共管理学院教授陈国权说。</p>
+
+<p>&nbsp;</p>
+
+<p>　　虽然现在说公务员考试降温证据还不是非常充分，至少2014就业市场的这些苗头改变了以往一边倒地热捧公务员的状况。2013年11月，2006年诺贝尔经济学奖得主埃德蒙&middot;菲尔普斯在北京曾评论中国大学生挤着考公务员的现象，他说&ldquo;很多受教育程度良好的年轻人，都挤着想去做公务员，这是一种严重浪费。&rdquo;他说，&ldquo;我们希望看到聪明的年轻人对妈妈说：妈，我去西部、去南部、去北部开公司去了。&rdquo;（本报记者李玉兰）</p>
+
+<p>&nbsp;</p>
+                                </div>
+								<!-- SingleAd end -->
+							</div>
+						</div>
+						<div class="postnavi">
+							<div class="previous_post">上一篇: <a href="https://www.cmhxi.com.cn/show/" title=""></a></div>
+							<div class="next_post">下一篇: <a href="45" title="">就业资讯教育部：将采取多项措施力促农村大学生就业</a></div>
+						</div>
+						<!-- PageNavigation end -->
+					</div>
+				</div>
+			</div>
+
+
+
+
+            <div class="sidebar">
+    <ul>
+      <li class="mostviews">
+        <span class="intit"><a class="more" href="../list/30">更多&gt;&gt;</a><strong>一周热点新闻</strong></span>
+        <ul>
+         
+                                                <li><a href="33" target="_blank" title="民教网声明">民教网声明</a></li>
+                                                                <li><a href="32" target="_blank" title="民教网免责严正声明！">民教网免责严正声明！</a></li>
+                                                                <li><a href="31" target="_blank" title="关于非法网站仿冒我司民教信息网严正声明">关于非法网站仿冒我司民教信息网严正声明</a></li>
+                                                                <li><a href="17" target="_blank" title="资质批文">资质批文</a></li>
+                                    
+
+                                <li><a href="279" target="_blank" title="李克强主持召开国务院常务会议 部署深入推进大众创业万众创新 重点支持高校毕业生等群体就业创业">李克强主持召开国务院常务会议 部署深入推进大众创业万众创新 重点支持高校毕业生等群体就业创业</a></li>
+                                <li><a href="277" target="_blank" title="翁铁慧赴企业调研高校毕业生就业创业情况">翁铁慧赴企业调研高校毕业生就业创业情况</a></li>
+                                <li><a href="275" target="_blank" title="教育部启动实施全国高校与湖北高校毕业生就业创业工作“一帮一”行动">教育部启动实施全国高校与湖北高校毕业生就业创业工作“一帮一”行动</a></li>
+                                <li><a href="273" target="_blank" title="教育部启动高校毕业生就业状况核查工作">教育部启动高校毕业生就业状况核查工作</a></li>
+                                <li><a href="272" target="_blank" title="教育部推出四项“不断线”就业服务助力未就业毕业生尽早就业">教育部推出四项“不断线”就业服务助力未就业毕业生尽早就业</a></li>
+                 
+
+ 
+        </ul>
+      </li>
+      <li>
+        <div class="bar" style="margin-top:10px;"> <span class="intit"><a class="more" href="../list/21">更多&gt;&gt;</a><strong>会客厅</strong></span>
+           		  <div class="focus1" href="/person/77">                
+                <a href="../person/77">
+                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/e98838466bbb88812f747a996708eddf.jpg" width="74" height="56" border="0"> <span style="color: red;">顾明远</span></a>
+                <br><span>中共党员，教育部社会科学委员会副主任、北京师范大学教育学部顾问。</span>
+        </div>
+  
+          <ul>
+                                <li><a href="../person/77" target="_blank" title="顾明远">顾明远</a></li>
+                                <li><a href="../person/76" target="_blank" title="贾少华">贾少华</a></li>
+                                <li><a href="../person/75" target="_blank" title="杨东平">杨东平</a></li>
+                                <li><a href="../person/70" target="_blank" title="陈宝生">陈宝生</a></li>
+                                <li><a href="../person/68" target="_blank" title="孙春兰">孙春兰</a></li>
+                          </ul>
+  </div>
+</li>
+     <li>
+        <div class="bar"> <span class="intit"><a class="more" target="_blank" href="../list/25">更多&gt;&gt;</a><strong>民教网简报</strong></span>
+          <ul>
+                                <li><a href="11" target="_blank" title="2013年《民教网工作简报》第十一期">2013年《民教网工作简报》第十一期</a></li>
+                                <li><a href="10" target="_blank" title="2013年《民教网工作简报》第十期">2013年《民教网工作简报》第十期</a></li>
+                                <li><a href="9" target="_blank" title="2013年《民教网工作简报》第九期">2013年《民教网工作简报》第九期</a></li>
+                                <li><a href="8" target="_blank" title="2014年《民教网工作简报》第二期">2014年《民教网工作简报》第二期</a></li>
+                          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>            <div class="dbgd"></div>
+            <div class="footer2">
+    <div class="dbmume">
+        <a href="../person/21">首 页</a>
+        <a>|</a>
+        <a href="../list/16">平台介绍</a>
+        <a>|</a>
+        <a href="../list/17">资质批文</a>
+        <a>|</a>
+        <a href="../list/18">主管单位</a>
+        <a>|</a>
+        <a href="../list/5">通知公告</a>
+        <a>|</a>
+        <a href="../list/22">客服中心</a>
+        <a>|</a>
+        <a href="../list/23">版权声明</a>
+        <a>|</a>
+        <a href="../bgsqform">办公合作申请</a>
+    </div>
+
+<div class="copybq">
+<p>公安局备案号:2021031956号 &nbsp; 备案编号：
+                          <a href="https://beian.miit.gov.cn">豫ICP备2021031956号-2</a>
+        </p><p>办公地址：河南省郑州市高新技术产业开发区瑞达路96号商务中心　邮政编码:454000 &nbsp; &nbsp;通信地址：河南省100005-019信箱</p><p>主办单位：河南民教信息科技有限公司 &nbsp; &nbsp;指导：全国民办高等教育学生信息咨询与就业指导中心　</p>
+<a id="_pingansec_bottomimagesmall_shiming" target="_blank" href="https://si.trustutn.org/info?sn=313211119040899888649&amp;certType=1"><img src="https://v.trustutn.org/images/cert/bottom_small_img.png"/></a>
+<a target="_blank" href="https://xinyong.yunaq.com/certificate?domain=www.cmhsi.com.cn"><img style="width:110px;height:40px" src="../static/images/label_lg_90020.png"></a>
+
+<dd><img src="../static/picture/dbpic.png"></dd>
+</div>
+
+
+<script type="text/javascript" src="../static/js/jquery-1.9.1.min.js">
+</script>
+
+<script type="text/javascript" src="../static/js/slides.js">
+</script>
+
+<script type="text/javascript" src="../static/js/flexslider.js">
+</script>
+
+<script type="text/javascript">
+
+</div>
+
+</div>
+        
+        
+
+        </div>
+    </div>
+</body>
+</html>

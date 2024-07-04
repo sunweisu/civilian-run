@@ -1,0 +1,381 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>民教网_民办教育服务信息网</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="民办教育服务信息网,民教网,中国民办高等教育学生信息网,民办网官网"/>
+<meta name="description" content="民教网是民办教育服务信息网的简称，又称民教官网，由民办教育机构，行业协会，科研院所和有关专家学者共同组建，是民办高等教育机构学生信息服务官方网站。"/>
+    <link type="text/css" rel="stylesheet" href="../static/css/style5.css">
+    <link href="../static/css/lbiao.css" type="text/css" rel="stylesheet">
+    <!--<script src="/static/js/tab.js" type="text/javascript"></script>-->
+    <script language="javascript" src="../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/tabpic.js"></script>
+
+</head>
+<body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrap {
+        width: 100%;
+        height: 50px;
+        background-color: #127de1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pics {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .text {
+        display: inline-block;
+        vertical-align: middle;
+        color: white;
+        font-size: 16px;
+    }
+
+    .you {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+
+<div class="wrap" id="toop">
+    <div class="zuo">
+        <div class="pics" style="background-image: url(../static/images/trusted-web1_01.png);width: 30px;height: 38px; background-size: 100%; background-repeat: no-repeat;"></div>
+        <h2 class="text">该网站工信部已备案,唯一百度官方认证(民教网)官方网站www.cmhxi.com.cn，请放心访问</h2>
+    </div>
+
+    <div class="you">
+        <div style="vertical-align: middle;">
+            <a href="../person/21">
+                <p class="aaa" style="color: #ffe6ae;font-size: 18px;">了解详情&gt;</p >
+            </a >
+        </div>
+        <div style="vertical-align: middle; margin-right: 10px;">
+            <a href="../person/21">
+                <img src="../static/images/trusted-real-name.png">
+            </a >
+        </div>
+        <div style="vertical-align: middle;">
+            <img id="toop2" src="../static/images/la.png" title="收起" style="width: 50px;height: 70px;" onclick="shou()">
+            <img id="toop3" src="../static/images/zhan.png" title="展开" style="width: 50px;height: 70px;display: none;" onclick="zhan()">
+        </div>
+    </div>
+</div>
+
+<div class="toop" style="display: none;">
+    <div class="topleft">欢迎光临中国民办高等教育学生信息网(中国民办教育学生信息网(官网)-民教信息网)www.cmhxi.com.cn！</div>
+    <div class="topright"></div>
+</div>
+<script>
+    function shou() {
+        $('.toop').css("display", "block");
+        $('#toop3').css("display", "block");
+        $('#toop').css("display", "none");
+        $('#toop2').css("display", "none");
+    }
+
+    function zhan() {
+        $('.toop').css("display", "none");
+        $('#toop3').css("display", "none");
+        $('#toop').css("display", "block");
+        $('#toop2').css("display", "block");
+    }
+</script>
+    <div class="beiji-01" style="background-color:#f1f1f1;background-image: url(https://www.cmhxi.com.cn/show/static/images/bj.jpeg);
+          background-size: cover;
+        background-repeat: no-repeat;">
+        <div style="background-color:#f1f1f1;width:1004px;margin:0 auto;">
+        <div class="box2">
+    <div id="banner">
+                    <img src="../static/images/banner1.png"/>
+            </div>
+    <style>
+        .t_nav {
+            width: 100%;
+            min-width: 1000px;
+            height: 40px;
+            line-height: 40px;
+            background: #2EAFBB;
+            color: #FFFFFF;
+            overflow: hidden;
+        }
+
+        .width1000 {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .t_nav li {
+            float: left;
+            display: inline;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .t_nav a, .t_nav a:link, .t_nav a:visited {
+            color: #FFFFFF;
+            font: 17px/38px "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", HELVETICA;
+        }
+    </style>
+    <div class="t_nav">
+        <ul class="width1000">
+            <li style="padding-left:40px;"><a href="../person/21" target="_parent">首页</a></li>
+            <li><a href="../list/3">平台介绍</a></li>
+            <li><a href="../list/17">资质批文</a></li>
+            <li><a href="../list/20">政策法规</a></li>
+            <li><a href="../list/5">通知公告</a></li>
+            <li><a href="../list/4">新闻中心</a></li>
+            <li><a href="../list/21">民教人物</a></li>
+            <li><a href="../list/6">院校列表</a></li>
+            <li style="padding-right: 0;"><a href="http://xy.cmhni.com.cn">查询中心</a></li>
+        </ul>
+    </div>
+    <div id="announ">
+        <div class="announ_l">
+            <em><img src="../static/picture/announce.gif" width="18" height="18"></em>
+            <b></b>
+            <div id="scrollDiv">
+                <script language="javascript">
+                    $(function () {
+                        //单行应用@Mr.Think
+                        var _wrap = $('ul.line');//定义滚动区域
+                        var _interval = 2000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时，停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                    $(function () {
+                        //多行应用@Mr.Think
+                        var _wrap = $('ul.mulitline');//定义滚动区域
+                        var _interval = 3000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时,停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                </script>
+                <ul class="line">
+                                            <li style="margin-top: 0px;"><a href="33"
+                                                        target="_blank">民教网声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="32"
+                                                        target="_blank">民教网免责严正声明！</a></li>
+                                            <li style="margin-top: 0px;"><a href="31"
+                                                        target="_blank">关于非法网站仿冒我司民教信息网严正声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="17"
+                                                        target="_blank">资质批文</a></li>
+                                    </ul>
+            </div>
+        </div>
+        <div class="clearboth"></div>
+    </div>
+</div>
+<style>
+    #trusted_container {
+        display: none;
+    }
+</style>
+        <div class="w960">
+
+
+
+            <div class="content">
+				<!-- Breadcrumb begin -->
+				<div class="breadcrumb" style="margin-top: 1px;"> <strong>当前位置：</strong><a href="../person/21">首页</a> &gt;&gt; <a href="../list/7">媒体关注</a> &gt;&gt; 浏览文章</div>
+				<!-- 列表开始 -->
+				<div class="listbox">
+					<!--图文-->
+					<div class="single">
+						<h1>中国日报网：中国民教网盘点2012年度民办教育十大新闻事件</h1>
+						<div class="meta singlemeta"><span>作者:admin</span>
+							<span>2019-08-27</span>
+							<span>来源:民教网 </span>
+							<span>浏览:<span id="mys_show_hits_16">8874</span></span> </div>
+						<!-- PostContent begin -->
+						<div class="entry">
+							<div class="entrycontent">
+								<!-- SingleAd begin -->
+								<div id="MyContent">
+                                <p><strong>&nbsp;&nbsp;1、陕西省自2012年起每年设3亿<a href="../person/21">民办</a>高校发展专项资金</strong></p>
+
+<p>　　2012年1月，针对<a href="../person/21">民办</a>高等教育所面临的诸多困难，陕西省政府在发布的《关于进一步支持和规范<a href="../person/21">民办</a>高等教育发展的意见》中明确指出，自 2012年起，陕西省政府每年设立3亿元<a href="../person/21">民办</a>高等教育发展专项资金，用于支持<a href="../person/21">民办</a>高等教育在公共服务和信息平台、高水平<a href="../person/21">民办</a>高校、师资队伍建设、实验室和实习实训基地等方面的建设。制定<a href="../person/21">民办</a>高等教育的发展规划，建立多部门共同参与的综合协调机制，研究解决发展中的重大问题。政府给予非营利性<a href="../person/21">民办</a>高校与公办高校同等的支持力度，推动形成公办教育与<a href="../person/21">民办</a>教育共同发展的格局。</p>
+
+<p><strong>　　2、人民政协报举办&ldquo;春天的约会2012&rdquo;</strong></p>
+
+<p>　　3月2日，由人民政协报社主办的教育之春系列沙龙两会特别版&mdash;&mdash;&ldquo;春天的约会2012&rdquo;在京举办，本次活动主题为&ldquo;向着教育的春天：纪念邓小平南方谈话20年&rdquo;。李君如、迟福林、景天魁、孙霄兵、朱永新、姜岚昕、张杰庭、娄源功、周洪宇、王健、孙珩超等数十位全国人大代表、全国政协委员和教育界人士共聚一堂，就教育的变迁与挑战、市场的力量、教育决策的民主化科学化等当前百姓关注的话题进行了互动交流。北京民教信息科学研究院等一批大教育实体的代表也参加了活动，他们希望国家的普惠性教育政策能够给予<a href="../person/21">民办</a>学校和机构与公办同等的待遇和地位。</p>
+
+<p><strong>　　3、全国首届<a href="../person/21">民办</a>教育舆论宣传与品牌塑造高峰论坛启动</strong></p>
+
+<p>　　4月28日，由中国教育报刊社、北京民教信息科学研究院举办的全国首届<a href="../person/21">民办</a>教育舆论宣传与品牌建设高峰论坛在北京举行。该论坛以&ldquo;突破、创新、合作、共赢&rdquo;为主题，来自全国的200多位教育主管部门及行业协会领导、<a href="../person/21">民办</a>教育研究专家、<a href="../person/21">民办</a>院校院长、培训机构董事长、媒体记者总结和反思了我国<a href="../person/21">民办</a>教育舆论宣传与品牌建设的实践经验，对教育变革时代具有竞争力和生命力的<a href="../person/21">民办</a>教育主体特征以及发展模式进行了探寻，加强了<a href="../person/21">民办</a>教育机构的舆论引导，提升了<a href="../person/21">民办</a>学校社会的影响力和综合竞争力。</p>
+
+<p><strong>　　4、教育部出台&ldquo;22条&rdquo; 清理<a href="../person/21">民办</a>教育歧视政策</strong></p>
+
+<p>　　6月18日，教育部出台了《教育部关于鼓励和引导民间资金进入教育领域促进<a href="../person/21">民办</a>教育健康发展的实施意见》，为中国的<a href="../person/21">民办</a>教育注入了一针&ldquo;强心剂&rdquo;。2010年中国<a href="../person/21">民办</a>教育发展大会后，教育部梳理出困扰<a href="../person/21">民办</a>教育发展的十大问题，&ldquo;包括法人属性、产权归属、学校权益、师生权益、会计制度、分类管理、合理回报、优惠政策、市场监管和政府服务&rdquo;。鲁昕副部长认为，&ldquo;当前<a href="../person/21">民办</a>教育发展存在体制性机制性障碍，首先应解决教育内部的平等性问题，消除&lsquo;政策歧视&rsquo;。此次22条的出台，至少解决了<a href="../person/21">民办</a>教育4方面的问题，包括民间资金的进退自由、教育内部的地位平等、<a href="../person/21">民办</a>学校的规范管理以及各级政府做好服务。</p>
+
+<p><strong>　　5、新东方遭浑水猎杀股价暴跌</strong></p>
+
+<p>　　7月19日消息，新东方(纽约证券交易所交易代码：EDU)股价再次暴跌35.02%，收报每股9.50美元，跌至5年内新低。原因是做空机构浑水(Muddy Waters)指称，这家中国教育服务提供商存在账目欺诈行为。浑水在其报告中指称，新东方曾欺诈性地宣称其整个门店网络都属公司所有，而实际上这家公司拥有众多的连锁加盟店。这些连锁加盟店对投资者来说并非一种隐含的红利，而是新东方账目中重大欺诈的一部分内容。事实上，新东方利用预付的连锁加盟费及其他费用来夸大自己的现金余额，目的是从其审计机构那里获得不合资格的审计观点。&rdquo;受新东方风波的影响，中国概念股遭到投资者抛售，股价集体联动下挫。</p>
+
+<p><strong>　　6、全联<a href="../person/21">民办</a>教育出资者商会在京成立</strong></p>
+
+<p>　　8月17日，经国务院同意，民政部批准，全国工商联主管的全国唯一一个由教育投资者和捐资者组成的国家一级社团组织&mdash;&mdash;全联<a href="../person/21">民办</a>教育出资者商会在北京成立。在未来五年中，该商会将致力于帮助<a href="../person/21">民办</a>教育出资者解决法人属性、产权归属、学校权益、教育公平、合理回报、优惠政策、政府服务，权益维护，资源整合，合作共赢等问题。强化政企桥梁作用，搭建会员与政府之间的沟通平台;创新思路，办活商会，增强凝聚力;规范内部管理，努力将商会打造成一个有担当、有建树，在社会上具有高信誉度、高知名度的品牌商会。</p>
+
+<p><strong>　　7、《云南省<a href="../person/21">民办</a>教育条例》10月1日正式实施</strong></p>
+
+<p>　　9月20日，云南省人大召开新闻发布会，宣布《云南省<a href="../person/21">民办</a>教育条例》将于2012年10月1日起实施，并对贯彻实施《条例》、促进全省<a href="../person/21">民办</a>教育发展提出总体要求。《条例》突出了7个方面的内容：一是强化了政府对<a href="../person/21">民办</a>教育的鼓励和支持;二是细化了<a href="../person/21">民办</a>学校与公办学校享有同等待遇的规定;三是完善了承担义务教育的<a href="../person/21">民办</a>学校应当享有国家优惠政策的规定;四是规定了对<a href="../person/21">民办</a>学校教师的社会保险给予补助;五是对教师在公办与<a href="../person/21">民办</a>学校之间合理流动做了相关规定;六是对<a href="../person/21">民办</a>学校的收费作了规定;七是对<a href="../person/21">民办</a>学校招生自主权作了规定。该《条例》的制定对于推动云南<a href="../person/21">民办</a>教育由自我发展阶段向规范发展阶段转变，尽快形成公办与<a href="../person/21">民办</a>学校共同发展的格局，促进<a href="../person/21">民办</a>教育事业进步具有积极意义。</p>
+
+<p><strong>　　8、&ldquo;温岭虐童&rdquo;暴露当前<a href="../person/21">民办</a>教育管理之失</strong></p>
+
+<p>　　10月24日，浙江省温岭市发生了一起幼儿园教师虐童事件。事发后不久，该教师虐待班上幼儿全过程的视频在网上被曝光，一时间众网友声讨不断。据了解，此事发生在浙江温岭城西街道蓝孔雀幼儿园，是一所<a href="../person/21">民办</a>学校。该校教师颜艳红因&ldquo;一时好玩&rdquo;在该园活动室里强行揪住一名幼童双耳向上提起，同时让另一名教师用手机拍下，之后该视频被上传到网上。事发之后，涉事老师被刑拘。该事件的发生一方面暴漏了当前的师德师风问题存在隐忧，一方面也折射出<a href="../person/21">民办</a>教育领域的师资队伍建设急需得到政府和社会各界的更多关注。</p>
+
+<p><strong>　　9、中国<a href="../person/21">民办</a>教育发展大会在温召开</strong></p>
+
+<p>　　12月5日，中国<a href="../person/21">民办</a>教育发展大会暨中国<a href="../person/21">民办</a>教育协会2012年会今天在温州开幕。全国政协副主席张榕明出席开幕式并讲话。张榕明在开幕式上说，十八大报告提出，鼓励引导社会力量兴办教育。我国<a href="../person/21">民办</a>教育正面临重要的发展机遇，要从促进中国教育长远发展的高度，审视<a href="../person/21">民办</a>教育发展的重要性，在深化改革开放的攻坚期，加快推进<a href="../person/21">民办</a>教育改革发展，贯彻落实科学发展观，加强<a href="../person/21">民办</a>教育自身建设。建议加快<a href="../person/21">民办</a>教育法制建设进程，建立全国<a href="../person/21">民办</a>教育改革综合协调机制，各级地方政府要加强对<a href="../person/21">民办</a>教育的引导，各级教育行政部门要自觉促进<a href="../person/21">民办</a>教育发展。<a href="../person/21">民办</a>学校要加强自身建设，坚持教育公益性原则，努力提高办学质量，加强学校队伍建设，大力推进现代学校制度建设。</p>
+
+<p><strong>　　10、温州<a href="../person/21">民办</a>教育出台&ldquo;1+14&rdquo;政策受肯定</strong></p>
+
+<p>　　温州作为中国<a href="../person/21">民办</a>教育改革的先行先试地区之一，2012年以来相继出台了<a href="../person/21">民办</a>教育综合改革的&ldquo;1+14&rdquo;政策，即1个纲领性文件及14项配套实施办法，从登记管理、财政扶持、融资政策、队伍建设、产权属性、合理回报、税费优惠、土地政策、治理结构、办学体制、金融支持办法、最低工资指导线、会计核算办法、社保补充规定等方面全面进行制度重建，对原有体制、机制实现创新与突破，并在100家<a href="../person/21">民办</a>教育机构率先实施。教育部副部长鲁昕认为，温州市的改革注重基础设计和制度建设，突出重点，解决关键问题。这些经验值得其他地方学习，也为制定全国性的政策提供了思路和借鉴。</p>
+
+<p>&nbsp;</p>
+                                </div>
+								<!-- SingleAd end -->
+							</div>
+						</div>
+						<div class="postnavi">
+							<div class="previous_post">上一篇: <a href="23" title="">中国网：全国首个大学生“诚信档案”公共平台建立</a></div>
+							<div class="next_post">下一篇: <a href="25" title="">中国日报：全国首个大学生“诚信档案”公共平台建立</a></div>
+						</div>
+						<!-- PageNavigation end -->
+					</div>
+				</div>
+			</div>
+
+
+
+
+            <div class="sidebar">
+    <ul>
+      <li class="mostviews">
+        <span class="intit"><a class="more" href="../list/30">更多&gt;&gt;</a><strong>一周热点新闻</strong></span>
+        <ul>
+         
+                                                <li><a href="33" target="_blank" title="民教网声明">民教网声明</a></li>
+                                                                <li><a href="32" target="_blank" title="民教网免责严正声明！">民教网免责严正声明！</a></li>
+                                                                <li><a href="31" target="_blank" title="关于非法网站仿冒我司民教信息网严正声明">关于非法网站仿冒我司民教信息网严正声明</a></li>
+                                                                <li><a href="17" target="_blank" title="资质批文">资质批文</a></li>
+                                    
+
+                                <li><a href="279" target="_blank" title="李克强主持召开国务院常务会议 部署深入推进大众创业万众创新 重点支持高校毕业生等群体就业创业">李克强主持召开国务院常务会议 部署深入推进大众创业万众创新 重点支持高校毕业生等群体就业创业</a></li>
+                                <li><a href="277" target="_blank" title="翁铁慧赴企业调研高校毕业生就业创业情况">翁铁慧赴企业调研高校毕业生就业创业情况</a></li>
+                                <li><a href="275" target="_blank" title="教育部启动实施全国高校与湖北高校毕业生就业创业工作“一帮一”行动">教育部启动实施全国高校与湖北高校毕业生就业创业工作“一帮一”行动</a></li>
+                                <li><a href="273" target="_blank" title="教育部启动高校毕业生就业状况核查工作">教育部启动高校毕业生就业状况核查工作</a></li>
+                                <li><a href="272" target="_blank" title="教育部推出四项“不断线”就业服务助力未就业毕业生尽早就业">教育部推出四项“不断线”就业服务助力未就业毕业生尽早就业</a></li>
+                 
+
+ 
+        </ul>
+      </li>
+      <li>
+        <div class="bar" style="margin-top:10px;"> <span class="intit"><a class="more" href="../list/21">更多&gt;&gt;</a><strong>会客厅</strong></span>
+           		  <div class="focus1" href="/person/77">                
+                <a href="../person/77">
+                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/e98838466bbb88812f747a996708eddf.jpg" width="74" height="56" border="0"> <span style="color: red;">顾明远</span></a>
+                <br><span>中共党员，教育部社会科学委员会副主任、北京师范大学教育学部顾问。</span>
+        </div>
+  
+          <ul>
+                                <li><a href="../person/77" target="_blank" title="顾明远">顾明远</a></li>
+                                <li><a href="../person/76" target="_blank" title="贾少华">贾少华</a></li>
+                                <li><a href="../person/75" target="_blank" title="杨东平">杨东平</a></li>
+                                <li><a href="../person/70" target="_blank" title="陈宝生">陈宝生</a></li>
+                                <li><a href="../person/68" target="_blank" title="孙春兰">孙春兰</a></li>
+                          </ul>
+  </div>
+</li>
+     <li>
+        <div class="bar"> <span class="intit"><a class="more" target="_blank" href="../list/25">更多&gt;&gt;</a><strong>民教网简报</strong></span>
+          <ul>
+                                <li><a href="11" target="_blank" title="2013年《民教网工作简报》第十一期">2013年《民教网工作简报》第十一期</a></li>
+                                <li><a href="10" target="_blank" title="2013年《民教网工作简报》第十期">2013年《民教网工作简报》第十期</a></li>
+                                <li><a href="9" target="_blank" title="2013年《民教网工作简报》第九期">2013年《民教网工作简报》第九期</a></li>
+                                <li><a href="8" target="_blank" title="2014年《民教网工作简报》第二期">2014年《民教网工作简报》第二期</a></li>
+                          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>            <div class="dbgd"></div>
+            <div class="footer2">
+    <div class="dbmume">
+        <a href="../person/21">首 页</a>
+        <a>|</a>
+        <a href="../list/16">平台介绍</a>
+        <a>|</a>
+        <a href="../list/17">资质批文</a>
+        <a>|</a>
+        <a href="../list/18">主管单位</a>
+        <a>|</a>
+        <a href="../list/5">通知公告</a>
+        <a>|</a>
+        <a href="../list/22">客服中心</a>
+        <a>|</a>
+        <a href="../list/23">版权声明</a>
+        <a>|</a>
+        <a href="../bgsqform">办公合作申请</a>
+    </div>
+
+<div class="copybq">
+<p>公安局备案号:2021031956号 &nbsp; 备案编号：
+                          <a href="https://beian.miit.gov.cn">豫ICP备2021031956号-2</a>
+        </p><p>办公地址：河南省郑州市高新技术产业开发区瑞达路96号商务中心　邮政编码:454000 &nbsp; &nbsp;通信地址：河南省100005-019信箱</p><p>主办单位：河南民教信息科技有限公司 &nbsp; &nbsp;指导：全国民办高等教育学生信息咨询与就业指导中心　</p>
+<a id="_pingansec_bottomimagesmall_shiming" target="_blank" href="https://si.trustutn.org/info?sn=313211119040899888649&amp;certType=1"><img src="https://v.trustutn.org/images/cert/bottom_small_img.png"/></a>
+<a target="_blank" href="https://xinyong.yunaq.com/certificate?domain=www.cmhsi.com.cn"><img style="width:110px;height:40px" src="../static/images/label_lg_90020.png"></a>
+
+<dd><img src="../static/picture/dbpic.png"></dd>
+</div>
+
+
+<script type="text/javascript" src="../static/js/jquery-1.9.1.min.js">
+</script>
+
+<script type="text/javascript" src="../static/js/slides.js">
+</script>
+
+<script type="text/javascript" src="../static/js/flexslider.js">
+</script>
+
+<script type="text/javascript">
+
+</div>
+
+</div>
+        
+        
+
+        </div>
+    </div>
+</body>
+</html>

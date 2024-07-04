@@ -1,0 +1,487 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>民教网_民办教育服务信息网</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="民办教育服务信息网,民教网,中国民办高等教育学生信息网,民办网官网"/>
+<meta name="description" content="民教网是民办教育服务信息网的简称，又称民教官网，由民办教育机构，行业协会，科研院所和有关专家学者共同组建，是民办高等教育机构学生信息服务官方网站。"/>
+    <link type="text/css" rel="stylesheet" href="../static/css/style5.css">
+    <link href="../static/css/lbiao.css" type="text/css" rel="stylesheet">
+    <!--<script src="/static/js/tab.js" type="text/javascript"></script>-->
+    <script language="javascript" src="../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/tabpic.js"></script>
+
+</head>
+<body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrap {
+        width: 100%;
+        height: 50px;
+        background-color: #127de1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pics {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .text {
+        display: inline-block;
+        vertical-align: middle;
+        color: white;
+        font-size: 16px;
+    }
+
+    .you {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+
+<div class="wrap" id="toop">
+    <div class="zuo">
+        <div class="pics" style="background-image: url(../static/images/trusted-web1_01.png);width: 30px;height: 38px; background-size: 100%; background-repeat: no-repeat;"></div>
+        <h2 class="text">该网站工信部已备案,唯一百度官方认证(民教网)官方网站www.cmhxi.com.cn，请放心访问</h2>
+    </div>
+
+    <div class="you">
+        <div style="vertical-align: middle;">
+            <a href="../person/21">
+                <p class="aaa" style="color: #ffe6ae;font-size: 18px;">了解详情&gt;</p >
+            </a >
+        </div>
+        <div style="vertical-align: middle; margin-right: 10px;">
+            <a href="../person/21">
+                <img src="../static/images/trusted-real-name.png">
+            </a >
+        </div>
+        <div style="vertical-align: middle;">
+            <img id="toop2" src="../static/images/la.png" title="收起" style="width: 50px;height: 70px;" onclick="shou()">
+            <img id="toop3" src="../static/images/zhan.png" title="展开" style="width: 50px;height: 70px;display: none;" onclick="zhan()">
+        </div>
+    </div>
+</div>
+
+<div class="toop" style="display: none;">
+    <div class="topleft">欢迎光临中国民办高等教育学生信息网(中国民办教育学生信息网(官网)-民教信息网)www.cmhxi.com.cn！</div>
+    <div class="topright"></div>
+</div>
+<script>
+    function shou() {
+        $('.toop').css("display", "block");
+        $('#toop3').css("display", "block");
+        $('#toop').css("display", "none");
+        $('#toop2').css("display", "none");
+    }
+
+    function zhan() {
+        $('.toop').css("display", "none");
+        $('#toop3').css("display", "none");
+        $('#toop').css("display", "block");
+        $('#toop2').css("display", "block");
+    }
+</script>
+    <div class="beiji-01" style="background-color:#f1f1f1;background-image: url(https://www.cmhxi.com.cn/show/static/images/bj.jpeg);
+          background-size: cover;
+        background-repeat: no-repeat;">
+        <div style="background-color:#f1f1f1;width:1004px;margin:0 auto;">
+        <div class="box2">
+    <div id="banner">
+                    <img src="../static/images/banner1.png"/>
+            </div>
+    <style>
+        .t_nav {
+            width: 100%;
+            min-width: 1000px;
+            height: 40px;
+            line-height: 40px;
+            background: #2EAFBB;
+            color: #FFFFFF;
+            overflow: hidden;
+        }
+
+        .width1000 {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .t_nav li {
+            float: left;
+            display: inline;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .t_nav a, .t_nav a:link, .t_nav a:visited {
+            color: #FFFFFF;
+            font: 17px/38px "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", HELVETICA;
+        }
+    </style>
+    <div class="t_nav">
+        <ul class="width1000">
+            <li style="padding-left:40px;"><a href="../person/21" target="_parent">首页</a></li>
+            <li><a href="../list/3">平台介绍</a></li>
+            <li><a href="../list/17">资质批文</a></li>
+            <li><a href="../list/20">政策法规</a></li>
+            <li><a href="../list/5">通知公告</a></li>
+            <li><a href="../list/4">新闻中心</a></li>
+            <li><a href="../list/21">民教人物</a></li>
+            <li><a href="../list/6">院校列表</a></li>
+            <li style="padding-right: 0;"><a href="http://xy.cmhni.com.cn">查询中心</a></li>
+        </ul>
+    </div>
+    <div id="announ">
+        <div class="announ_l">
+            <em><img src="../static/picture/announce.gif" width="18" height="18"></em>
+            <b></b>
+            <div id="scrollDiv">
+                <script language="javascript">
+                    $(function () {
+                        //单行应用@Mr.Think
+                        var _wrap = $('ul.line');//定义滚动区域
+                        var _interval = 2000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时，停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                    $(function () {
+                        //多行应用@Mr.Think
+                        var _wrap = $('ul.mulitline');//定义滚动区域
+                        var _interval = 3000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时,停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                </script>
+                <ul class="line">
+                                            <li style="margin-top: 0px;"><a href="33"
+                                                        target="_blank">民教网声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="32"
+                                                        target="_blank">民教网免责严正声明！</a></li>
+                                            <li style="margin-top: 0px;"><a href="31"
+                                                        target="_blank">关于非法网站仿冒我司民教信息网严正声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="17"
+                                                        target="_blank">资质批文</a></li>
+                                    </ul>
+            </div>
+        </div>
+        <div class="clearboth"></div>
+    </div>
+</div>
+<style>
+    #trusted_container {
+        display: none;
+    }
+</style>
+        <div class="w960">
+
+
+
+            <div class="content">
+				<!-- Breadcrumb begin -->
+				<div class="breadcrumb" style="margin-top: 1px;"> <strong>当前位置：</strong><a href="../person/21">首页</a> &gt;&gt; <a href="../list/8">教育时评</a> &gt;&gt; 浏览文章</div>
+				<!-- 列表开始 -->
+				<div class="listbox">
+					<!--图文-->
+					<div class="single">
+						<h1>民教网时评东莞：多元优质民办教育助力城市品质提升</h1>
+						<div class="meta singlemeta"><span>作者:admin</span>
+							<span>2019-08-27</span>
+							<span>来源:民教网 </span>
+							<span>浏览:<span id="mys_show_hits_16">8116</span></span> </div>
+						<!-- PostContent begin -->
+						<div class="entry">
+							<div class="entrycontent">
+								<!-- SingleAd begin -->
+								<div id="MyContent">
+                                <p>&nbsp;&nbsp;1993年，东莞市第一所<a href="../person/21">民办</a>学校&ldquo;东莞市新世纪英才学校&rdquo;在凤岗镇正式开办，<a href="../person/21">民办</a>教育在东莞的发展大幕自此拉开。26年之后，来自东莞市教育局的数据，截至2018年底，东莞全市<a href="../person/21">民办</a>学校达1223所，在校学生118万人。</p>
+
+<p>　　作为公办教育的有力补充，经过20多年的发展，东莞已成为广东乃至全国<a href="../person/21">民办</a>学校数量、规模最大的地区之一，<a href="../person/21">民办</a>教育在东莞亦经历起步到多元发展的历程。近年来，随着东莞教育扩容提质的持续推进，一批着眼世界、立足培养高素质创新人才的高端民校走进公众视野。</p>
+
+<p>　　近日，由北京大学&mdash;国际教育运营与管理研修班和广东海德教育发展集团&mdash;东莞市海德双语学校联合主办，以&ldquo;育人才&middot;慧创2035&rdquo;为主题的大湾区<a href="../person/21">民办</a>教育创新与发展论坛在东莞举行，与会专家与本地教育工作者为<a href="../person/21">民办</a>教育创新发展支招。作为大湾区节点城市，在东莞占比超七成的<a href="../person/21">民办</a>教育如何适应新形势，主动求变？这是摆在东莞<a href="../person/21">民办</a>教育人面前的一盘大棋。</p>
+
+<p>　　<strong>东莞<a href="../person/21">民办</a>教育的出现源于优质教育需求增加</strong></p>
+
+<p>　　&ldquo;东莞的<a href="../person/21">民办</a>教育大致经历了三个明显变化的阶段，上世纪90年代初，<a href="../person/21">民办</a>学校的出现满足了一部分先富裕起来的家庭对于优质教育的需求。&rdquo;广东海德教育集团副总裁、东莞市海德双语学校创校总校长黄赛勇，也是本次大湾区<a href="../person/21">民办</a>教育创新与发展论坛主要参与者，谈及东莞<a href="../person/21">民办</a>教育的发展时表示，以新世纪英才、东方明珠为代表的学校出现，呈现了东莞<a href="../person/21">民办</a>教育的初期探索与起步。</p>
+
+<p>　　1982年，第五届全国人大第五次会议通过的《宪法》明确提出，国家鼓励集体经济组织、国家企业事业组织和其他社会力量依照法律规定举办各种教育事业，社会力量办学的合法性被确立。</p>
+
+<p>　　<a href="../person/21">民办</a>教育办学的春风在1993年吹到了东莞。根据《东莞年鉴》（1997&mdash;2001年）（下称《年鉴》），1993年东莞市首间<a href="../person/21">民办</a>学校&mdash;&mdash;东莞市新世纪英才学校在凤岗镇雁田开班。第二年，东莞市东方明珠学校成立。</p>
+
+<p>　　这一阶段，全市<a href="../person/21">民办</a>学校规模壮大和水平提升的速度比较缓慢，但值得一提的是，东莞从一开始就将<a href="../person/21">民办</a>学校的招生行为、学生学籍等纳入全市教育统一管理。根据《年鉴》，到2000年全市有<a href="../person/21">民办</a>中小学16所，<a href="../person/21">民办</a>中小学在校生达28188人。</p>
+
+<p>　　&ldquo;进入新千年，东莞<a href="../person/21">民办</a>教育开始了大规模发展。&rdquo;黄赛勇表示，在灵活用人、政策支持、社会需求增加等多重因素影响下，<a href="../person/21">民办</a>教育进一步发展。</p>
+
+<p>　　记者梳理这一时期的东莞<a href="../person/21">民办</a>学校时发现，如今在全市、省内具有一定知名度的学校皆创办于这一阶段，如2001年东华高级中学创办、2003年光明中学创办、2004年翰林实验学校创办。</p>
+
+<p>　　与此同时，随着经济社会高速发展，学习外语的重要性开始广泛被社会接受，2002年东莞第一所外国语学校创办，即宏远外国语学校。在随后的两三年里，虎门外国语学校、御花苑外国语学校先后招生。</p>
+
+<p>　　原光明教育集团总校长、现茶山中学校长孙煜分析，这一时期东莞<a href="../person/21">民办</a>学校如雨后春笋般冒出，一方面是外来务工人员迅速增长导致学位需求的增加；另一方面，这批学校的&ldquo;全寄宿&rdquo;办学模式契合本地家长的需求，寄宿制便于学校开展教学，因此这批学校很快赢得家长口碑。</p>
+
+<p>　　为了进一步规范<a href="../person/21">民办</a>学校发展，2002年东莞召开全市<a href="../person/21">民办</a>教育工作会议，提出大力发展<a href="../person/21">民办</a>教育事业，并于当年11月出台《东莞市<a href="../person/21">民办</a>学校管理办法》，提出对<a href="../person/21">民办</a>学校实行&ldquo;积极鼓励、大力支持、正确引导、加强管理&rdquo;的方针。</p>
+
+<p><strong>　　高端民校助力东莞教育生态优化和人才聚集</strong></p>
+
+<p>　　在黄赛勇看来，经历前两个阶段的发展之后，随着近年来东莞市教育提质扩容的持续推进，<a href="../person/21">民办</a>教育发展进入更加多元的阶段，一方面，政府持续加大对<a href="../person/21">民办</a>教育的投入，进一步实现<a href="../person/21">民办</a>教育与公办教育的均衡发展，以此满足公众对学位需求；另一方面，国际教育、双语学校等高端优质学校在东莞的开办，进一步丰富东莞<a href="../person/21">民办</a>教育生态，提升了城市品质。</p>
+
+<p>　　在松山湖，由华为集团联手清华大学附属中学（下称&ldquo;清华附中&rdquo;）创办的清澜山学校于2017年开学；毗邻深圳的黄江镇引入省属名校品牌华南师范大学附属中学，开办华南师范大学附属东莞学校（下称&ldquo;东莞华附&rdquo;）；由东华教育集团打造的东华文泽学校今年9月开学；选址清溪镇的东莞市海德双语学校（筹）计划2020年开学。</p>
+
+<p>　　教育是民生之本，也是城市转型发展、社会文明进步的一面镜子。东莞<a href="../person/21">民办</a>学校的办学质量、办学定位不断提升，这离不开人才的支撑，优质民校不断开办形成了人才的聚拢效应。</p>
+
+<p>　　清澜山学校行政校长林静姿任教清华附中，自清澜山学校确定开办后，她频繁来往于北京与东莞，并于2017年开始正式入莞工作。她说，学校里和她一样从北京过来的教师有50多人，&ldquo;原有清华附中的教师团队具有极强的号召力与吸引力，吸引了更多优秀人才的加入&rdquo;。</p>
+
+<p>　　她透露，目前清澜山学校教师团队约160人，除北京来的老师外，还有50名海归教师，另外约60名是从世界各地招聘的外籍教师。&ldquo;大湾区建设如火如荼，大量高科技企业的创办，服务体系的完善，为学校提供人才&lsquo;选、育、留&rsquo;的空间，让学校变成一棵梧桐树，能不断吸引金凤凰&rdquo;。</p>
+
+<p>　　在东莞华附，今年秋季开学有7名毕业于北京大学、清华大学的新教师走上讲台，目前学校正在为明年高中开学储备教师。&ldquo;我们计划招聘170名教师，招聘宣讲第一站到了北京大学，接着去了吉林大学、东北师范大学、陕西师范大学，还要去成都、重庆。&rdquo;据东华华附相关负责人介绍，目前有初步意向来校任教的北大、清华毕业生有19名。</p>
+
+<p>　　目前，海德双语学校也在为明年开学储备教师，并发出面向全国招聘教师团队的公告。该校总投资10.28亿元，分为国内部和国际部，开设幼儿园、小学、初中、高中学段，建成后可提供约5000个学位。学校招聘公告提出，达到一定职称的教师、校长，最高年薪可达150万元。</p>
+
+<p><strong>　　<a href="../person/21">民办</a>教育人搭台探讨如何做好教育创新文章</strong></p>
+
+<p>　　经过三个阶段、20多年的发展，东莞<a href="../person/21">民办</a>学校数量及在校生人数已经远超公办学校，成为东莞教育不可或缺的重要组成部分。</p>
+
+<p>　　至2018年底，东莞全市有<a href="../person/21">民办</a>中小学296所（含<a href="../person/21">民办</a>中职学校9所）、幼儿园921所；全市有各类在校生168万人，其中非户籍学生118万人（不含高校）。</p>
+
+<p>　　当前，东莞提出全面构建慧教育体系，打造湾区都市，发展品质教育。占比超七成的<a href="../person/21">民办</a>教育如何进一步吸纳优质教育人才，如何发挥各自学校优势、实现错位发展，进一步优化东莞<a href="../person/21">民办</a>教育生态，合力写好<a href="../person/21">民办</a>教育文章，这是摆在东莞<a href="../person/21">民办</a>教育人面前的一盘大棋。</p>
+
+<p>　　在11月16日举办的&ldquo;育人才&middot;慧创2035&rdquo;大湾区<a href="../person/21">民办</a>教育创新与发展论坛上，黄赛勇客串论坛主持。他透露，这是东莞第一次举办这种规模的论坛，希望搭建一个高档次、高水平的<a href="../person/21">民办</a>教育对话平台，带给大家思考&mdash;&mdash;大湾区建设背景下，东莞<a href="../person/21">民办</a>教育在教育改革创新中能带来什么样的积极影响。</p>
+
+<p>　　在现场，来自北京的专家与东莞、广州和深圳的教育工作者，就<a href="../person/21">民办</a>教育的实践、大湾区国际教育发展等一系列问题开展深入交流。北京大学教育学院副院长哈巍带来《<a href="../person/21">民办</a>教育发展：全球视野与中国实践》分享，通过对比世界三大湾区教育分布，他表示，粤港澳大湾区<a href="../person/21">民办</a>教育呈现两头大、中间小的特点，<a href="../person/21">民办</a>教育要持续发展，除了解决质量与效率的问题，还应该考虑如何兼顾公平。</p>
+
+<p>　　中国教育发展战略学会副会长、国家教育发展研究中心研究员周满生作了《粤港澳大湾区国际基础教育的推进引起的一些思考》主题演讲，认为广东国际教育起步早、基础好，国际学校要坚持走特色发展之路。</p>
+
+<p>　　&ldquo;深圳<a href="../person/21">民办</a>教育同样存在数量多、占比大的特点，截至2018年底，全市共有<a href="../person/21">民办</a>中小学262所，占全市普通中小学总数的36%。&rdquo;深圳市教育科学研究院教育信息化办公室副主任张素容以深圳为例，分享《<a href="../person/21">民办</a>教育的挑战与应对》。她透露，深圳从招生管理、加大公共财政投入、推荐<a href="../person/21">民办</a>教育国际合作等方式扶持<a href="../person/21">民办</a>教育发展。</p>
+
+<p>　　论坛吸引圈内人围观，也吸引了部分家长来到现场取经。孩子就读南城四小二年级的家长叶女士，当天带着儿子一起听讲座，她希望能通过活动更多了解东莞<a href="../person/21">民办</a>教学体系，了解不同学校办学理念，为选择适合孩子就读的初中学校做准备。</p>
+
+<p><strong>　　数读</strong></p>
+
+<p>　　东莞各阶段<a href="../person/21">民办</a>中小学数量（据公开数据）</p>
+
+<p>　　到2000年，东莞全市有<a href="../person/21">民办</a>中小学16所，其中高收费<a href="../person/21">民办</a>学校4所，<a href="../person/21">民办</a>公助学校1所，台商子弟学校1所，流动人口子女学校10所，<a href="../person/21">民办</a>中小学在校生达28188人。</p>
+
+<p>　　至2008年底，东莞全市有<a href="../person/21">民办</a>中小学237所（含<a href="../person/21">民办</a>中职学校7所），全市中小学非户籍学生49.15万人中，在<a href="../person/21">民办</a>中小学就读的有36.21万人，占全市非户籍中小学生的73.8%。</p>
+
+<p>　　至2018年底，东莞全市有<a href="../person/21">民办</a>中小学296所（含<a href="../person/21">民办</a>中职学校9所），幼儿园921所；全市有各类在校生168万人，其中非户籍学生118万人（不含高校）。</p>
+
+<p><strong>　　纵深</strong></p>
+
+<p>　<strong>　</strong><strong>1.</strong><strong>如何打好<a href="../person/21">民办</a>教育</strong><strong>&ldquo;</strong><strong>东莞牌</strong><strong>&rdquo;</strong><strong>？</strong></p>
+
+<p>　　一众优质民校的开办，让家长在公办教育之余多了一份选择。教育作为城市公办配套服务资源的重要组成部分，依据口碑形成的辐射影响，进一步为城市品质提升添砖加瓦。</p>
+
+<p>　　以东莞华附招生为例，在上半年举办的校园开放日上，校门口停满东莞各个镇街乃至深圳、惠州等地的车辆。记者从清澜山学校获悉，包括幼儿园在内，学校有在校生500多人，约50%学生为居住在东莞的学生，另外50%的学生为华为的子弟。&ldquo;学校没有刻意招入华为子弟，他们不少是从深圳过来东莞插班就读，这是学校口碑相传的效果。&rdquo;林静姿表示，好的教育资源是重要加分项，学校对于松山湖引入高端人才起到一定作用。</p>
+
+<p>　　不仅如此，为了进一步体现优质教育面向公众办学，学校设立国际化高中奖学金计划，拟拿出4000万元作为奖学金，奖励给优秀的高中申请者，为更多学生的梦想提供支持。</p>
+
+<p>　　&ldquo;在办学之初我们就思考办什么样的教育？目前东莞教育正在探索未来学校的建设，首先要思考是谁的未来？&rdquo;黄赛勇表示，海德双语学校致力培养2035年的创新人才，立足教师的未来，为大湾区教育注入优质师资力量。此外还有家长的未来、社区的未来，&ldquo;学校所在的清溪镇离深圳龙岗只有10多公里，离香港约1小时车程，处于粤港澳大湾区一个中心点，有深圳、东莞、惠州三个支点，我们希望通过影响清溪社区进而影响东莞，辐射周边。&rdquo;她表示。</p>
+
+<p>　　定位高端的东华文泽学校今年9月正式开学，从一开始就吸引了公众的关注，学校提供面向3&mdash;18岁学生的K&mdash;12国际学校。从幼儿园到高中一体化的国际教育，丰富了东莞<a href="../person/21">民办</a>教育的形式，学校上周举办家长说明会，受到众多家长关注。</p>
+
+<p>　　&ldquo;目前，东莞正在推进集团化办学、品牌学校以及未来学校，从这三个支点发力，未来东莞教育变化非常大。&rdquo;孙煜认为，公办、<a href="../person/21">民办</a>学校齐发展，不管是对老牌<a href="../person/21">民办</a>学校还是新办学校，都应该主动寻求办学模式的创新，坚持特色化办学之路。</p>
+
+<p>　<strong>　</strong><strong>2.</strong><strong>如何实现民校差异化、个性化办学？</strong></p>
+
+<p>　　以清澜山、东莞华附为代表的学校进驻东莞，是近年来东莞教育扩容提质的直接写照。同时，东莞采取通过公办学校托管试点、公办<a href="../person/21">民办</a>学校结对、专任教师全员培训、建信息化教学资源、品牌学校培育等一系列政策，力促教育优质、均衡。</p>
+
+<p>　　为了进一步规范<a href="../person/21">民办</a>学校办学，2019年3月教育部发布《关于做好2019年普通中小学招生入学工作的通知》，首次提出<a href="../person/21">民办</a>、公办中小学同步招生，<a href="../person/21">民办</a>中小学免试入学。在此背景之下，各级各类<a href="../person/21">民办</a>学校如何实现差异化、个性化办学值得思考。</p>
+
+<p>　　林静姿表示，清澜山学校引入清华附中品牌，提出用4C教育（创新、合作、沟通、批判性思维）引领各学科的发展，培养学生做具有全球化视野、国际化胸怀、关注社会、有责任意识与家国情怀的二十一世纪人才。</p>
+
+<p>　　秉承清华&ldquo;无体育不清华&rdquo;的原则，学校为学生开设20余门体育课程，每天一节体育课，通过每学年十几门体育项目的学习，在提升学生身体素质的同时提高学生的领导力和团队合作精神。</p>
+
+<p>　　今年3月东莞市确定首批品牌学校培育对象，东华初级中学、东华高级中学成为<a href="../person/21">民办</a>学校代表，入选首批品牌学校培育对象。11月3日&mdash;9日，由东莞品牌学校校长和学校骨干组成的80人研修班，在北京开展了为期一个星期的学习。研修经历让东华初级中学沈传标对于学校品牌打造有了更深刻的思考，&ldquo;东华初级中学正在探索&lsquo;三大课程（品位课程、思维课程和个性课程）&rsquo;成就&lsquo;三大成长（学生成长、教师成长和文化成长）&rsquo;，以课程促成长，以成长促文化，以文化聚精神，以精神立品牌，我们将在探索与实践中不断丰富自己的积淀&rdquo;。</p>
+
+<p>　　11月13日，东华高级中学举办校园开放日。如何以品牌学校为契机，在新一轮高考改革背景下实现自我突破？校长简期颐表示，学校一直倡导既要对学生学业前途负责，更要对学生的终身发展负责，因此将立足于学生生涯规划引导，让学生明确3个问题：我想做什么、我能做什么、我应该做什么？通过实施选科跑班，因材施教，尽量让每个学生受到最适合的教育，成为最好的自己。根据品牌培育方案，未来该校将进一步在学校实施分层教学，强化&ldquo;培尖扶弱&rdquo;工作，让更多学生用适合自己的节奏、步伐在学校学习，实现自我提升。</p>
+
+<p>　　落实到具体实践，简期颐表示，学校将以活动课程为载体培养学生的&ldquo;好习惯&rdquo;，提升综合素质；以课堂创新为手段，通过小组合作，探究学习，培养学生的&ldquo;好思维&rdquo;；通过公民教育、感恩教育、赏识教育，培养学生&ldquo;好品质&rdquo;，为终身发展打下坚实基础。</p>
+
+<p>　<strong>　观点</strong></p>
+
+<p><strong>　　北京大学教育学院副院长哈巍：</strong></p>
+
+<p><strong>　　<a href="../person/21">民办</a>教育</strong></p>
+
+<p><strong>　　要注重质量效率</strong></p>
+
+<p><strong>　　也要兼顾公平</strong></p>
+
+<p>　　在《<a href="../person/21">民办</a>教育发展：全球视野与中国实践》主题讲座中，哈巍表示，私塾教育是中国历史上<a href="../person/21">民办</a>教育最早呈现形式，这些私人设立的教育机构是古代民众接受基础教育的重要场所。</p>
+
+<p>　　&ldquo;社会力量办学的合法性在1982年被确立，之后陆续出台多份文件用于指导<a href="../person/21">民办</a>教育办学。&rdquo;哈巍引用第三方数据，预计到2020年中国<a href="../person/21">民办</a>教育的总体规模将达3.36万亿元人民币，&ldquo;总体来说，<a href="../person/21">民办</a>教育在国内仍属于方兴未艾的阶段&rdquo;。</p>
+
+<p>　　哈巍以纽约、旧金山、东京三大湾区来对比看粤港澳大湾区教育的分布。他表示，世界几大湾区高校资源相对集中，纽约湾区有哥伦比亚大学以及周边普林斯顿、康奈尔等知名高校，旧金山湾区有斯坦福大学、加州大学伯克利分校和加州理工学院等高等学府，东京湾区有早稻田大学、东京大学等，粤港澳大湾区同样集聚一批高校资源，如中山大学、暨南大学、深圳大学以及香港众多知名高校。</p>
+
+<p>　　&ldquo;从中学教育资源来看，对比美国最好的公立学校和私立学校排名，旧金山湾区有2所学校可以进入公立学校前20%，有8所学校可以进入私立学校排名前20%。&rdquo;哈巍说，粤港澳大湾区<a href="../person/21">民办</a>教育呈现两头大、中间小的特点，<a href="../person/21">民办</a>幼儿园和<a href="../person/21">民办</a>大学所占市场比例比较高，<a href="../person/21">民办</a>大学可达30%，<a href="../person/21">民办</a>幼儿园可以达60%&mdash;70%，中学的比例相对低。</p>
+
+<p>　　在满足家长对子女教育差异化需求中，<a href="../person/21">民办</a>教育扮演非常重要的角色，大湾区发展<a href="../person/21">民办</a>教育，哈巍认为要解决好两个问题，一个是质量和效率，另一个就是公平，&ldquo;私立教育高度分化后，带来阶层和社会流动的问题，家长的经济收入直接决定孩子的教育环境，这方面的问题值得办学者思考&rdquo;。</p>
+
+<p>　<strong>　中国教育发展战略学会副会长周满生：</strong></p>
+
+<p><strong>　　基础教育国际化</strong></p>
+
+<p><strong>　　课程设置是核心</strong></p>
+
+<p>　　&ldquo;广东省基础教育国际化走在全国前列，在上世纪90年代初已经有归国留学生或者外籍华人创办的学校。&rdquo;如何推进粤港澳大湾区国际基础教育，周满生给出自己的思考。</p>
+
+<p>　　他认为，在倡导基础教育国际化过程中，首先需要重视公办教育机构的引领作用，善于发挥民营教育的优势，<a href="../person/21">民办</a>国际学校要坚持走特色发展之路；其次，推进基础教育国际化，国际化课程设置是核心，要提升教师国际化素养；第三，中国的基础教育一定要扎根本土、放眼全球，要在理解和坚守本国教育特色及传统化的基础上进行中西结合探索。</p>
+
+<p>　　&ldquo;教育目标包括技能、知识、价值观、态度，老师不仅仅是传授基本的读写算，还要培养学生终身学习的愿望和能力。&rdquo;周满生认为，在粤港澳大湾区建设背景下，<a href="../person/21">民办</a>教育要强调教育质量的全面推进，学校必须通过教学改革、课程开发、班级建设、学校管理、教师专业化、校长领导力、教育科研等途径全面提升学校的教育质量，基础教育国际化则是进一步走向以质量为核心的义务教育均衡发展阶段。</p>
+
+<p>　　他表示，倡导基础教育国际化不是仅为部分学生开设留学预备班，而是要提高学生的国际化素养，包括国际理解的沟通和交流能力。因此，他建议<a href="../person/21">民办</a>学校的投资人、管理人应把真正做好优质的国际教育、为国家培养人才放在第一位，着眼于培养一流的人才，发挥<a href="../person/21">民办</a>教育的优势，将教育、教学、考试、升学、指导，做得更好更灵活，把人才培养做得更具个性化，探索建立中西融合的课程体系，将国际通行的课程框架和中国基础教育的优势结合起来，开发课程。</p>
+
+<p>　　比如，借鉴国外课改经验来深化自身课程改革，强调国际化课程的现代性和探究性，通过项目式学习开发自主研究课程。</p>
+
+<p>&nbsp;（南方日报）</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>中国<a href="../person/21">民办</a>教育学生信息网（<a href="../person/21">/</a>）简称&ldquo;<a href="../person/21">民教网</a>&rdquo;，由民教信息科技牵头，联合国内<a href="../person/21">民办</a>教育机构、行业协会、科研院所和有关专家学者共同组建的国内唯一的全国<a href="../person/21">民办</a>高校学生公共信息服务平台。主要提供全国<a href="../person/21">民办</a>院校资质查询、<a href="../person/21">民办</a>大学毕业生&nbsp;<a href="../person/21">证书查询</a>、学籍查询、档案管理、证书报告、就业推荐等服务。</p>
+
+<p>&nbsp;</p>
+                                </div>
+								<!-- SingleAd end -->
+							</div>
+						</div>
+						<div class="postnavi">
+							<div class="previous_post">上一篇: <a href="26" title="">中国民教网【互联网冲击传统教育行业】时评</a></div>
+							<div class="next_post">下一篇: <a href="28" title="">民教网时评民辦基礎教育現代化中的變與不變</a></div>
+						</div>
+						<!-- PageNavigation end -->
+					</div>
+				</div>
+			</div>
+
+
+
+
+            <div class="sidebar">
+    <ul>
+      <li class="mostviews">
+        <span class="intit"><a class="more" href="../list/30">更多&gt;&gt;</a><strong>一周热点新闻</strong></span>
+        <ul>
+         
+                                                <li><a href="33" target="_blank" title="民教网声明">民教网声明</a></li>
+                                                                <li><a href="32" target="_blank" title="民教网免责严正声明！">民教网免责严正声明！</a></li>
+                                                                <li><a href="31" target="_blank" title="关于非法网站仿冒我司民教信息网严正声明">关于非法网站仿冒我司民教信息网严正声明</a></li>
+                                                                <li><a href="17" target="_blank" title="资质批文">资质批文</a></li>
+                                    
+
+                                <li><a href="279" target="_blank" title="李克强主持召开国务院常务会议 部署深入推进大众创业万众创新 重点支持高校毕业生等群体就业创业">李克强主持召开国务院常务会议 部署深入推进大众创业万众创新 重点支持高校毕业生等群体就业创业</a></li>
+                                <li><a href="277" target="_blank" title="翁铁慧赴企业调研高校毕业生就业创业情况">翁铁慧赴企业调研高校毕业生就业创业情况</a></li>
+                                <li><a href="275" target="_blank" title="教育部启动实施全国高校与湖北高校毕业生就业创业工作“一帮一”行动">教育部启动实施全国高校与湖北高校毕业生就业创业工作“一帮一”行动</a></li>
+                                <li><a href="273" target="_blank" title="教育部启动高校毕业生就业状况核查工作">教育部启动高校毕业生就业状况核查工作</a></li>
+                                <li><a href="272" target="_blank" title="教育部推出四项“不断线”就业服务助力未就业毕业生尽早就业">教育部推出四项“不断线”就业服务助力未就业毕业生尽早就业</a></li>
+                 
+
+ 
+        </ul>
+      </li>
+      <li>
+        <div class="bar" style="margin-top:10px;"> <span class="intit"><a class="more" href="../list/21">更多&gt;&gt;</a><strong>会客厅</strong></span>
+           		  <div class="focus1" href="/person/77">                
+                <a href="../person/77">
+                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/e98838466bbb88812f747a996708eddf.jpg" width="74" height="56" border="0"> <span style="color: red;">顾明远</span></a>
+                <br><span>中共党员，教育部社会科学委员会副主任、北京师范大学教育学部顾问。</span>
+        </div>
+  
+          <ul>
+                                <li><a href="../person/77" target="_blank" title="顾明远">顾明远</a></li>
+                                <li><a href="../person/76" target="_blank" title="贾少华">贾少华</a></li>
+                                <li><a href="../person/75" target="_blank" title="杨东平">杨东平</a></li>
+                                <li><a href="../person/70" target="_blank" title="陈宝生">陈宝生</a></li>
+                                <li><a href="../person/68" target="_blank" title="孙春兰">孙春兰</a></li>
+                          </ul>
+  </div>
+</li>
+     <li>
+        <div class="bar"> <span class="intit"><a class="more" target="_blank" href="../list/25">更多&gt;&gt;</a><strong>民教网简报</strong></span>
+          <ul>
+                                <li><a href="11" target="_blank" title="2013年《民教网工作简报》第十一期">2013年《民教网工作简报》第十一期</a></li>
+                                <li><a href="10" target="_blank" title="2013年《民教网工作简报》第十期">2013年《民教网工作简报》第十期</a></li>
+                                <li><a href="9" target="_blank" title="2013年《民教网工作简报》第九期">2013年《民教网工作简报》第九期</a></li>
+                                <li><a href="8" target="_blank" title="2014年《民教网工作简报》第二期">2014年《民教网工作简报》第二期</a></li>
+                          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>            <div class="dbgd"></div>
+            <div class="footer2">
+    <div class="dbmume">
+        <a href="../person/21">首 页</a>
+        <a>|</a>
+        <a href="../list/16">平台介绍</a>
+        <a>|</a>
+        <a href="../list/17">资质批文</a>
+        <a>|</a>
+        <a href="../list/18">主管单位</a>
+        <a>|</a>
+        <a href="../list/5">通知公告</a>
+        <a>|</a>
+        <a href="../list/22">客服中心</a>
+        <a>|</a>
+        <a href="../list/23">版权声明</a>
+        <a>|</a>
+        <a href="../bgsqform">办公合作申请</a>
+    </div>
+
+<div class="copybq">
+<p>公安局备案号:2021031956号 &nbsp; 备案编号：
+                          <a href="https://beian.miit.gov.cn">豫ICP备2021031956号-2</a>
+        </p><p>办公地址：河南省郑州市高新技术产业开发区瑞达路96号商务中心　邮政编码:454000 &nbsp; &nbsp;通信地址：河南省100005-019信箱</p><p>主办单位：河南民教信息科技有限公司 &nbsp; &nbsp;指导：全国民办高等教育学生信息咨询与就业指导中心　</p>
+<a id="_pingansec_bottomimagesmall_shiming" target="_blank" href="https://si.trustutn.org/info?sn=313211119040899888649&amp;certType=1"><img src="https://v.trustutn.org/images/cert/bottom_small_img.png"/></a>
+<a target="_blank" href="https://xinyong.yunaq.com/certificate?domain=www.cmhsi.com.cn"><img style="width:110px;height:40px" src="../static/images/label_lg_90020.png"></a>
+
+<dd><img src="../static/picture/dbpic.png"></dd>
+</div>
+
+
+<script type="text/javascript" src="../static/js/jquery-1.9.1.min.js">
+</script>
+
+<script type="text/javascript" src="../static/js/slides.js">
+</script>
+
+<script type="text/javascript" src="../static/js/flexslider.js">
+</script>
+
+<script type="text/javascript">
+
+</div>
+
+</div>
+        
+        
+
+        </div>
+    </div>
+</body>
+</html>

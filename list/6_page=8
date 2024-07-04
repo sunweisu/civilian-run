@@ -1,0 +1,1285 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>民教网_民办教育服务信息网</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="民办教育服务信息网,民教网,中国民办高等教育学生信息网,民办网官网"/>
+<meta name="description" content="民教网是民办教育服务信息网的简称，又称民教官网，由民办教育机构，行业协会，科研院所和有关专家学者共同组建，是民办高等教育机构学生信息服务官方网站。"/>
+    <link type="text/css" rel="stylesheet" href="../static/css/style5.css">
+	<link href="../static/css/gk.css" rel="stylesheet" type="text/css">
+    <!--<script src="/static/js/tab.js" type="text/javascript"></script>-->
+    <script language="javascript" src="../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/tabpic.js"></script>
+
+</head>
+<body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrap {
+        width: 100%;
+        height: 50px;
+        background-color: #127de1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pics {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .text {
+        display: inline-block;
+        vertical-align: middle;
+        color: white;
+        font-size: 16px;
+    }
+
+    .you {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+
+<div class="wrap" id="toop">
+    <div class="zuo">
+        <div class="pics" style="background-image: url(../static/images/trusted-web1_01.png);width: 30px;height: 38px; background-size: 100%; background-repeat: no-repeat;"></div>
+        <h2 class="text">该网站工信部已备案,唯一百度官方认证(民教网)官方网站www.cmhxi.com.cn，请放心访问</h2>
+    </div>
+
+    <div class="you">
+        <div style="vertical-align: middle;">
+            <a href="../person/21">
+                <p class="aaa" style="color: #ffe6ae;font-size: 18px;">了解详情&gt;</p >
+            </a >
+        </div>
+        <div style="vertical-align: middle; margin-right: 10px;">
+            <a href="../person/21">
+                <img src="../static/images/trusted-real-name.png">
+            </a >
+        </div>
+        <div style="vertical-align: middle;">
+            <img id="toop2" src="../static/images/la.png" title="收起" style="width: 50px;height: 70px;" onclick="shou()">
+            <img id="toop3" src="../static/images/zhan.png" title="展开" style="width: 50px;height: 70px;display: none;" onclick="zhan()">
+        </div>
+    </div>
+</div>
+
+<div class="toop" style="display: none;">
+    <div class="topleft">欢迎光临中国民办高等教育学生信息网(中国民办教育学生信息网(官网)-民教信息网)www.cmhxi.com.cn！</div>
+    <div class="topright"></div>
+</div>
+<script>
+    function shou() {
+        $('.toop').css("display", "block");
+        $('#toop3').css("display", "block");
+        $('#toop').css("display", "none");
+        $('#toop2').css("display", "none");
+    }
+
+    function zhan() {
+        $('.toop').css("display", "none");
+        $('#toop3').css("display", "none");
+        $('#toop').css("display", "block");
+        $('#toop2').css("display", "block");
+    }
+</script>
+    <div class="beiji-01" style="background-color:#f1f1f1;background-image: url(https://www.cmhxi.com.cn/list/static/images/bj.jpeg);
+          background-size: cover;
+        background-repeat: no-repeat;">
+        <div style="background-color:#f1f1f1;width:1004px;margin:0 auto;">
+        <div class="box2">
+    <div id="banner">
+                    <img src="../static/images/banner1.png"/>
+            </div>
+    <style>
+        .t_nav {
+            width: 100%;
+            min-width: 1000px;
+            height: 40px;
+            line-height: 40px;
+            background: #2EAFBB;
+            color: #FFFFFF;
+            overflow: hidden;
+        }
+
+        .width1000 {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .t_nav li {
+            float: left;
+            display: inline;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .t_nav a, .t_nav a:link, .t_nav a:visited {
+            color: #FFFFFF;
+            font: 17px/38px "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", HELVETICA;
+        }
+    </style>
+    <div class="t_nav">
+        <ul class="width1000">
+            <li style="padding-left:40px;"><a href="../person/21" target="_parent">首页</a></li>
+            <li><a href="3">平台介绍</a></li>
+            <li><a href="17">资质批文</a></li>
+            <li><a href="20">政策法规</a></li>
+            <li><a href="5">通知公告</a></li>
+            <li><a href="4">新闻中心</a></li>
+            <li><a href="21">民教人物</a></li>
+            <li><a href="6">院校列表</a></li>
+            <li style="padding-right: 0;"><a href="http://xy.cmhni.com.cn">查询中心</a></li>
+        </ul>
+    </div>
+    <div id="announ">
+        <div class="announ_l">
+            <em><img src="../static/picture/announce.gif" width="18" height="18"></em>
+            <b></b>
+            <div id="scrollDiv">
+                <script language="javascript">
+                    $(function () {
+                        //单行应用@Mr.Think
+                        var _wrap = $('ul.line');//定义滚动区域
+                        var _interval = 2000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时，停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                    $(function () {
+                        //多行应用@Mr.Think
+                        var _wrap = $('ul.mulitline');//定义滚动区域
+                        var _interval = 3000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时,停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                </script>
+                <ul class="line">
+                                            <li style="margin-top: 0px;"><a href="../show/33"
+                                                        target="_blank">民教网声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="../show/32"
+                                                        target="_blank">民教网免责严正声明！</a></li>
+                                            <li style="margin-top: 0px;"><a href="../show/31"
+                                                        target="_blank">关于非法网站仿冒我司民教信息网严正声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="../show/17"
+                                                        target="_blank">资质批文</a></li>
+                                    </ul>
+            </div>
+        </div>
+        <div class="clearboth"></div>
+    </div>
+</div>
+<style>
+    #trusted_container {
+        display: none;
+    }
+</style>
+            <style>
+        .clearfix:after {
+            content: "";
+            display: block;
+            clear: both;
+            height: 0;
+        }
+
+        .yxk-filter {
+            background: #ffffff;
+            position: relative;
+            margin: 20px 0;
+            padding: 0 15px;
+            border: 1px solid #e5e5e5;
+        }
+
+        .yxk-filter li {
+            padding: 20px 0;
+            line-height: 30px;
+        }
+
+        .yxk-filter li.yxk-option-con {
+            position: relative;
+            border-bottom: 1px dotted #e5e5e5;
+        }
+
+        .clearfix {
+            zoom: 1;
+        }
+
+        .yxk-filter .list-th {
+            position: relative;
+            float: left;
+            width: 95px;
+            font-size: 16px;
+        }
+
+        .yxk-filter .list-th .iconfont {
+            position: absolute;
+            top: 2px;
+            right: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #9a9a9a;
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .yxk-filter .ch-hide {
+            display: none;
+        }
+
+        .yxk-filter .yxk-option.selected {
+            display: inline-block;
+            background: #1787e0;
+            color: #fff;
+            cursor: default;
+        }
+
+        .yxk-filter .yxk-all.selected {
+            background: #1787e0;
+            color: #fff;
+            cursor: default;
+        }
+
+
+        .yxk-filter .yxk-all {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            padding: 0 10px;
+            cursor: pointer;
+        }
+
+        .yxk-filter .yxk-option {
+            padding: 0 10px;
+            cursor: pointer;
+        }
+
+        .yxk-filter .list-td {
+            position: relative;
+            float: left;
+            width: 1053px;
+            color: #666;
+        }
+
+        .yxk-filter li.yxk-option-con .list-td {
+            width: 800px;
+            padding-left: 48px;
+        }
+
+
+        .yxk-table {
+            margin-bottom: 30px;
+        }
+
+        .ch-table {
+            background: #ffffff;
+            width: 100%;
+            line-height: 25px;
+            border: 1px solid #e9e9e9;
+            border-bottom: 0;
+            border-collapse: collapse;
+            border-spacing: 0;
+            word-break: break-all;
+            word-wrap: break-word;
+        }
+
+        .ch-table th {
+            padding: 12px 10px;
+            border-bottom: 1px solid #e9e9e9;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        .ch-table td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #e9e9e9;
+            font-size: 16px;
+            color: #666;
+            text-align: left;
+        }
+
+        .ch-table .ch-table-tick {
+            font-size: 20px;
+        }
+
+        .ch-table td.ch-table-center {
+            text-align: center;
+        }
+
+
+        @font-face {
+            font-family: "iconfont";
+            src: url('https://www.cmhxi.com.cn/font/iconfont.eot?t=1512951693273'); /* IE9*/
+            src: url('https://www.cmhxi.com.cn/font/iconfont.eot?t=1512951693273') format('embedded-opentype'), /* IE6-IE8 */ url('../font/iconfont.woff?t=1512951693273') format('woff'), /* chrome, firefox */ url('https://www.cmhxi.com.cn/font/iconfont.ttf?t=1512951693273') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('https://www.cmhxi.com.cn/font/iconfont.svg?t=1512951693273') format('svg'); /* iOS 4.1- */
+        }
+
+        .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+
+        .pagination > li {
+            display: inline;
+        }
+
+        .pagination > li > a,
+        .pagination > li > span {
+            position: relative;
+            float: left;
+            padding: 6px 12px;
+            margin-left: -1px;
+            line-height: 1.42857143;
+            color: #000000;
+            text-decoration: none;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        .pagination > li:first-child > a,
+        .pagination > li:first-child > span {
+            margin-left: 0;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+
+        .pagination > li:last-child > a,
+        .pagination > li:last-child > span {
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        .pagination > li > a:hover,
+        .pagination > li > span:hover,
+        .pagination > li > a:focus,
+        .pagination > li > span:focus {
+            color: #2a6496;
+            background-color: #eee;
+            border-color: #ddd;
+        }
+
+        .pagination > .active > a,
+        .pagination > .active > span,
+        .pagination > .active > a:hover,
+        .pagination > .active > span:hover,
+        .pagination > .active > a:focus,
+        .pagination > .active > span:focus {
+            z-index: 2;
+            color: #fff;
+            cursor: default;
+            background-color: #428bca;
+            border-color: #428bca;
+        }
+
+        .pagination > .disabled > span,
+        .pagination > .disabled > span:hover,
+        .pagination > .disabled > span:focus,
+        .pagination > .disabled > a,
+        .pagination > .disabled > a:hover,
+        .pagination > .disabled > a:focus {
+            color: #777;
+            cursor: not-allowed;
+            background-color: #fff;
+            border-color: #ddd;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+    </style>
+
+    <div class="yxk-filter">
+        <form class="zx-search-yx" action="6" id="chooseForm">
+            <ul class="yxk-fliter-list">
+                <li class="yxk-option-con clearfix">
+                    <div class="list-th">地区选择<i class="iconfont"></i></div>
+                    <div class="list-td clearfix">
+                        <select class="ch-hide" name="ssdm" id="ssdm">
+                            <option value=""  selected="selected" >院校所在地</option>
+                                                            <option value="11" >
+                                    北京
+                                </option>
+                                                            <option value="12" >
+                                    天津
+                                </option>
+                                                            <option value="13" >
+                                    河北
+                                </option>
+                                                            <option value="14" >
+                                    山西
+                                </option>
+                                                            <option value="15" >
+                                    内蒙古
+                                </option>
+                                                            <option value="21" >
+                                    辽宁
+                                </option>
+                                                            <option value="22" >
+                                    吉林
+                                </option>
+                                                            <option value="23" >
+                                    黑龙江
+                                </option>
+                                                            <option value="31" >
+                                    上海
+                                </option>
+                                                            <option value="32" >
+                                    江苏
+                                </option>
+                                                            <option value="33" >
+                                    浙江
+                                </option>
+                                                            <option value="34" >
+                                    安徽
+                                </option>
+                                                            <option value="35" >
+                                    福建
+                                </option>
+                                                            <option value="36" >
+                                    江西
+                                </option>
+                                                            <option value="37" >
+                                    山东
+                                </option>
+                                                            <option value="41" >
+                                    河南
+                                </option>
+                                                            <option value="42" >
+                                    湖北
+                                </option>
+                                                            <option value="43" >
+                                    湖南
+                                </option>
+                                                            <option value="44" >
+                                    广东
+                                </option>
+                                                            <option value="45" >
+                                    广西
+                                </option>
+                                                            <option value="46" >
+                                    海南
+                                </option>
+                                                            <option value="50" >
+                                    重庆
+                                </option>
+                                                            <option value="51" >
+                                    四川
+                                </option>
+                                                            <option value="52" >
+                                    贵州
+                                </option>
+                                                            <option value="53" >
+                                    云南
+                                </option>
+                                                            <option value="54" >
+                                    西藏
+                                </option>
+                                                            <option value="61" >
+                                    陕西
+                                </option>
+                                                            <option value="62" >
+                                    甘肃
+                                </option>
+                                                            <option value="63" >
+                                    青海
+                                </option>
+                                                            <option value="64" >
+                                    宁夏
+                                </option>
+                                                            <option value="65" >
+                                    新疆
+                                </option>
+                                                    </select>
+                        <span class="yxk-all js-option  selected " data-id="">全部</span>
+
+                                                    <span class="yxk-option js-option  "
+                                  data-id="11">北京</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="12">天津</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="13">河北</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="14">山西</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="15">内蒙古</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="21">辽宁</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="22">吉林</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="23">黑龙江</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="31">上海</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="32">江苏</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="33">浙江</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="34">安徽</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="35">福建</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="36">江西</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="37">山东</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="41">河南</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="42">湖北</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="43">湖南</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="44">广东</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="45">广西</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="46">海南</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="50">重庆</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="51">四川</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="52">贵州</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="53">云南</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="54">西藏</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="61">陕西</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="62">甘肃</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="63">青海</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="64">宁夏</span>
+                                                    <span class="yxk-option js-option  "
+                                  data-id="65">新疆</span>
+                                            </div>
+                </li>
+                <li class="yxk-option-con clearfix">
+                    <div class="list-th">院校隶属<i class="iconfont"></i></div>
+                    <div class="list-td clearfix">
+                        <select class="ch-hide" name="yxls">
+                            <option id="yxls_no" value=""  selected="selected" >全部
+                            </option>
+                            <option id="yxls_moe" value="moe" >
+                                教育部
+                            </option>
+                            <option id="yxls_min" value="min" >
+                                其他部委
+                            </option>
+                            <option id="yxls_loc" value="loc" >
+                                地方
+                            </option>
+                        </select>
+                        <span class="yxk-all js-option   selected "
+                              data-id="">全部</span>
+                        <span class="yxk-option js-option " data-id="moe">教育部</span>
+                        <span class="yxk-option js-option " data-id="min">其他部委</span>
+                        <span class="yxk-option js-option " data-id="loc">地方</span>
+                    </div>
+                </li>
+            </ul>
+        </form>
+    </div>
+
+    <div style="color: #999; margin: 15px 0 5px 0;">注：各招生单位的院校库信息由其自主维护，如有疑问，请咨询发布单位。</div>
+
+    <div class="yxk-table">
+        <table class="ch-table">
+            <thead>
+            <tr>
+                <th>院校名称</th>
+                <th width="90">所在地</th>
+                <th width="130">院校隶属</th>
+                <th width="90" class="ch-table-center">研究生院</th>
+                <th width="95" class="ch-table-center">自划线院校</th>
+                <th width="80">网报公告</th>
+                <th width="80">招生简章</th>
+                <th width="80">在线咨询</th>
+                <th width="80">调剂办法</th>
+            </tr>
+            </thead>
+            <tbody>
+
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-368061.dhtml" target="_blank">
+                            吉林农业大学
+                        </a>
+                    </td>
+                    <td> 吉林</td>
+                    <td> 吉林省</td>
+                    <td class="ch-table-center">
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10193&amp;ssdm=22 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-368061,categoryId-10461115,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-449254,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-368061,categoryId-671092,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-368060.dhtml" target="_blank">
+                            长春中医药大学
+                        </a>
+                    </td>
+                    <td> 吉林</td>
+                    <td> 吉林省</td>
+                    <td class="ch-table-center">
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10199&amp;ssdm=22 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-368060,categoryId-10461117,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-449237,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-368060,categoryId-671094,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-368059.dhtml" target="_blank">
+                            东北师范大学
+                        </a>
+                    </td>
+                    <td> 吉林</td>
+                    <td> 教育部</td>
+                    <td class="ch-table-center">
+                                                    <i class="iconfont ch-table-tick"></i>
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10200&amp;ssdm=22 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-368059,categoryId-10461119,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-449220,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-368059,categoryId-671096,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-368066.dhtml" target="_blank">
+                            北华大学
+                        </a>
+                    </td>
+                    <td> 吉林</td>
+                    <td> 吉林省</td>
+                    <td class="ch-table-center">
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10201&amp;ssdm=22 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-368066,categoryId-10461961,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-455855,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-368066,categoryId-671104,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-368058.dhtml" target="_blank">
+                            吉林师范大学
+                        </a>
+                    </td>
+                    <td> 吉林</td>
+                    <td> 吉林省</td>
+                    <td class="ch-table-center">
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10203&amp;ssdm=22 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-368058,categoryId-10461121,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-449203,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-368058,categoryId-671098,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-677583.dhtml" target="_blank">
+                            长春师范大学
+                        </a>
+                    </td>
+                    <td> 吉林</td>
+                    <td> 吉林省</td>
+                    <td class="ch-table-center">
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10205&amp;ssdm=22 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-677583,categoryId-10461128,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-677695,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-677583,categoryId-10461126,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-368057.dhtml" target="_blank">
+                            吉林财经大学
+                        </a>
+                    </td>
+                    <td> 吉林</td>
+                    <td> 吉林省</td>
+                    <td class="ch-table-center">
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10207&amp;ssdm=22 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-368057,categoryId-10461130,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-449186,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-368057,categoryId-671100,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-677710.dhtml" target="_blank">
+                            吉林体育学院
+                        </a>
+                    </td>
+                    <td> 吉林</td>
+                    <td> 吉林省</td>
+                    <td class="ch-table-center">
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10208&amp;ssdm=22 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-677710,categoryId-10461137,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-677762,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-677710,categoryId-10461135,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-368075.dhtml" target="_blank">
+                            吉林艺术学院
+                        </a>
+                    </td>
+                    <td> 吉林</td>
+                    <td> 吉林省</td>
+                    <td class="ch-table-center">
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10209&amp;ssdm=22 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-368075,categoryId-10461139,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-449443,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-368075,categoryId-671102,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-368090.dhtml" target="_blank">
+                            黑龙江大学
+                        </a>
+                    </td>
+                    <td> 黑龙江</td>
+                    <td> 黑龙江省</td>
+                    <td class="ch-table-center">
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10212&amp;ssdm=23 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-368090,categoryId-10461141,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-449703,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-368090,categoryId-671116,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-368087.dhtml" target="_blank">
+                            哈尔滨工业大学
+                        </a>
+                    </td>
+                    <td> 黑龙江</td>
+                    <td> 工业与信息化部</td>
+                    <td class="ch-table-center">
+                                                    <i class="iconfont ch-table-tick"></i>
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                                    <i class="iconfont ch-table-tick"></i>
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10213&amp;ssdm=23 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-368087,categoryId-10461143,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-449651,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-368087,categoryId-671118,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-368079.dhtml" target="_blank">
+                            哈尔滨理工大学
+                        </a>
+                    </td>
+                    <td> 黑龙江</td>
+                    <td> 黑龙江省</td>
+                    <td class="ch-table-center">
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10214&amp;ssdm=23 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-368079,categoryId-10461953,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-449512,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-368079,categoryId-671146,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-367984.dhtml" target="_blank">
+                            燕山大学
+                        </a>
+                    </td>
+                    <td> 河北</td>
+                    <td> 河北省</td>
+                    <td class="ch-table-center">
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10216&amp;ssdm=13 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-367984,categoryId-10461145,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-455711,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-367984,categoryId-670913,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-368091.dhtml" target="_blank">
+                            哈尔滨工程大学
+                        </a>
+                    </td>
+                    <td> 黑龙江</td>
+                    <td> 工业与信息化部</td>
+                    <td class="ch-table-center">
+                                                    <i class="iconfont ch-table-tick"></i>
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10217&amp;ssdm=23 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-368091,categoryId-10461147,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-449720,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-368091,categoryId-671120,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-368092.dhtml" target="_blank">
+                            黑龙江科技大学
+                        </a>
+                    </td>
+                    <td> 黑龙江</td>
+                    <td> 黑龙江省</td>
+                    <td class="ch-table-center">
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10219&amp;ssdm=23 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-368092,categoryId-10461149,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-449737,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-368092,categoryId-671122,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-368093.dhtml" target="_blank">
+                            东北石油大学
+                        </a>
+                    </td>
+                    <td> 黑龙江</td>
+                    <td> 黑龙江省</td>
+                    <td class="ch-table-center">
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10220&amp;ssdm=23 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-368093,categoryId-10461151,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-449754,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-368093,categoryId-671125,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-368095.dhtml" target="_blank">
+                            佳木斯大学
+                        </a>
+                    </td>
+                    <td> 黑龙江</td>
+                    <td> 黑龙江省</td>
+                    <td class="ch-table-center">
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10222&amp;ssdm=23 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-368095,categoryId-10461156,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-449789,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-368095,categoryId-671130,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-368096.dhtml" target="_blank">
+                            黑龙江八一农垦大学
+                        </a>
+                    </td>
+                    <td> 黑龙江</td>
+                    <td> 黑龙江省</td>
+                    <td class="ch-table-center">
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10223&amp;ssdm=23 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-368096,categoryId-10461158,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-449806,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-368096,categoryId-671132,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-368098.dhtml" target="_blank">
+                            东北农业大学
+                        </a>
+                    </td>
+                    <td> 黑龙江</td>
+                    <td> 黑龙江省</td>
+                    <td class="ch-table-center">
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10224&amp;ssdm=23 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-368098,categoryId-10461160,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-455863,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-368098,categoryId-671134,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                            <tr>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/sch/schoolInfo--schId-368097.dhtml" target="_blank">
+                            东北林业大学
+                        </a>
+                    </td>
+                    <td> 黑龙江</td>
+                    <td> 教育部</td>
+                    <td class="ch-table-center">
+                        
+                    </td>
+                    <td class="ch-table-center">
+                                            </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sswbgg/?dwdm=10225&amp;ssdm=23 " target="_blank">查看</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/listZszc--schId-368097,categoryId-10461162,mindex-13,start-0.dhtml" target="_blank">查询</a>
+                    </td>
+                    <td>
+                        <a href="https://yz.chsi.com.cn/zxdy/forum--type-sch,forumid-449823,method-listDefault,start-0,year-2014.dhtml" target="_blank">进入</a>
+                    </td>
+                    <td class="text_center">
+                        <a href="https://yz.chsi.com.cn/sch/tjzc--method-listPub,schId-368097,categoryId-671136,mindex-15,start-0.dhtml" target="_blank">查看</a>
+                    </td>
+                </tr>
+                        </tbody>
+        </table>
+        <br>
+        <div class="ch-page-wrapper" style="float: right;">
+            <div class="pager-box">
+                <nav>
+        <ul class="pagination">
+            
+                            <li class="page-item">
+                    <a class="page-link" href="6?page=7" rel="prev" aria-label="pagination.previous">&lsaquo;</a>
+                </li>
+            
+            
+                            
+                
+                
+                                                                                        <li class="page-item"><a class="page-link" href="6?page=1">1</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="6?page=2">2</a></li>
+                                                                                        
+                                    <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+                
+                
+                                            
+                
+                
+                                                                                        <li class="page-item"><a class="page-link" href="6?page=5">5</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="6?page=6">6</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="6?page=7">7</a></li>
+                                                                                                <li class="page-item active" aria-current="page"><span class="page-link">8</span></li>
+                                                                                                <li class="page-item"><a class="page-link" href="6?page=9">9</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="6?page=10">10</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="6?page=11">11</a></li>
+                                                                                        
+                                    <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+                
+                
+                                            
+                
+                
+                                                                                        <li class="page-item"><a class="page-link" href="6?page=41">41</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="6?page=42">42</a></li>
+                                                                        
+            
+                            <li class="page-item">
+                    <a class="page-link" href="6?page=9" rel="next" aria-label="pagination.next">&rsaquo;</a>
+                </li>
+                    </ul>
+    </nav>
+
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <script>
+        $(function () {
+            //select模拟单选功能
+            $('.js-option').click(function () {
+                var $this = $(this),
+                    thisVal = $(this).attr('data-id');
+                if ($this.hasClass('selected')) {
+                    return;
+                }
+                $this.siblings('select').find('option').removeAttr('selected');
+                $this.siblings('select').find('option[value=' + thisVal + ']').prop('selected', true);
+                $this.addClass('selected').siblings().removeClass('selected');
+                $('#chooseForm').submit();
+            });
+        });
+    </script>
+
+
+    <div class="footer2">
+    <div class="dbmume">
+        <a href="../person/21">首 页</a>
+        <a>|</a>
+        <a href="16">平台介绍</a>
+        <a>|</a>
+        <a href="17">资质批文</a>
+        <a>|</a>
+        <a href="18">主管单位</a>
+        <a>|</a>
+        <a href="5">通知公告</a>
+        <a>|</a>
+        <a href="22">客服中心</a>
+        <a>|</a>
+        <a href="23">版权声明</a>
+        <a>|</a>
+        <a href="../bgsqform">办公合作申请</a>
+    </div>
+
+<div class="copybq">
+<p>公安局备案号:2021031956号 &nbsp; 备案编号：
+                          <a href="https://beian.miit.gov.cn">豫ICP备2021031956号-2</a>
+        </p><p>办公地址：河南省郑州市高新技术产业开发区瑞达路96号商务中心　邮政编码:454000 &nbsp; &nbsp;通信地址：河南省100005-019信箱</p><p>主办单位：河南民教信息科技有限公司 &nbsp; &nbsp;指导：全国民办高等教育学生信息咨询与就业指导中心　</p>
+<a id="_pingansec_bottomimagesmall_shiming" target="_blank" href="https://si.trustutn.org/info?sn=313211119040899888649&amp;certType=1"><img src="https://v.trustutn.org/images/cert/bottom_small_img.png"/></a>
+<a target="_blank" href="https://xinyong.yunaq.com/certificate?domain=www.cmhsi.com.cn"><img style="width:110px;height:40px" src="../static/images/label_lg_90020.png"></a>
+
+<dd><img src="../static/picture/dbpic.png"></dd>
+</div>
+
+
+<script type="text/javascript" src="../static/js/jquery-1.9.1.min.js">
+</script>
+
+<script type="text/javascript" src="../static/js/slides.js">
+</script>
+
+<script type="text/javascript" src="../static/js/flexslider.js">
+</script>
+
+<script type="text/javascript">
+
+</div>
+        
+        
+
+        </div>
+    </div>
+</body>
+</html>

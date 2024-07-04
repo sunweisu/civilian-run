@@ -1,0 +1,71 @@
+/*å­¦ç±å­¦åŽ† ä¸­è‹±æ–‡ç‰ˆ åœ¨çº¿éªŒè¯æŠ¥å‘Š ç½‘é¡µç‰ˆæ ·å¼  huanghui 20171227*/
+.zbrq-title{
+    font-size: 16px;color: #333;line-height: 1.2;
+    display: block;
+    margin: 14px 10px 7px;font-weight: 400;
+}
+.by_img{    
+    vertical-align: bottom;
+}
+
+.div3 h2,.cn_table h2{
+    line-height: 36px;
+    font-size: 16px;
+    font-family: "é»‘ä½“";
+    padding-left: 26px;
+    text-align: left;
+}
+.div3 td{position: relative;}
+.zysx{
+    width:572px;
+}
+/**åœ¨çº¿éªŒè¯*/
+.table_zxyz td{
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+    font-size:12px;
+    text-align: center;    
+    line-height: 1.5;
+    color: #000;
+    font-family: "é»‘ä½“";
+}
+.table_zxyz span{
+    padding-left:0;
+    display:block;
+}
+.vcode-block{
+    height: 120px;
+    /* border-right: 1px solid #ccc; */
+}
+.vcode-detail{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+    font-weight:900;
+    font-family: "Times New Roman", Times, serif;
+}
+.vcode-title{  
+    color:#727272;  
+    margin-top: -18px;
+    display: block;
+    padding-left: 5px;
+    text-align: center;
+}
+
+.icon-mini{
+    margin-bottom: 5px;
+}
+.logoBot{
+    height:50px;
+    margin-top: 20px;
+    margin-right:20px;
+}
+/**è‹±æ–‡ç‰ˆæ ·å¼*/
+.tableTitle_en .zbrq-title{font-size: 14px;}
+.en_table td{
+    position: relative;
+}
+.en_table h2{
+    padding: 10px 25px 0px;
+}

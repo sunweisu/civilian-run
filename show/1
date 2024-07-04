@@ -1,0 +1,439 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>民教网_民办教育服务信息网</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="民办教育服务信息网,民教网,中国民办高等教育学生信息网,民办网官网"/>
+<meta name="description" content="民教网是民办教育服务信息网的简称，又称民教官网，由民办教育机构，行业协会，科研院所和有关专家学者共同组建，是民办高等教育机构学生信息服务官方网站。"/>
+    <link type="text/css" rel="stylesheet" href="../static/css/style5.css">
+    <link href="../static/css/lbiao.css" type="text/css" rel="stylesheet">
+    <!--<script src="/static/js/tab.js" type="text/javascript"></script>-->
+    <script language="javascript" src="../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/tabpic.js"></script>
+
+</head>
+<body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrap {
+        width: 100%;
+        height: 50px;
+        background-color: #127de1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pics {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .text {
+        display: inline-block;
+        vertical-align: middle;
+        color: white;
+        font-size: 16px;
+    }
+
+    .you {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+
+<div class="wrap" id="toop">
+    <div class="zuo">
+        <div class="pics" style="background-image: url(../static/images/trusted-web1_01.png);width: 30px;height: 38px; background-size: 100%; background-repeat: no-repeat;"></div>
+        <h2 class="text">该网站工信部已备案,唯一百度官方认证(民教网)官方网站www.cmhxi.com.cn，请放心访问</h2>
+    </div>
+
+    <div class="you">
+        <div style="vertical-align: middle;">
+            <a href="../person/21">
+                <p class="aaa" style="color: #ffe6ae;font-size: 18px;">了解详情&gt;</p >
+            </a >
+        </div>
+        <div style="vertical-align: middle; margin-right: 10px;">
+            <a href="../person/21">
+                <img src="../static/images/trusted-real-name.png">
+            </a >
+        </div>
+        <div style="vertical-align: middle;">
+            <img id="toop2" src="../static/images/la.png" title="收起" style="width: 50px;height: 70px;" onclick="shou()">
+            <img id="toop3" src="../static/images/zhan.png" title="展开" style="width: 50px;height: 70px;display: none;" onclick="zhan()">
+        </div>
+    </div>
+</div>
+
+<div class="toop" style="display: none;">
+    <div class="topleft">欢迎光临中国民办高等教育学生信息网(中国民办教育学生信息网(官网)-民教信息网)www.cmhxi.com.cn！</div>
+    <div class="topright"></div>
+</div>
+<script>
+    function shou() {
+        $('.toop').css("display", "block");
+        $('#toop3').css("display", "block");
+        $('#toop').css("display", "none");
+        $('#toop2').css("display", "none");
+    }
+
+    function zhan() {
+        $('.toop').css("display", "none");
+        $('#toop3').css("display", "none");
+        $('#toop').css("display", "block");
+        $('#toop2').css("display", "block");
+    }
+</script>
+    <div class="beiji-01" style="background-color:#f1f1f1;background-image: url(https://www.cmhxi.com.cn/show/static/images/bj.jpeg);
+          background-size: cover;
+        background-repeat: no-repeat;">
+        <div style="background-color:#f1f1f1;width:1004px;margin:0 auto;">
+        <div class="box2">
+    <div id="banner">
+                    <img src="../static/images/banner1.png"/>
+            </div>
+    <style>
+        .t_nav {
+            width: 100%;
+            min-width: 1000px;
+            height: 40px;
+            line-height: 40px;
+            background: #2EAFBB;
+            color: #FFFFFF;
+            overflow: hidden;
+        }
+
+        .width1000 {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .t_nav li {
+            float: left;
+            display: inline;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .t_nav a, .t_nav a:link, .t_nav a:visited {
+            color: #FFFFFF;
+            font: 17px/38px "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", HELVETICA;
+        }
+    </style>
+    <div class="t_nav">
+        <ul class="width1000">
+            <li style="padding-left:40px;"><a href="../person/21" target="_parent">首页</a></li>
+            <li><a href="../list/3">平台介绍</a></li>
+            <li><a href="../list/17">资质批文</a></li>
+            <li><a href="../list/20">政策法规</a></li>
+            <li><a href="../list/5">通知公告</a></li>
+            <li><a href="../list/4">新闻中心</a></li>
+            <li><a href="../list/21">民教人物</a></li>
+            <li><a href="../list/6">院校列表</a></li>
+            <li style="padding-right: 0;"><a href="http://xy.cmhni.com.cn">查询中心</a></li>
+        </ul>
+    </div>
+    <div id="announ">
+        <div class="announ_l">
+            <em><img src="../static/picture/announce.gif" width="18" height="18"></em>
+            <b></b>
+            <div id="scrollDiv">
+                <script language="javascript">
+                    $(function () {
+                        //单行应用@Mr.Think
+                        var _wrap = $('ul.line');//定义滚动区域
+                        var _interval = 2000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时，停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                    $(function () {
+                        //多行应用@Mr.Think
+                        var _wrap = $('ul.mulitline');//定义滚动区域
+                        var _interval = 3000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时,停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                </script>
+                <ul class="line">
+                                            <li style="margin-top: 0px;"><a href="33"
+                                                        target="_blank">民教网声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="32"
+                                                        target="_blank">民教网免责严正声明！</a></li>
+                                            <li style="margin-top: 0px;"><a href="31"
+                                                        target="_blank">关于非法网站仿冒我司民教信息网严正声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="17"
+                                                        target="_blank">资质批文</a></li>
+                                    </ul>
+            </div>
+        </div>
+        <div class="clearboth"></div>
+    </div>
+</div>
+<style>
+    #trusted_container {
+        display: none;
+    }
+</style>
+        <div class="w960">
+
+
+
+            <div class="content">
+				<!-- Breadcrumb begin -->
+				<div class="breadcrumb" style="margin-top: 1px;"> <strong>当前位置：</strong><a href="../person/21">首页</a> &gt;&gt; <a href="../list/4">新闻中心</a> &gt;&gt; 浏览文章</div>
+				<!-- 列表开始 -->
+				<div class="listbox">
+					<!--图文-->
+					<div class="single">
+						<h1>开学通知</h1>
+						<div class="meta singlemeta"><span>作者:admin</span>
+							<span>2020-07-26</span>
+							<span>来源:民教网 </span>
+							<span>浏览:<span id="mys_show_hits_16">8321</span></span> </div>
+						<!-- PostContent begin -->
+						<div class="entry">
+							<div class="entrycontent">
+								<!-- SingleAd begin -->
+								<div id="MyContent">
+                                <p>&nbsp;</p>
+
+<p>开学通知！</p>
+
+<p>根据2021&mdash;2022学年度</p>
+
+<p>&nbsp;</p>
+
+<p>第二学期校历安排</p>
+
+<p>&nbsp;</p>
+
+<p>明天就要开学啦</p>
+
+<p>&nbsp;</p>
+
+<p>开学注意事项有哪些？</p>
+
+<p>&nbsp;</p>
+
+<p>2022年春季学期收费标准又是如何？</p>
+
+<p>&nbsp;</p>
+
+<p>快快看过来！</p>
+
+<p>&nbsp;</p>
+
+<p>2022年春季开学安排</p>
+
+<p>&nbsp;</p>
+
+<p>2021&mdash;2022学年度第二学期（春季学期），全市普通中小学于2022年2月16日（星期三）正式开学，7月5日（星期二）开始放暑假。</p>
+
+<p>&nbsp;</p>
+
+<p>幼儿园第二学期（春季学期）于2022年2月16日（星期三）开学，寒暑假放假时间参照普通中小学执行。</p>
+
+<p>&nbsp;</p>
+
+<p>相关开学通知和返校防疫指南参考当地教育局发布开学提醒！</p>
+
+<p>&nbsp;</p>
+
+<p>市教育局：至学生家长的一封信！</p>
+
+<p>&nbsp;</p>
+
+<p>尊敬的各位家长：</p>
+
+<p>&nbsp;</p>
+
+<p>新年好！春节假期即将结束，您的孩子也将于2月16日正式开学。目前，正值冬春季传染病高发期，我市疫情防控工作仍处于常态化管理阶段，市教育局始终将师生生命安全和身体健康放在第一位，严守校园安全底线，落实各项防疫措施，&ldquo;外防输入、内防反弹&rdquo;，周密稳妥安排新学期开学工作。真诚希望广大学生与家长积极配合学校，做好开学返校期间的疫情防控工作。</p>
+
+<p>&nbsp;</p>
+
+<p>一、坚持健康监测，做好健康打卡。</p>
+
+<p>&nbsp;</p>
+
+<p>请家长引导学生积极锻炼，担负起个人在自身健康管理上的第一责任，继续执行健康状况日报制度，在武汉市师生健康监测与校园传染病防控数据服务平台（人人通空间），如实申报个人健康状况。</p>
+
+<p>&nbsp;</p>
+
+<p>二、了解防疫政策，遵守防疫规定。</p>
+
+<p>&nbsp;</p>
+
+<p>主动向学校报备返校前14天的健康状况和行程信息。严格落实市疫情防控指挥部对入境人员实施&ldquo;14天第一入境地集中隔离医学观察＋7天目的地集中隔离医学观察＋7天居家隔离医学观察&rdquo;闭环管理措施。</p>
+
+<p>从国内中高风险地区来（返）汉人员实施&ldquo;集中隔离医学观察14天+居家隔离医学观察14天&rdquo;管理措施；省外其他地区返汉师生员工，无论当地是否有疫情，均需要查验48小时核酸检测阴性证明，并在返汉后24小时内在住地进行1次核酸检测，落实14天社区健康监测，每7天开展1次核酸检测；省内返汉师生员工持健康码&ldquo;绿码&rdquo;正常返校。</p>
+
+<p>&nbsp;</p>
+
+<p>三、加强个人防护，注意路途安全。</p>
+
+<p>&nbsp;</p>
+
+<p>在返校过程中，要加强个人卫生防护。乘坐公共交通工具时，须全程佩戴口罩，尽量避免触摸周边物品，勤洗手、勤通风、不聚集，自觉保持安全社交间距。</p>
+
+<p>&nbsp;</p>
+
+<p>四、严格体温筛查，执行封闭管理。</p>
+
+<p>&nbsp;</p>
+
+<p>学生入校时须进行体温检测，继续严格执行校园封闭管理，发热人员一律不得进入校园，校外人员无正当理由谢绝入校。落实在校晨午晚检制度，完善学生从入校到离校全过程、各环节的疫情防控衔接管理。</p>
+
+<p>&nbsp;</p>
+
+<p>五、配合核酸抽检，加快疫苗接种。</p>
+
+<p>&nbsp;</p>
+
+<p>学生返校后应主动配合学校、疾控部门开展每周核酸抽检，安全有序推进3-11岁人群新冠肺炎疫苗接种，做到应检尽检，应接尽接。</p>
+
+<p><a href="../person/21">民办</a>教育信息网（<a href="../person/21">/</a>）简称&ldquo;<a href="../person/21">民教网</a>&rdquo;，由民教信息科技牵头，联合国内<a href="../person/21">民办</a>教育机构、行业协会、科研院所和有关专家学者共同组建的国内唯一的全国<a href="../person/21">民办</a>高校学生公共信息服务平台。主要提供全国<a href="../person/21">民办</a>院校资质查询、就业推荐等服务。</p>
+
+<p>&nbsp;</p>
+                                </div>
+								<!-- SingleAd end -->
+							</div>
+						</div>
+						<div class="postnavi">
+							<div class="previous_post">上一篇: <a href="https://www.cmhxi.com.cn/show/" title=""></a></div>
+							<div class="next_post">下一篇: <a href="2" title="">民办高校健康发展面临“拦路虎”</a></div>
+						</div>
+						<!-- PageNavigation end -->
+					</div>
+				</div>
+			</div>
+
+
+
+
+            <div class="sidebar">
+    <ul>
+      <li class="mostviews">
+        <span class="intit"><a class="more" href="../list/30">更多&gt;&gt;</a><strong>一周热点新闻</strong></span>
+        <ul>
+         
+                                                <li><a href="33" target="_blank" title="民教网声明">民教网声明</a></li>
+                                                                <li><a href="32" target="_blank" title="民教网免责严正声明！">民教网免责严正声明！</a></li>
+                                                                <li><a href="31" target="_blank" title="关于非法网站仿冒我司民教信息网严正声明">关于非法网站仿冒我司民教信息网严正声明</a></li>
+                                                                <li><a href="17" target="_blank" title="资质批文">资质批文</a></li>
+                                    
+
+                                <li><a href="279" target="_blank" title="李克强主持召开国务院常务会议 部署深入推进大众创业万众创新 重点支持高校毕业生等群体就业创业">李克强主持召开国务院常务会议 部署深入推进大众创业万众创新 重点支持高校毕业生等群体就业创业</a></li>
+                                <li><a href="277" target="_blank" title="翁铁慧赴企业调研高校毕业生就业创业情况">翁铁慧赴企业调研高校毕业生就业创业情况</a></li>
+                                <li><a href="275" target="_blank" title="教育部启动实施全国高校与湖北高校毕业生就业创业工作“一帮一”行动">教育部启动实施全国高校与湖北高校毕业生就业创业工作“一帮一”行动</a></li>
+                                <li><a href="273" target="_blank" title="教育部启动高校毕业生就业状况核查工作">教育部启动高校毕业生就业状况核查工作</a></li>
+                                <li><a href="272" target="_blank" title="教育部推出四项“不断线”就业服务助力未就业毕业生尽早就业">教育部推出四项“不断线”就业服务助力未就业毕业生尽早就业</a></li>
+                 
+
+ 
+        </ul>
+      </li>
+      <li>
+        <div class="bar" style="margin-top:10px;"> <span class="intit"><a class="more" href="../list/21">更多&gt;&gt;</a><strong>会客厅</strong></span>
+           		  <div class="focus1" href="/person/77">                
+                <a href="../person/77">
+                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/e98838466bbb88812f747a996708eddf.jpg" width="74" height="56" border="0"> <span style="color: red;">顾明远</span></a>
+                <br><span>中共党员，教育部社会科学委员会副主任、北京师范大学教育学部顾问。</span>
+        </div>
+  
+          <ul>
+                                <li><a href="../person/77" target="_blank" title="顾明远">顾明远</a></li>
+                                <li><a href="../person/76" target="_blank" title="贾少华">贾少华</a></li>
+                                <li><a href="../person/75" target="_blank" title="杨东平">杨东平</a></li>
+                                <li><a href="../person/70" target="_blank" title="陈宝生">陈宝生</a></li>
+                                <li><a href="../person/68" target="_blank" title="孙春兰">孙春兰</a></li>
+                          </ul>
+  </div>
+</li>
+     <li>
+        <div class="bar"> <span class="intit"><a class="more" target="_blank" href="../list/25">更多&gt;&gt;</a><strong>民教网简报</strong></span>
+          <ul>
+                                <li><a href="11" target="_blank" title="2013年《民教网工作简报》第十一期">2013年《民教网工作简报》第十一期</a></li>
+                                <li><a href="10" target="_blank" title="2013年《民教网工作简报》第十期">2013年《民教网工作简报》第十期</a></li>
+                                <li><a href="9" target="_blank" title="2013年《民教网工作简报》第九期">2013年《民教网工作简报》第九期</a></li>
+                                <li><a href="8" target="_blank" title="2014年《民教网工作简报》第二期">2014年《民教网工作简报》第二期</a></li>
+                          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>            <div class="dbgd"></div>
+            <div class="footer2">
+    <div class="dbmume">
+        <a href="../person/21">首 页</a>
+        <a>|</a>
+        <a href="../list/16">平台介绍</a>
+        <a>|</a>
+        <a href="../list/17">资质批文</a>
+        <a>|</a>
+        <a href="../list/18">主管单位</a>
+        <a>|</a>
+        <a href="../list/5">通知公告</a>
+        <a>|</a>
+        <a href="../list/22">客服中心</a>
+        <a>|</a>
+        <a href="../list/23">版权声明</a>
+        <a>|</a>
+        <a href="../bgsqform">办公合作申请</a>
+    </div>
+
+<div class="copybq">
+<p>公安局备案号:2021031956号 &nbsp; 备案编号：
+                          <a href="https://beian.miit.gov.cn">豫ICP备2021031956号-2</a>
+        </p><p>办公地址：河南省郑州市高新技术产业开发区瑞达路96号商务中心　邮政编码:454000 &nbsp; &nbsp;通信地址：河南省100005-019信箱</p><p>主办单位：河南民教信息科技有限公司 &nbsp; &nbsp;指导：全国民办高等教育学生信息咨询与就业指导中心　</p>
+<a id="_pingansec_bottomimagesmall_shiming" target="_blank" href="https://si.trustutn.org/info?sn=313211119040899888649&amp;certType=1"><img src="https://v.trustutn.org/images/cert/bottom_small_img.png"/></a>
+<a target="_blank" href="https://xinyong.yunaq.com/certificate?domain=www.cmhsi.com.cn"><img style="width:110px;height:40px" src="../static/images/label_lg_90020.png"></a>
+
+<dd><img src="../static/picture/dbpic.png"></dd>
+</div>
+
+
+<script type="text/javascript" src="../static/js/jquery-1.9.1.min.js">
+</script>
+
+<script type="text/javascript" src="../static/js/slides.js">
+</script>
+
+<script type="text/javascript" src="../static/js/flexslider.js">
+</script>
+
+<script type="text/javascript">
+
+</div>
+
+</div>
+        
+        
+
+        </div>
+    </div>
+</body>
+</html>

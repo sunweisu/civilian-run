@@ -1,0 +1,393 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>民教网_民办教育服务信息网</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="民办教育服务信息网,民教网,中国民办高等教育学生信息网,民办网官网"/>
+<meta name="description" content="民教网是民办教育服务信息网的简称，又称民教官网，由民办教育机构，行业协会，科研院所和有关专家学者共同组建，是民办高等教育机构学生信息服务官方网站。"/>
+    <link type="text/css" rel="stylesheet" href="../static/css/style5.css">
+    <link href="../static/css/lbiao.css" type="text/css" rel="stylesheet">
+    <!--<script src="/static/js/tab.js" type="text/javascript"></script>-->
+    <script language="javascript" src="../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/tabpic.js"></script>
+
+</head>
+<body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrap {
+        width: 100%;
+        height: 50px;
+        background-color: #127de1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pics {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .text {
+        display: inline-block;
+        vertical-align: middle;
+        color: white;
+        font-size: 16px;
+    }
+
+    .you {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+
+<div class="wrap" id="toop">
+    <div class="zuo">
+        <div class="pics" style="background-image: url(../static/images/trusted-web1_01.png);width: 30px;height: 38px; background-size: 100%; background-repeat: no-repeat;"></div>
+        <h2 class="text">该网站工信部已备案,唯一百度官方认证(民教网)官方网站www.cmhxi.com.cn，请放心访问</h2>
+    </div>
+
+    <div class="you">
+        <div style="vertical-align: middle;">
+            <a href="../person/21">
+                <p class="aaa" style="color: #ffe6ae;font-size: 18px;">了解详情&gt;</p >
+            </a >
+        </div>
+        <div style="vertical-align: middle; margin-right: 10px;">
+            <a href="../person/21">
+                <img src="../static/images/trusted-real-name.png">
+            </a >
+        </div>
+        <div style="vertical-align: middle;">
+            <img id="toop2" src="../static/images/la.png" title="收起" style="width: 50px;height: 70px;" onclick="shou()">
+            <img id="toop3" src="../static/images/zhan.png" title="展开" style="width: 50px;height: 70px;display: none;" onclick="zhan()">
+        </div>
+    </div>
+</div>
+
+<div class="toop" style="display: none;">
+    <div class="topleft">欢迎光临中国民办高等教育学生信息网(中国民办教育学生信息网(官网)-民教信息网)www.cmhxi.com.cn！</div>
+    <div class="topright"></div>
+</div>
+<script>
+    function shou() {
+        $('.toop').css("display", "block");
+        $('#toop3').css("display", "block");
+        $('#toop').css("display", "none");
+        $('#toop2').css("display", "none");
+    }
+
+    function zhan() {
+        $('.toop').css("display", "none");
+        $('#toop3').css("display", "none");
+        $('#toop').css("display", "block");
+        $('#toop2').css("display", "block");
+    }
+</script>
+    <div class="beiji-01" style="background-color:#f1f1f1;background-image: url(https://www.cmhxi.com.cn/show/static/images/bj.jpeg);
+          background-size: cover;
+        background-repeat: no-repeat;">
+        <div style="background-color:#f1f1f1;width:1004px;margin:0 auto;">
+        <div class="box2">
+    <div id="banner">
+                    <img src="../static/images/banner1.png"/>
+            </div>
+    <style>
+        .t_nav {
+            width: 100%;
+            min-width: 1000px;
+            height: 40px;
+            line-height: 40px;
+            background: #2EAFBB;
+            color: #FFFFFF;
+            overflow: hidden;
+        }
+
+        .width1000 {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .t_nav li {
+            float: left;
+            display: inline;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .t_nav a, .t_nav a:link, .t_nav a:visited {
+            color: #FFFFFF;
+            font: 17px/38px "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", HELVETICA;
+        }
+    </style>
+    <div class="t_nav">
+        <ul class="width1000">
+            <li style="padding-left:40px;"><a href="../person/21" target="_parent">首页</a></li>
+            <li><a href="../list/3">平台介绍</a></li>
+            <li><a href="../list/17">资质批文</a></li>
+            <li><a href="../list/20">政策法规</a></li>
+            <li><a href="../list/5">通知公告</a></li>
+            <li><a href="../list/4">新闻中心</a></li>
+            <li><a href="../list/21">民教人物</a></li>
+            <li><a href="../list/6">院校列表</a></li>
+            <li style="padding-right: 0;"><a href="http://xy.cmhni.com.cn">查询中心</a></li>
+        </ul>
+    </div>
+    <div id="announ">
+        <div class="announ_l">
+            <em><img src="../static/picture/announce.gif" width="18" height="18"></em>
+            <b></b>
+            <div id="scrollDiv">
+                <script language="javascript">
+                    $(function () {
+                        //单行应用@Mr.Think
+                        var _wrap = $('ul.line');//定义滚动区域
+                        var _interval = 2000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时，停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                    $(function () {
+                        //多行应用@Mr.Think
+                        var _wrap = $('ul.mulitline');//定义滚动区域
+                        var _interval = 3000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时,停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                </script>
+                <ul class="line">
+                                            <li style="margin-top: 0px;"><a href="33"
+                                                        target="_blank">民教网声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="32"
+                                                        target="_blank">民教网免责严正声明！</a></li>
+                                            <li style="margin-top: 0px;"><a href="31"
+                                                        target="_blank">关于非法网站仿冒我司民教信息网严正声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="17"
+                                                        target="_blank">资质批文</a></li>
+                                    </ul>
+            </div>
+        </div>
+        <div class="clearboth"></div>
+    </div>
+</div>
+<style>
+    #trusted_container {
+        display: none;
+    }
+</style>
+        <div class="w960">
+
+
+
+            <div class="content">
+				<!-- Breadcrumb begin -->
+				<div class="breadcrumb" style="margin-top: 1px;"> <strong>当前位置：</strong><a href="../person/21">首页</a> &gt;&gt; <a href="../list/8">教育时评</a> &gt;&gt; 浏览文章</div>
+				<!-- 列表开始 -->
+				<div class="listbox">
+					<!--图文-->
+					<div class="single">
+						<h1>民教网时评民辦基礎教育現代化中的變與不變</h1>
+						<div class="meta singlemeta"><span>作者:admin</span>
+							<span>2019-08-27</span>
+							<span>来源:民教网 </span>
+							<span>浏览:<span id="mys_show_hits_16">1492</span></span> </div>
+						<!-- PostContent begin -->
+						<div class="entry">
+							<div class="entrycontent">
+								<!-- SingleAd begin -->
+								<div id="MyContent">
+                                <p>&nbsp; 民辦基礎教育多年來不斷探索﹐通過多元活動培養學生藝術﹑體育﹑文化等綜合素質﹐積極導向全面育人目標。</p>
+
+<p>　　<strong>■奔向2035</strong><strong>‧</strong><strong>實現學校教育現代化</strong></p>
+
+<p>　　《中華人民共和國民辦教育促進法(2018修正)》明確﹕&ldquo;民辦教育事業屬於公益性事業﹐是社會主義教育事業的組成部分。&rdquo;作為我國教育事業的組成部分﹐民辦教育在擴大教育開放﹑增加教育供給﹑推動教育創新﹑提高教育效率等方面起著積極的作用。站在新的歷史時期﹐民辦基礎教育更應及時總結經驗﹐厘清新時代對民辦教育的辦學需求﹔堅持公益辦學﹐堅守教育初心﹐實施教育科學化發展﹐積極探索面向未來的教育創新實踐﹐為實現教育現代化貢獻自身應有的價值。</p>
+
+<p>　　<strong>公益辦學﹕民辦基礎教育不變的邏輯起點</strong></p>
+
+<p>　　教育是一項社會公共事業﹐民辦教育辦學必須堅持以立德樹人為根本任務﹑以公益為導向。當前﹐促進民辦教育辦學規範進入到新時代﹐需要更加清晰地認識到﹕可持續地進行公益辦學是民辦基礎教育的邏輯起點。</p>
+
+<p>　　優質辦學是教育現代化的終極訴求。民辦學校辦學機制的自主性和靈活性﹐給予了學校昇級優質教育服務的空間。通過高效的管理和科學的服務配置﹐民辦學校是可以有一定結餘的。但結餘不是&ldquo;利潤&rdquo;﹐而是不斷提昇教育教學質量﹑豐富教育資源﹑實現教育可持續發展的保障。</p>
+
+<p>　　以四川嘉祥教育集團（以下簡稱&ldquo;嘉祥&rdquo;）為例﹐始終將&ldquo;三個堅持&rdquo;作為辦學原則﹕堅持&ldquo;辦百年名校&rdquo;﹑堅持&ldquo;不從教育拿走一分錢&rdquo;﹑堅持&ldquo;教育的公益性和社會性&rdquo;﹐由此推進教育的可持續健康發展。</p>
+
+<p>　　在堅持&ldquo;辦百年名校&rdquo;理想之下﹐嘉祥建立了結餘再投入機制﹕將辦學結餘持續投入到辦學條件的改善﹑教師福利的可持續增長和教育研究的不斷推進中。民辦教育要始終審視﹐面對教育還能做些什麼﹐應該繼續投入些什麼。</p>
+
+<p>　　在&ldquo;不從教育拿走一分錢&rdquo;理念之下﹐嘉祥堅持教育主體不上市。創辦教育企業的目的並非是為謀利﹐而是為持續昇級教育資源﹐支持優質教育再發展。</p>
+
+<p>　　在&ldquo;教育的公益性和社會性&rdquo;初心之下﹐嘉祥成立教育發展基金﹐以項目形式幫扶薄弱地區學校發展。通過有組織的貧困地區長期支教和互聯網&ldquo;雲教育&rdquo;平臺搭建﹐助力教育精准扶貧﹐實現教育資源共享﹐促進優質教育均衡﹑可持續發展。嘉祥每年不間斷派出教師支教四川省阿壩州小金中學﹐並主動將學校優質課程向&ldquo;四川雲教&rdquo;平臺輸送。同時﹐還在四川省民政廳領導下﹐與省慈善總會合作多項公益項目。</p>
+
+<p>　　此外﹐在嚴格規范自身辦學的同時﹐積極向社會爭取支持。通過自覺地向社會開放﹐真正做到開門辦學﹔在始終堅持黨的領導下﹐主動吸取社會多元力量（包括社會賢達﹑專業人士﹐家長﹑校友代表等）參與學校的發展管理和監督。通過多元參與﹑充分協商﹑共享智慧﹐實現學校辦學過程的透明化﹐推進學校治理科學化﹐形成社會力量興辦優質民辦教育的可推廣案例。</p>
+
+<p>　　<strong>全面育人﹕民辦基礎教育堅守的初心</strong></p>
+
+<p>　　《中國教育現代化2035》系統勾畫了教育現代化的戰略願景﹐明確提出推進教育現代化需要注重以德為先﹑全面發展﹑面向人人﹑因材施教的&ldquo;全面育人&rdquo;理念。育人為本是教育工作根本要求﹕學校主體是學生和教師﹐民辦基礎教育辦學必須聚焦學生全面發展和對教師的有效引領。</p>
+
+<p>　　基礎教育是學生培養的初級階段﹐是人個性形成的主要時期﹐是人潛能發展的關鍵時期。特別是在人工智能時代﹐更需要培養品行端正﹑個性鮮活﹑符合時代發展﹑能夠融入世界的人。因此﹐民辦基礎教育需要堅持&ldquo;全面育人&rdquo;的教育理念﹐培養現代化的&ldquo;人&rdquo;。必須堅持培養&ldquo;自然的人﹑完整的人﹑社會的人&rdquo;──培養自然的人﹐即要求遵循自然規律﹑尊重教育規律﹔培養完整的人﹐是要求培養出人格健全﹑身體健康的學生﹐能夠不斷完善自我﹔培養社會的人﹐則是要求學校引導學生踐行利他精神﹐懂得感恩﹐回報社會。</p>
+
+<p>　　為此﹐民辦學校要堅持&ldquo;有教無類&rdquo;﹐堅持將每一名學生的&ldquo;德智體美勞&rdquo;全面發展作為一切工作的出發點和落腳點。要堅信教育的成功與否﹐不在於當下考了多少&ldquo;狀元&rdquo;﹑取得多少第一﹐而在於50年﹑100年之後﹐學校走出的學生是否身體健康生活幸福﹑是否懂得感恩懂得回報﹑是否成為推動社會發展的一分子﹐而學校又是否能仍然不忘初心﹐堅守公益﹐持續優質發展。</p>
+
+<p>　　德育發展和美育普及是當前教育的著力點。民辦中小學應鼓勵學生社團建設﹐組織多元活動﹐並確保全體學生參與﹔建立學生成長助力委員會﹐校內由教師自願申請﹐免費為學科薄弱和需要心理建設的孩子進行精准幫扶和持續關愛﹔成立校友會﹐為畢業校友搭建平臺並提供創業孵化與支持﹔建立學生激勵機制﹐設立注重學生全面發展的獎學金制度。通過以上多種舉措﹐積極導向全面育人辦學目標的實現。</p>
+
+<p>　　&ldquo;全面育人&rdquo;理念需要教師真實的教育行動。在對教師的專業發展引領上﹐引導教師關注對學生興趣特長的激發和培育﹑對學生的教導輔導方式的把握﹐是十分重要的。因此﹐必須建立明確的教師發展軌道﹐並輔之以有效的行動支持﹐激勵教師專業發展。例如﹐嘉祥按照&ldquo;學科教學﹑創新教練﹑學生輔導&rdquo;三條發展軌道﹐設立教師榮譽體系﹐形成教師&ldquo;全面育人&rdquo;的上昇通道﹐針對性促進教師專業發展。</p>
+
+<p>　　<strong>教育科學化﹕民辦基礎教育變革的方向</strong></p>
+
+<p>　　在教育現代化發展的新時空﹐要充分認識教育科學化的必要性。隨著推進&ldquo;學生核心素養&rdquo;的全面落地和推動&ldquo;新高考&rdquo;&ldquo;新課標&rdquo;的綜合改革﹐如何聚焦&ldquo;人的全面發展&rdquo;教育目標﹐如何立體銜接﹐如何有效推進﹖作為一線民辦基礎教育學校﹐更應利用自身一定優勢﹐在理論結合實際的應用層面上﹐積極創新﹐探索和形成有益的現實案例和有效經驗。</p>
+
+<p>　　比如﹐將&ldquo;學生核心素養&rdquo;在學校教育科學化具體實施的問題。民辦學校相較于公辦學校﹐在如何將&ldquo;學生核心素養&rdquo;演變為學校教育教學過程中可實施的著力點﹑如何更好地聯動專家和教師展開實踐實證﹑如何在&ldquo;最短距離&rdquo;內實現最大的教育成果等方面﹐都可以以充足的資源做出先行探索和實踐。目前﹐嘉祥根據&ldquo;學生核心素養&rdquo;的培養要求﹐校本詮釋&ldquo;嘉祥英才五力模型&rdquo;﹐將&ldquo;學生核心素養&rdquo;分解為&ldquo;學習力﹑技術力﹑思維力﹑社群力﹑品格力&rdquo;﹔在專家學者指導下聯動課程實施目標﹐積極推動&ldquo;學生核心素養&rdquo;校本實施。</p>
+
+<p>　　最後﹐要充分認識到﹕辦教育﹐一定要遵循教育自身的規律。在&ldquo;有教無類&rdquo;的同時﹐必須體現&ldquo;因材施教&rdquo;。民辦基礎教育在學生個性化培養方面﹐有長久積累與探索﹐如實施&ldquo;分層&rdquo;與&ldquo;銜接&rdquo;改革等。而在推進教育現代化過程中﹐如何對學習後進生進行持續輔導﹐如何為有特殊學科潛質的學生提供更好的助力﹐如何在國家課程要求基礎上進行有效的學時分配和課程銜接等﹐都將是民辦學校先行實踐和探索的方向。</p>
+
+<p>　　在此基礎上﹐衷心呼籲民辦教育學校能夠深入貫徹落實《中國教育現代化2035》理念和要求﹐堅守初心﹐創新治理﹐助力教育現代化﹐辦百姓家門口的好學校﹐爭取為我國民辦基礎教育的良性發展提供多元樣本。</p>
+
+<p>　　（作者向克堅﹐系四川省優質教育促進會常務副會長兼秘書長）</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>中国<a href="../person/21">民办</a>教育学生信息网（<a href="../person/21">/</a>）简称&ldquo;<a href="../person/21">民教网</a>&rdquo;，由民教信息科技牵头，联合国内<a href="../person/21">民办</a>教育机构、行业协会、科研院所和有关专家学者共同组建的国内唯一的全国<a href="../person/21">民办</a>高校学生公共信息服务平台。主要提供全国<a href="../person/21">民办</a>院校资质查询、<a href="../person/21">民办</a>大学毕业生&nbsp;<a href="../person/21">证书查询</a>、学籍查询、档案管理、证书报告、就业推荐等服务。</p>
+
+<p>&nbsp;</p>
+                                </div>
+								<!-- SingleAd end -->
+							</div>
+						</div>
+						<div class="postnavi">
+							<div class="previous_post">上一篇: <a href="27" title="">民教网时评东莞：多元优质民办教育助力城市品质提升</a></div>
+							<div class="next_post">下一篇: <a href="29" title="">民教网时评山西：坚持改革创新 破解发展难题 提升治理水平</a></div>
+						</div>
+						<!-- PageNavigation end -->
+					</div>
+				</div>
+			</div>
+
+
+
+
+            <div class="sidebar">
+    <ul>
+      <li class="mostviews">
+        <span class="intit"><a class="more" href="../list/30">更多&gt;&gt;</a><strong>一周热点新闻</strong></span>
+        <ul>
+         
+                                                <li><a href="33" target="_blank" title="民教网声明">民教网声明</a></li>
+                                                                <li><a href="32" target="_blank" title="民教网免责严正声明！">民教网免责严正声明！</a></li>
+                                                                <li><a href="31" target="_blank" title="关于非法网站仿冒我司民教信息网严正声明">关于非法网站仿冒我司民教信息网严正声明</a></li>
+                                                                <li><a href="17" target="_blank" title="资质批文">资质批文</a></li>
+                                    
+
+                                <li><a href="279" target="_blank" title="李克强主持召开国务院常务会议 部署深入推进大众创业万众创新 重点支持高校毕业生等群体就业创业">李克强主持召开国务院常务会议 部署深入推进大众创业万众创新 重点支持高校毕业生等群体就业创业</a></li>
+                                <li><a href="277" target="_blank" title="翁铁慧赴企业调研高校毕业生就业创业情况">翁铁慧赴企业调研高校毕业生就业创业情况</a></li>
+                                <li><a href="275" target="_blank" title="教育部启动实施全国高校与湖北高校毕业生就业创业工作“一帮一”行动">教育部启动实施全国高校与湖北高校毕业生就业创业工作“一帮一”行动</a></li>
+                                <li><a href="273" target="_blank" title="教育部启动高校毕业生就业状况核查工作">教育部启动高校毕业生就业状况核查工作</a></li>
+                                <li><a href="272" target="_blank" title="教育部推出四项“不断线”就业服务助力未就业毕业生尽早就业">教育部推出四项“不断线”就业服务助力未就业毕业生尽早就业</a></li>
+                 
+
+ 
+        </ul>
+      </li>
+      <li>
+        <div class="bar" style="margin-top:10px;"> <span class="intit"><a class="more" href="../list/21">更多&gt;&gt;</a><strong>会客厅</strong></span>
+           		  <div class="focus1" href="/person/77">                
+                <a href="../person/77">
+                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/e98838466bbb88812f747a996708eddf.jpg" width="74" height="56" border="0"> <span style="color: red;">顾明远</span></a>
+                <br><span>中共党员，教育部社会科学委员会副主任、北京师范大学教育学部顾问。</span>
+        </div>
+  
+          <ul>
+                                <li><a href="../person/77" target="_blank" title="顾明远">顾明远</a></li>
+                                <li><a href="../person/76" target="_blank" title="贾少华">贾少华</a></li>
+                                <li><a href="../person/75" target="_blank" title="杨东平">杨东平</a></li>
+                                <li><a href="../person/70" target="_blank" title="陈宝生">陈宝生</a></li>
+                                <li><a href="../person/68" target="_blank" title="孙春兰">孙春兰</a></li>
+                          </ul>
+  </div>
+</li>
+     <li>
+        <div class="bar"> <span class="intit"><a class="more" target="_blank" href="../list/25">更多&gt;&gt;</a><strong>民教网简报</strong></span>
+          <ul>
+                                <li><a href="11" target="_blank" title="2013年《民教网工作简报》第十一期">2013年《民教网工作简报》第十一期</a></li>
+                                <li><a href="10" target="_blank" title="2013年《民教网工作简报》第十期">2013年《民教网工作简报》第十期</a></li>
+                                <li><a href="9" target="_blank" title="2013年《民教网工作简报》第九期">2013年《民教网工作简报》第九期</a></li>
+                                <li><a href="8" target="_blank" title="2014年《民教网工作简报》第二期">2014年《民教网工作简报》第二期</a></li>
+                          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>            <div class="dbgd"></div>
+            <div class="footer2">
+    <div class="dbmume">
+        <a href="../person/21">首 页</a>
+        <a>|</a>
+        <a href="../list/16">平台介绍</a>
+        <a>|</a>
+        <a href="../list/17">资质批文</a>
+        <a>|</a>
+        <a href="../list/18">主管单位</a>
+        <a>|</a>
+        <a href="../list/5">通知公告</a>
+        <a>|</a>
+        <a href="../list/22">客服中心</a>
+        <a>|</a>
+        <a href="../list/23">版权声明</a>
+        <a>|</a>
+        <a href="../bgsqform">办公合作申请</a>
+    </div>
+
+<div class="copybq">
+<p>公安局备案号:2021031956号 &nbsp; 备案编号：
+                          <a href="https://beian.miit.gov.cn">豫ICP备2021031956号-2</a>
+        </p><p>办公地址：河南省郑州市高新技术产业开发区瑞达路96号商务中心　邮政编码:454000 &nbsp; &nbsp;通信地址：河南省100005-019信箱</p><p>主办单位：河南民教信息科技有限公司 &nbsp; &nbsp;指导：全国民办高等教育学生信息咨询与就业指导中心　</p>
+<a id="_pingansec_bottomimagesmall_shiming" target="_blank" href="https://si.trustutn.org/info?sn=313211119040899888649&amp;certType=1"><img src="https://v.trustutn.org/images/cert/bottom_small_img.png"/></a>
+<a target="_blank" href="https://xinyong.yunaq.com/certificate?domain=www.cmhsi.com.cn"><img style="width:110px;height:40px" src="../static/images/label_lg_90020.png"></a>
+
+<dd><img src="../static/picture/dbpic.png"></dd>
+</div>
+
+
+<script type="text/javascript" src="../static/js/jquery-1.9.1.min.js">
+</script>
+
+<script type="text/javascript" src="../static/js/slides.js">
+</script>
+
+<script type="text/javascript" src="../static/js/flexslider.js">
+</script>
+
+<script type="text/javascript">
+
+</div>
+
+</div>
+        
+        
+
+        </div>
+    </div>
+</body>
+</html>

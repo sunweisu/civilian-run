@@ -1,0 +1,1355 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>民教网_民办教育服务信息网</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="民办教育服务信息网,民教网,中国民办高等教育学生信息网,民办网官网"/>
+<meta name="description" content="民教网是民办教育服务信息网的简称，又称民教官网，由民办教育机构，行业协会，科研院所和有关专家学者共同组建，是民办高等教育机构学生信息服务官方网站。"/>
+    <link type="text/css" rel="stylesheet" href="static/css/style5.css">
+    <!--<script src="/static/js/tab.js" type="text/javascript"></script>-->
+    <script language="javascript" src="static/js/jquery.js"></script>
+    <script type="text/javascript" src="static/js/tabpic.js"></script>
+    <script src="static/js/jquery-1.2.1.pack.js" type="text/javascript"></script>
+
+</head>
+<body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrap {
+        width: 100%;
+        height: 50px;
+        background-color: #127de1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pics {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .text {
+        display: inline-block;
+        vertical-align: middle;
+        color: white;
+        font-size: 16px;
+    }
+
+    .you {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+
+<div class="wrap" id="toop">
+    <div class="zuo">
+        <div class="pics" style="background-image: url(static/images/trusted-web1_01.png);width: 30px;height: 38px; background-size: 100%; background-repeat: no-repeat;"></div>
+        <h2 class="text">该网站工信部已备案,唯一百度官方认证(民教网)官方网站www.cmhxi.com.cn，请放心访问</h2>
+    </div>
+
+    <div class="you">
+        <div style="vertical-align: middle;">
+            <a href="person/21">
+                <p class="aaa" style="color: #ffe6ae;font-size: 18px;">了解详情&gt;</p >
+            </a >
+        </div>
+        <div style="vertical-align: middle; margin-right: 10px;">
+            <a href="person/21">
+                <img src="static/images/trusted-real-name.png">
+            </a >
+        </div>
+        <div style="vertical-align: middle;">
+            <img id="toop2" src="static/images/la.png" title="收起" style="width: 50px;height: 70px;" onclick="shou()">
+            <img id="toop3" src="static/images/zhan.png" title="展开" style="width: 50px;height: 70px;display: none;" onclick="zhan()">
+        </div>
+    </div>
+</div>
+
+<div class="toop" style="display: none;">
+    <div class="topleft">欢迎光临中国民办高等教育学生信息网(中国民办教育学生信息网(官网)-民教信息网)www.cmhxi.com.cn！</div>
+    <div class="topright"></div>
+</div>
+<script>
+    function shou() {
+        $('.toop').css("display", "block");
+        $('#toop3').css("display", "block");
+        $('#toop').css("display", "none");
+        $('#toop2').css("display", "none");
+    }
+
+    function zhan() {
+        $('.toop').css("display", "none");
+        $('#toop3').css("display", "none");
+        $('#toop').css("display", "block");
+        $('#toop2').css("display", "block");
+    }
+</script>
+    <div class="beiji-01" style="background-color:#f1f1f1;background-image: url(static/images/bj.jpeg);
+          background-size: cover;
+        background-repeat: no-repeat;">
+        <div style="background-color:#f1f1f1;width:1004px;margin:0 auto;">
+        <div class="box2">
+    <div id="banner">
+                    <img src="static/images/banner1.png"/>
+            </div>
+    <style>
+        .t_nav {
+            width: 100%;
+            min-width: 1000px;
+            height: 40px;
+            line-height: 40px;
+            background: #2EAFBB;
+            color: #FFFFFF;
+            overflow: hidden;
+        }
+
+        .width1000 {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .t_nav li {
+            float: left;
+            display: inline;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .t_nav a, .t_nav a:link, .t_nav a:visited {
+            color: #FFFFFF;
+            font: 17px/38px "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", HELVETICA;
+        }
+    </style>
+    <div class="t_nav">
+        <ul class="width1000">
+            <li style="padding-left:40px;"><a href="person/21" target="_parent">首页</a></li>
+            <li><a href="list/3">平台介绍</a></li>
+            <li><a href="list/17">资质批文</a></li>
+            <li><a href="list/20">政策法规</a></li>
+            <li><a href="list/5">通知公告</a></li>
+            <li><a href="list/4">新闻中心</a></li>
+            <li><a href="list/21">民教人物</a></li>
+            <li><a href="list/6">院校列表</a></li>
+            <li style="padding-right: 0;"><a href="http://xy.cmhni.com.cn">查询中心</a></li>
+        </ul>
+    </div>
+    <div id="announ">
+        <div class="announ_l">
+            <em><img src="static/picture/announce.gif" width="18" height="18"></em>
+            <b></b>
+            <div id="scrollDiv">
+                <script language="javascript">
+                    $(function () {
+                        //单行应用@Mr.Think
+                        var _wrap = $('ul.line');//定义滚动区域
+                        var _interval = 2000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时，停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                    $(function () {
+                        //多行应用@Mr.Think
+                        var _wrap = $('ul.mulitline');//定义滚动区域
+                        var _interval = 3000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时,停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                </script>
+                <ul class="line">
+                                            <li style="margin-top: 0px;"><a href="show/33"
+                                                        target="_blank">民教网声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="show/32"
+                                                        target="_blank">民教网免责严正声明！</a></li>
+                                            <li style="margin-top: 0px;"><a href="show/31"
+                                                        target="_blank">关于非法网站仿冒我司民教信息网严正声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="show/17"
+                                                        target="_blank">资质批文</a></li>
+                                    </ul>
+            </div>
+        </div>
+        <div class="clearboth"></div>
+    </div>
+</div>
+<style>
+    #trusted_container {
+        display: none;
+    }
+</style>
+            <div id="container">
+        <!--main开始-->
+        <div id="contain_main">
+            <div class="box3">
+                <div class="box_left1">
+
+                    <!--通知公告开始-->
+                    <div class="focus">
+                        <div id="KinSlideshow" style="visibility: visible;overflow: hidden; position: relative;">
+
+                            <div id="myFocus20145697913149">
+                                <div class="loading"></div>
+                                <div class="pic"><!--图片列表-->
+                                    <img src="uploadfile/202009/04013b6f551b385.jpg" width="350px" height="255px">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box_right1">
+                    <div class="newscenter">
+                        <div class="newscenter_c" style="height:260px; overflow:hidden">
+                            <div class="newscenter_c0">
+                                <h2>
+                                    <a href="show/49">民教网要闻教育部新闻发言人就美
+                                        ...</a></h2>
+                                <h6>中国民教网讯　　问：5月30日，美国政府宣布对部分中国留学人员赴美学习采取限制措施。连日来，...<a
+                                        href="show/49">【详细】</a></h6>
+                                <div class="ullistyle2">
+
+                                    <ul>
+                                                                                    <li><a href="show/49">民教网要闻教育部新闻发言人就美国政府采取限制部分中国留学人员赴美学习的措施答记者问</a><span>（06-27）</span>
+                                            </li>
+                                                                                    <li><a href="show/48">民教网要闻教育部启动2020年大学生应征入伍政策咨询宣传系列活动</a><span>（08-27）</span>
+                                            </li>
+                                                                                    <li><a href="show/2">民办高校健康发展面临“拦路虎”</a><span>（10-26）</span>
+                                            </li>
+                                                                                    <li><a href="show/1">开学通知</a><span>（07-26）</span>
+                                            </li>
+                                                                            </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearboth"></div>
+            </div>
+
+            <div class="box3" style="margin-top: 20px;">
+                <div class="box_left">
+                    <!--通知公告开始-->
+                    <div class="tzggbox" style="height:346px;overflow:hidden">
+                        <div class="tzgg_t">
+                            <div class="tzgg_ul siderover2" id="tzgg_ul">
+                                <ul>
+                                    <li onmouseover="setTab2('tzgg_ul', 'tzgg_ul siderover2', 'tzgg_c', 'con_three_1')"
+                                        class="on1">教育时评</li>
+                                    <li onmouseover="setTab2('tzgg_ul', 'tzgg_ul', 'tzgg_c', 'con_three_2')"
+                                        class="on2">通知公告</li>
+                                    <div class="clearboth"></div>
+                                </ul>
+                            </div>
+                            <span><a href="list/8" id="edutz_more">MORE+</a></span>
+                            <div class="clearboth"></div>
+                        </div>
+                        <div class="tzgg_c" id="tzgg_c">
+                            <div id="con_three_1" style="display:block;">
+
+                                <div class="ullistyle">
+                                    <dl>
+
+                                        <dd><a href="show/30">
+                                            <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/1640751399319.jpg"></a>
+                                        </dd>
+                                        <dt><h1>
+                                                <a href="show/30">民教网时评谁在投资民
+                                                    ...</a></h1>
+                                            <p>三所民办学校我国民办教育在近二十年来发展迅猛，发展的主阵地在县乡村三级，服务对象主要是来自...</p></dt>
+
+                                    </dl>
+                                    <ul>
+                                        
+                                            <li>
+                                                <a href="show/30">民教网时评谁在投资民办教育？</a><span>08-27</span>
+                                            </li>
+
+                                        
+                                            <li>
+                                                <a href="show/29">民教网时评山西：坚持改革创新 破解发展难题 提升治理水平</a><span>08-27</span>
+                                            </li>
+
+                                        
+                                            <li>
+                                                <a href="show/28">民教网时评民辦基礎教育現代化中的變與不變</a><span>08-27</span>
+                                            </li>
+
+                                        
+                                            <li>
+                                                <a href="show/27">民教网时评东莞：多元优质民办教育助力城市品质提升</a><span>08-27</span>
+                                            </li>
+
+                                        
+                                            <li>
+                                                <a href="show/26">中国民教网【互联网冲击传统教育行业】时评</a><span>08-27</span>
+                                            </li>
+
+                                                                            </ul>
+                                </div>
+                            </div>
+                            <div id="con_three_2" style="display: none;">
+                                <div class="ullistyle">
+                                    <dl>
+
+                                        <dd><a href="show/33">
+                                            <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/80fc00568942f6b75769dab7dc6c6a75.jpeg"></a>
+                                        </dd>
+                                        <dt><h1>
+                                                <a href="show/33">民教网声明
+                                                    ...</a></h1>
+                                            <p>各有关单位和个人： 近日，中国民办高等教育信息网 在各大收索引擎上呈现风险警示信息，经查实...</p></dt>
+
+                                    </dl>
+                                    <ul>
+                                        
+                                            <li>
+                                                <a href="show/33">民教网声明</a><span>08-10</span>
+                                            </li>
+
+                                        
+                                            <li>
+                                                <a href="show/32">民教网免责严正声明！</a><span>12-23</span>
+                                            </li>
+
+                                        
+                                            <li>
+                                                <a href="show/31">关于非法网站仿冒我司民教信息网严正声明</a><span>03-25</span>
+                                            </li>
+
+                                        
+                                            <li>
+                                                <a href="show/17">资质批文</a><span>07-27</span>
+                                            </li>
+
+                                                                            </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--通知公告结束-->
+                </div>
+
+
+                <div class="box_right">
+
+                    <!--院校资讯开始-->
+                    <div class="tzggbox1" style="height:346px;overflow:hidden;">
+                        <div class="tzgg_t">
+                            <div class="mtgz_ul" id="mtgz_ul">
+                                <ul>
+                                    <li onmouseover="setTab3('mtgz_ul', 'mtgz_ul', 'mtgz_c', 'con_four_1')"
+                                        class="on1">行业博览</li>
+                                    <li onmouseover="setTab3('mtgz_ul', 'mtgz_ul siderover2', 'mtgz_c', 'con_four_2')"
+                                        class="on2">媒体关注</li>
+
+
+                                    <div class="clearboth"></div>
+                                </ul>
+                            </div>
+                            <span><a href="list/9" id="edutz_more">MORE+</a></span>
+                            <div class="clearboth"></div>
+                        </div>
+                        <div class="tzgg_c" id="mtgz_c">
+                            <div id="con_four_1" style="display:block">
+
+
+                                <div class="ullistyle">
+                                    <dl>
+                                        <dd><a href="show/39">
+                                            <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/v2-804b706905bcf6a6555c3596746f4c96_720w.jpg">
+                                            </a>
+                                        </dd>
+                                        <dt><h1>
+                                                <a href="show/39">民教网要闻全国学生资
+                                                    ...</a></h1>
+                                            <p>亲爱的同学：　　你好！　　突如其来的新冠肺炎疫情给我们所有人都带来了很大影响。刚刚复学的你...</p></dt>
+                                    </dl>
+                                    <ul>
+                                                                                    <li>
+                                                <a href="show/39">民教网要闻全国学生资助管理中心致高中毕业生的一封信</a><span>08-27</span>
+                                            </li>
+                                                                                    <li>
+                                                <a href="show/38">民教网要闻2019年全国教育经费执行情况统计快报</a><span>08-27</span>
+                                            </li>
+                                                                                    <li>
+                                                <a href="show/37">民教网要闻全面推进高等学校课程思政建设工作视频会议召开</a><span>08-27</span>
+                                            </li>
+                                                                                    <li>
+                                                <a href="show/36">民教网要闻教育部发布2020年第1号留学预警</a><span>08-27</span>
+                                            </li>
+                                                                            </ul>
+                                </div>
+
+
+                            </div>
+                            <div id="con_four_2" style="display:none">
+
+
+                                <div class="ullistyle">
+                                    <dl>
+                                        <dd><a href="show/25">
+                                            <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/7851dbc44093479.png"></a>
+                                        </dd>
+                                        <dt><h1>
+                                                <a href="show/25">中国日报：全国首个大
+                                                    ...</a></h1>
+                                            <p>中国民教网讯 我国首个大中专生诚信信息公共服务平台15日在京成立。据悉，开通当天，申请建立...</p></dt>
+                                    </dl>
+                                    <ul>
+                                                                                    <li>
+                                                <a href="show/25">中国日报：全国首个大学生“诚信档案”公共平台建立</a><span>08-27</span>
+                                            </li>
+                                                                                    <li>
+                                                <a href="show/24">中国日报网：中国民教网盘点2012年度民办教育十大新闻事件</a><span>08-27</span>
+                                            </li>
+                                                                                    <li>
+                                                <a href="show/23">中国网：全国首个大学生“诚信档案”公共平台建立</a><span>08-27</span>
+                                            </li>
+                                                                                    <li>
+                                                <a href="show/22">淄博时空新闻网：大学生诚信档案实现电子化</a><span>08-27</span>
+                                            </li>
+                                                                                    <li>
+                                                <a href="show/21">贵州信息网：全国首个大学生“诚信档案”公共平台建立</a><span>08-27</span>
+                                            </li>
+                                                                            </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--院校资讯结束-->
+                </div>
+                <div class="clearboth"></div>
+            </div>
+            <!--广告开始-->
+            <!--广告结束-->
+            <div class="box3" style="margin-top:20px;">
+                <div class="box_left">
+                    <!--院校开始-->
+
+                    <div class="yxzxbox" style="height:346px; overflow:hidden">
+                        <div class="yxzxbox_t">
+                            <div class="yxzxbox_ul siderover2" id="lib_Tab1">
+                                <ul>
+                                    <li id="one1" onmouseover="setTab('one',1,2)"
+                                        class="hover">求职就业</li>
+                                    <li id="one2"
+                                        onmouseover="setTab('one',2,2)">政策法规</li>
+                                    <div class="clearboth"></div>
+                                </ul>
+                            </div>
+                            <span><a href="list/27" id="RstBack_more1">MORE+</a></span>
+                            <div class="clearboth"></div>
+                        </div>
+
+
+                        <div class="yxzxbox_c">
+                            <div id="con_one_1" style="display:block">
+
+
+                                <div class="ullistyle">
+                                    <dl>
+                                        <dd><a href="show/47">
+                                            <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/banner_m.19b4c19e.jpg"></a>
+                                        </dd>
+                                        <dt><h1>
+                                                <a href="show/47">就业资讯大学生“就业
+                                                    ...</a></h1>
+                                            <p>中国社会科学院日前发布的《社会蓝皮书:2014年中国社会形势分析与预测》披露,在毕业两个月...</p></dt>
+                                    </dl>
+                                    <ul>
+                                                                                    <li>
+                                                <a href="show/47">就业资讯大学生“就业压力计”缘何年年攀高</a><span>08-27</span>
+                                            </li>
+                                                                                    <li>
+                                                <a href="show/46">就业资讯90后学生寒假打短工 “好玩”是首选</a><span>08-27</span>
+                                            </li>
+                                                                                    <li>
+                                                <a href="show/45">就业资讯教育部：将采取多项措施力促农村大学生就业</a><span>08-27</span>
+                                            </li>
+                                                                                    <li>
+                                                <a href="show/44">民教信息网就业资讯2014年，727万大学毕业生能否马上有工作？</a><span>08-27</span>
+                                            </li>
+                                                                            </ul>
+                                </div>
+
+
+                            </div>
+                            <div id="con_one_2" style="display:none">
+
+
+                                <div class="ullistyle">
+                                    <dl>
+                                        <dd><a href="show/43"><img
+                                                    src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/459e5af4afcf1.jpg"></a>
+                                        </dd>
+                                        <dt><h1>
+                                                <a href="show/43">中华人民共和国义务教
+                                                    ...</a></h1>
+                                            <p>第一章 总 则　　第一条 根据中华人民共和国义务教育法(以下简称义务教育法)第十七条的规定...</p></dt>
+                                    </dl>
+                                    <ul>
+                                                                                    <li>
+                                                <a href="show/43">中华人民共和国义务教育法实施细则</a><span>08-27</span>
+                                            </li>
+                                                                                    <li>
+                                                <a href="show/42">教学成果奖励条例</a><span>08-27</span>
+                                            </li>
+                                                                                    <li>
+                                                <a href="show/41">安徽：关于加强幼儿园收费管理的通知</a><span>08-27</span>
+                                            </li>
+                                                                                    <li>
+                                                <a href="show/40">中华人民共和国民办教育促进法实施条例</a><span>08-27</span>
+                                            </li>
+                                                                            </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--院校结束-->
+                </div>
+                <div class="box_right">
+                    <!--求职就业开始-->
+
+
+                    <div class="yxzxbox1" style="height:346px; overflow:hidden;">
+                        <div class="yxzxbox_t">
+                            <div class="yxzxbox_ul siderover2" id="lib_Tab2">
+                                <ul>
+                                    <li id="two1" onmouseover="setTab('two',1,2)"
+                                        class="hover">行业动态</li>
+                                    <li id="two2"
+                                        onmouseover="setTab('two',2,2)">院校资讯</li>
+                                    <div class="clearboth"></div>
+                                </ul>
+                            </div>
+                            <span><a href="list/26" id="RstBack_more1">MORE+</a></span>
+                            <div class="clearboth"></div>
+                        </div>
+
+                        <div class="yxzxbox_c">
+                            <div id="con_two_1" style="display:block">
+
+
+                                <div class="ullistyle">
+                                    <dl>
+                                        <dd><a href="show/237"><img
+                                                    src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/1599276156a7f07d.jpg"></a>
+                                        </dd>
+                                        <dt><h1>
+                                                <a href="show/237">唐山迎来一所民办大学
+                                                    ...</a></h1>
+                                            <p>北省是中华人民共和国省级行政区，从2019年的数据就不难发现，这里十分的重视教育的发展，研...</p></dt>
+                                    </dl>
+                                    <ul>
+                                                                                    <li><a href="show/237">唐山迎来一所民办大学，占地面积605亩，已通过教育部备案</a><span>08-27</span>
+                                            </li>
+                                                                                    <li><a href="show/235">电子科大成都学院获四川省民办高校多项优秀成果奖</a><span>08-27</span>
+                                            </li>
+                                                                                    <li><a href="show/230">这所高校，毕业生初次就业率超90％，居然是所民办大学</a><span>08-27</span>
+                                            </li>
+                                                                                    <li><a href="show/229">过二本线50分，仍然只能选择民办院校，考生：很现实！</a><span>08-27</span>
+                                            </li>
+                                                                                    <li><a href="show/228">独立院校失去母体院校的支持，转变为民办院校，有其考量</a><span>08-27</span>
+                                            </li>
+                                                                            </ul>
+                                </div>
+
+
+                            </div>
+                            <div id="con_two_2" style="display:none">
+
+
+                                <div class="ullistyle">
+                                    <dl>
+                                        <dd><a href="show/7"><img
+                                                    src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/81484d1e55e82cd.jpg"></a>
+                                        </dd>
+                                        <dt><h1>
+                                                <a href="show/7">民教网校讯中国地质大
+                                                    ...</a></h1>
+                                            <p>中国民教网校园资讯　　中国地质大学（武汉）认真学习贯彻全国教育大会精神，落实新时代全国高等...</p></dt>
+                                    </dl>
+                                    <ul>
+                                                                                    <li>
+                                                <a href="show/7">民教网校讯中国地质大学（武汉）深耕学风建设“四方田” 努力提高本科人才培养质量</a><span>08-27</span>
+                                            </li>
+                                                                                    <li>
+                                                <a href="show/6">民教网校讯中南大学“三线发力”推进人才工作</a><span>08-27</span>
+                                            </li>
+                                                                                    <li>
+                                                <a href="show/5">民教网校讯东南大学统筹做好疫情防控和返校复学工作</a><span>08-27</span>
+                                            </li>
+                                                                                    <li>
+                                                <a href="show/4">民教网校讯复旦大学在战“疫”中积极推进“互联网+党建”模式创新</a><span>08-27</span>
+                                            </li>
+                                                                            </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--求职就业结束-->
+                </div>
+                <div class="clearboth"></div>
+            </div>
+
+            <div class="gg">
+                <img src="static/picture/ad1.jpg" width="715" height="88">
+            </div>
+
+
+            <!--人物推荐开始-->
+            <div class="rwtj_c">
+
+                <div class="rwtj_t"><span>人物推荐</span>
+                    <a href="list/21"><img src="static/picture/more2.jpg" width="41" height="11"></a>
+                </div>
+
+
+                <div class="rollBox">
+                    <div class="scrollcon">
+                        <div class="LeftBotton" onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()"
+                             onmouseout="ISL_StopDown()"></div>
+                        <div class="Cont" id="ISL_Cont">
+                            <div class="ScrCont">
+                                <div id="List1">
+                                    <!-- 图片列表 begin -->
+                                                                            <div class="pic">
+                                            <a href="person/77">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/e98838466bbb88812f747a996708eddf.jpg"></a>
+                                            <p><a href="person/77">顾明远</a>
+                                            </p>
+                                        </div>
+                                                                            <div class="pic">
+                                            <a href="person/76">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/27651627f83bf0f3f6582a3b4e303db0.jpg"></a>
+                                            <p><a href="person/76">贾少华</a>
+                                            </p>
+                                        </div>
+                                                                            <div class="pic">
+                                            <a href="person/75">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/杨东平.jpg"></a>
+                                            <p><a href="person/75">杨东平</a>
+                                            </p>
+                                        </div>
+                                                                            <div class="pic">
+                                            <a href="person/70">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/49d13eb92465150dc5f9d76a77b4e94f.jpg"></a>
+                                            <p><a href="person/70">陈宝生</a>
+                                            </p>
+                                        </div>
+                                                                            <div class="pic">
+                                            <a href="person/68">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/5795737b32348397a5eeb64a52627b60.jpg"></a>
+                                            <p><a href="person/68">孙春兰</a>
+                                            </p>
+                                        </div>
+                                                                            <div class="pic">
+                                            <a href="person/67">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/李维民.jpg"></a>
+                                            <p><a href="person/67">李维民</a>
+                                            </p>
+                                        </div>
+                                                                            <div class="pic">
+                                            <a href="person/66">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/981088fe32356a404068ce907ec70990.jpg"></a>
+                                            <p><a href="person/66">孙尧</a>
+                                            </p>
+                                        </div>
+                                                                            <div class="pic">
+                                            <a href="person/65">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/戴斌.jpg"></a>
+                                            <p><a href="person/65">戴斌</a>
+                                            </p>
+                                        </div>
+                                                                            <div class="pic">
+                                            <a href="person/64">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/36efcf05de819f519d837bf182a6425e.jpg"></a>
+                                            <p><a href="person/64">柳斌</a>
+                                            </p>
+                                        </div>
+                                                                            <div class="pic">
+                                            <a href="person/63">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/杨雪梅.jpg"></a>
+                                            <p><a href="person/63">杨雪梅</a>
+                                            </p>
+                                        </div>
+                                                                    </div>
+                                <div id="List2">
+                                                                            <div class="pic">
+                                            <a href="person/77">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/e98838466bbb88812f747a996708eddf.jpg"></a>
+                                            <p><a href="person/77">顾明远</a>
+                                            </p>
+                                        </div>
+                                                                        <div class="pic">
+                                            <a href="person/76">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/27651627f83bf0f3f6582a3b4e303db0.jpg"></a>
+                                            <p><a href="person/76">贾少华</a>
+                                            </p>
+                                        </div>
+                                                                        <div class="pic">
+                                            <a href="person/75">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/杨东平.jpg"></a>
+                                            <p><a href="person/75">杨东平</a>
+                                            </p>
+                                        </div>
+                                                                        <div class="pic">
+                                            <a href="person/70">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/49d13eb92465150dc5f9d76a77b4e94f.jpg"></a>
+                                            <p><a href="person/70">陈宝生</a>
+                                            </p>
+                                        </div>
+                                                                        <div class="pic">
+                                            <a href="person/68">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/5795737b32348397a5eeb64a52627b60.jpg"></a>
+                                            <p><a href="person/68">孙春兰</a>
+                                            </p>
+                                        </div>
+                                                                        <div class="pic">
+                                            <a href="person/67">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/李维民.jpg"></a>
+                                            <p><a href="person/67">李维民</a>
+                                            </p>
+                                        </div>
+                                                                        <div class="pic">
+                                            <a href="person/66">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/981088fe32356a404068ce907ec70990.jpg"></a>
+                                            <p><a href="person/66">孙尧</a>
+                                            </p>
+                                        </div>
+                                                                        <div class="pic">
+                                            <a href="person/65">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/戴斌.jpg"></a>
+                                            <p><a href="person/65">戴斌</a>
+                                            </p>
+                                        </div>
+                                                                        <div class="pic">
+                                            <a href="person/64">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/36efcf05de819f519d837bf182a6425e.jpg"></a>
+                                            <p><a href="person/64">柳斌</a>
+                                            </p>
+                                        </div>
+                                                                        <div class="pic">
+                                            <a href="person/63">
+                                                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/杨雪梅.jpg"></a>
+                                            <p><a href="person/63">杨雪梅</a>
+                                            </p>
+                                        </div>
+                                                                <!-- 图片列表 end -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="RightBotton" onmousedown="ISL_GoUp()" onmouseup="ISL_StopUp()"
+                             onmouseout="ISL_StopUp()"></div>
+                    </div><!--content end-->
+
+                    <script type="text/javascript">
+                        //图片滚动列表
+                        var Speed = 0.01;//速度(毫秒)
+                        var Space = 5;//每次移动(px)
+                        var PageWidth = 131;//翻页宽度
+                        var fill = 0;//整体移位
+                        var MoveLock = false;
+                        var MoveTimeObj;
+                        var Comp = 0;
+                        var AutoPlayObj = null;
+                        GetObj("List2").innerHTML = GetObj("List1").innerHTML;
+                        GetObj('ISL_Cont').scrollLeft = fill;
+                        GetObj("ISL_Cont").onmouseover = function () {
+                            clearInterval(AutoPlayObj);
+                        }
+                        GetObj("ISL_Cont").onmouseout = function () {
+                            AutoPlay();
+                        }
+
+                        AutoPlay();
+
+                        function GetObj(objName) {
+                            if (document.getElementById) {
+                                return eval('document.getElementById("' + objName + '")')
+                            } else {
+                                return eval('document.all.' + objName)
+                            }
+                        }
+
+                        function AutoPlay() { //自动滚动
+                            clearInterval(AutoPlayObj);
+                            AutoPlayObj = setInterval('ISL_GoDown();ISL_StopDown();', 2000);//间隔时间
+                        }
+
+                        function ISL_GoUp() { //上翻开始
+                            if (MoveLock) return;
+                            clearInterval(AutoPlayObj);
+                            MoveLock = true;
+                            MoveTimeObj = setInterval('ISL_ScrUp();', Speed);
+                        }
+
+                        function ISL_StopUp() { //上翻停止
+                            clearInterval(MoveTimeObj);
+                            if (GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0) {
+                                Comp = fill - (GetObj('ISL_Cont').scrollLeft % PageWidth);
+                                CompScr();
+                            } else {
+                                MoveLock = false;
+                            }
+                            AutoPlay();
+                        }
+
+                        function ISL_ScrUp() { //上翻动作
+                            if (GetObj('ISL_Cont').scrollLeft <= 0) {
+                                GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft + GetObj('List1').offsetWidth
+                            }
+                            GetObj('ISL_Cont').scrollLeft -= Space;
+                        }
+
+                        function ISL_GoDown() { //下翻
+                            clearInterval(MoveTimeObj);
+                            if (MoveLock) return;
+                            clearInterval(AutoPlayObj);
+                            MoveLock = true;
+                            ISL_ScrDown();
+                            MoveTimeObj = setInterval('ISL_ScrDown()', Speed);
+                        }
+
+                        function ISL_StopDown() { //下翻停止
+                            clearInterval(MoveTimeObj);
+                            if (GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0) {
+                                Comp = PageWidth - GetObj('ISL_Cont').scrollLeft % PageWidth + fill;
+                                CompScr();
+                            } else {
+                                MoveLock = false;
+                            }
+                            AutoPlay();
+                        }
+
+                        function ISL_ScrDown() { //下翻动作
+                            if (GetObj('ISL_Cont').scrollLeft >= GetObj('List1').scrollWidth) {
+                                GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft - GetObj('List1').scrollWidth;
+                            }
+                            GetObj('ISL_Cont').scrollLeft += Space;
+                        }
+
+                        function CompScr() {
+                            var num;
+                            if (Comp == 0) {
+                                MoveLock = false;
+                                return;
+                            }
+                            if (Comp < 0) { //上翻
+                                if (Comp < -Space) {
+                                    Comp += Space;
+                                    num = Space;
+                                } else {
+                                    num = -Comp;
+                                    Comp = 0;
+                                }
+                                GetObj('ISL_Cont').scrollLeft -= num;
+                                setTimeout('CompScr()', Speed);
+                            } else { //下翻
+                                if (Comp > Space) {
+                                    Comp -= Space;
+                                    num = Space;
+                                } else {
+                                    num = Comp;
+                                    Comp = 0;
+                                }
+                                GetObj('ISL_Cont').scrollLeft += num;
+                                setTimeout('CompScr()', Speed);
+                            }
+                        }
+                    </script>
+                    <script src="static/js/jquery-1.2.1.pack.js" type="text/javascript"></script>
+                    <!--<script src="static/js/zt_tab.js" type="text/javascript"></script>-->
+                </div>
+            </div>
+            <!--人物推荐结束-->
+            <!--特别专题开始23131321-->
+            <div class="rwtj" style="overflow:hidden">
+                <div class="rwtj_t"><span>特别专题</span>
+                    <a href="list/30"><img src="static/picture/more2.jpg" width="41" height="11"></a>
+                </div>
+                <div class="tbzt_c">
+                    <div class="tbxt_cpic">
+                        <div class="yxzxbox2" style="height:233px; overflow:hidden;margin-top: 5px;">
+                            <div class="yxzxbox_c">
+
+
+                                <div id="myFocus20181552070588">
+                                    <div class="loading"></div>
+                                    <div class="pic"><!--图片列表-->
+                                        <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/315x202_auto.jpg" width="320"
+                                             height="220px">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tbzt_title">
+                        <div class="yxzxbox3">
+
+                            <div class="yxzxbox_c3">
+                                <div class="ullistyle1">
+                                    <ul>
+
+                                        <ul>
+                                                                                            <li>
+                                                    <a href="show/279">李克强主持召开国务院常务会议 部署深入推进大众创业万众创新 重点支持高校毕业生等群体就业创业</a><span>（08-27）</span>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="show/277">翁铁慧赴企业调研高校毕业生就业创业情况</a><span>（08-27）</span>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="show/275">教育部启动实施全国高校与湖北高校毕业生就业创业工作“一帮一”行动</a><span>（08-27）</span>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="show/273">教育部启动高校毕业生就业状况核查工作</a><span>（08-27）</span>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="show/272">教育部推出四项“不断线”就业服务助力未就业毕业生尽早就业</a><span>（08-27）</span>
+                                                </li>
+                                                                                            <li>
+                                                    <a href="show/271">克强对全国普通高等学校毕业生就业创业工作电视电话会议作出重要批示强调</a><span>（08-27）</span>
+                                                </li>
+                                                                                    </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--特别专题结束-->
+
+        </div>
+        <!--main结束-->
+        <!--侧栏开始-->
+        <div id="contain_sidebar">
+            <!--领导活动开始-->
+            <div class="leaderbox">
+                <div class="leaderbox_t"><a href="list/21" target="_blank">
+                        <img src="static/picture/more2.jpg" width="41" height="11"></a></div>
+                <div class="leaderbox_c">
+                    <ul>
+                        
+                            
+                        
+                            
+                        
+                            
+                        
+                                                            <li><a href="person/70"><img
+                                            src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/49d13eb92465150dc5f9d76a77b4e94f.jpg" width="61"></a>
+                                    <span><h2><a
+                                                href="person/70">陈宝生</a></h2><h6>现任教育部党组书记、部长。</h6></span>
+                                </li>
+                            
+                        
+                                                            <li><a href="person/68"><img
+                                            src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/5795737b32348397a5eeb64a52627b60.jpg" width="61"></a>
+                                    <span><h2><a
+                                                href="person/68">孙春兰</a></h2><h6>现任国务院副总理、党组成员。</h6></span>
+                                </li>
+                            
+                        
+                            
+                        
+                                                            <li><a href="person/66"><img
+                                            src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/981088fe32356a404068ce907ec70990.jpg" width="61"></a>
+                                    <span><h2><a
+                                                href="person/66">孙尧</a></h2><h6>现任教育部党组成员、副部长。</h6></span>
+                                </li>
+                            
+                        
+                            
+                        
+                            
+                        
+                            
+                                                <div class="clearboth"></div>
+                    </ul>
+                </div>
+
+            </div>
+            <!--领导活动结束-->
+            <!--人事任免开始-->
+            <div class="rsrmbox" style="overflow: hidden">
+                <div class="rsrmbox_t"><span>人事任免</span>
+                    <a href="list/28"><img src="static/picture/more2.jpg" width="41" height="11"></a></div>
+                <div class="rsrmbox_c">
+                    <div class="ullistyle4">
+                        <ul>
+                                                            <li><a href="show/52" target="_blank"
+                                       title="中共教育部党组关于李军、郭新立同志职务任免的通知">中共教育部党组关于李军、郭新立同志职务任免的通知</a></li>
+                                                            <li><a href="show/51" target="_blank"
+                                       title="教育部关于李守业免职的通知">教育部关于李守业免职的通知</a></li>
+                                                            <li><a href="show/50" target="_blank"
+                                       title="中共教育部党组关于申长雨同志免职的通知">中共教育部党组关于申长雨同志免职的通知</a></li>
+                                                    </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <!--人事任免结束-->
+
+
+            <!--客服开始-->
+            <div class="kefu">
+                <div class="rsrmbox1" style="overflow: hidden">
+                    <div class="rsrmbox_t1"><span>领导活动专题报道</span>
+                        <a href="list/19"><img src="static/picture/more2.jpg" width="41" height="11"></a></div>
+                    <div class="rsrmbox_c">
+                        <div class="ullistyle4">
+
+
+                            <ul>
+                                                                    <li><a href="show/16" target="_blank"
+                                           title="全国职业教育改革发展现场会举行">全国职业教育改革发展现场会举行</a></li>
+                                                                    <li><a href="show/15" target="_blank"
+                                           title="教育部启动中外人文交流高级研修计划">教育部启动中外人文交流高级研修计划</a></li>
+                                                                    <li><a href="show/14" target="_blank"
+                                           title="“青年红色筑梦之旅”活动启动">“青年红色筑梦之旅”活动启动</a></li>
+                                                                    <li><a href="show/13" target="_blank"
+                                           title="第30届世界大夏会开幕">第30届世界大夏会开幕</a></li>
+                                                                    <li><a href="show/12" target="_blank"
+                                           title="2019年青少年高校科学营开营">2019年青少年高校科学营开营</a></li>
+                                                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--客服结束-->
+
+
+            <!--电子服务平台开始-->
+            <div class="dzfwpt">
+                <div class="dzfwpt_t">
+                    <a href="https://www.cmhxi.com.cn/xyform" target="_blank">
+                        <img src="static/picture/more2.jpg" width="41" height="11">
+                    </a>
+                </div>
+                <div class="kefu">
+                    <div class="rsrmbox1" style="overflow: hidden">
+                        <div class="rsrmbox_c">
+                            <div class="ullistyle4">
+
+
+                                <ul>
+                                    
+                                        <li>
+                                            <a href="show/33">民教网声明</a><span>08-10</span>
+                                        </li>
+
+                                    
+                                        <li>
+                                            <a href="show/32">民教网免责严正声明！</a><span>12-23</span>
+                                        </li>
+
+                                    
+                                        <li>
+                                            <a href="show/31">关于非法网站仿冒我司民教信息网严正声明</a><span>03-25</span>
+                                        </li>
+
+                                    
+                                        <li>
+                                            <a href="show/17">资质批文</a><span>07-27</span>
+                                        </li>
+
+                                                                    </ul>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--电子服务平台结束-->
+
+
+            <!--校年检结果开始-->
+            <div class="xnjjgbox">
+                <div class="xnjjgbox_t">
+                    <div class="xnjjgbox_tul" id="xnjjgbox_tul">
+                        <ul>
+                            <li onmouseover="setTab7('xnjjgbox_tul', 'xnjjgbox_tul', 'xnjjgbox_c', 'con_ten_1')">
+                                院校年检结果
+                            </li>
+                            <li onmouseover="setTab7('xnjjgbox_tul', 'xnjjgbox_tul siderover2', 'xnjjgbox_c', 'con_ten_2')">
+                                招生简章备案
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="xnjjgbox_c" id="xnjjgbox_c">
+                    <div id="con_ten_1">
+                        <div class="ullistyle5">
+                            <ul>
+                                                                    <li><a href="show/56" target="_blank"
+                                           title="北京汇佳职业学院年检公示">北京汇佳职业学院年检公示</a></li>
+                                                                    <li><a href="show/55" target="_blank"
+                                           title="北京经贸职业学院年检公示">北京经贸职业学院年检公示</a></li>
+                                                                    <li><a href="show/54" target="_blank"
+                                           title="上海建桥学院年检公示">上海建桥学院年检公示</a></li>
+                                                                    <li><a href="show/53" target="_blank"
+                                           title="江南影视艺术职业学院年检公示">江南影视艺术职业学院年检公示</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                    <div id="con_ten_2" style="display:none">
+                        <div class="ullistyle5">
+                            <ul>
+
+                                                                    <li><a href="show/60" target="_blank"
+                                           title="北京城市学院（学历）招生广告（2014-2015年）">北京城市学院（学历）招生广告（2014-2015年）</a></li>
+                                                                    <li><a href="show/59" target="_blank"
+                                           title="北京东方研修学院（非学历）招生广告（2013-2014年）">北京东方研修学院（非学历）招生广告（2013-2014年）</a></li>
+                                                                    <li><a href="show/58" target="_blank"
+                                           title="北京建设大学（非学历）招生广告（2013-2014年）">北京建设大学（非学历）招生广告（2013-2014年）</a></li>
+                                                                    <li><a href="show/57" target="_blank"
+                                           title="北京黄埔大学（非学历）招生简章与广告备案（2013-2014年）">北京黄埔大学（非学历）招生简章与广告备案（2013-2014年）</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--校年检结果结束-->
+
+
+            <!--全国民办院校资质查询开始-->
+            <div class="zzcx">
+                <div class="zzcx_t"></div>
+                <div class="zzcx_c">
+                    <form id="form1" action="index.php?c=category&amp;id=22#" method="get">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td class="fontcolor0" align="right">院校名称:</td>
+                                <td align="left"><input type="text" class="textbox" name="schoolname" id="schoolname">
+                                </td>
+                            </tr>
+                            <input type="hidden" name="action" id="action" value="cha">
+                            <tr>
+                                <td class="fontcolor0" align="right">办学类型:</td>
+                                <td align="left">
+                                    <select name="type" class="typeselect">
+                                        <option value="">请选择</option>
+                                        <option value="民办普通高等教育机构">民办普通高等教育机构</option>
+                                        <option value="民办非学历高等教育机构">民办非学历高等教育机构</option>
+                                        <option value="民办普通高等教育机构">民办普通高等教育机构</option>
+                                        <option value="民办高等教育机构">民办高等教育机构</option>
+                                        <option value="民办非学历高等教育机构">民办非学历高等教育机构</option>
+                                        <option value="中外合作办学">中外合作办学</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td class="fontcolor0" align="right">办学许可证:</td>
+                                <td align="left"><input type="text" class="textbox" name="license" id="license"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center"><span>
+            <input type="submit" value="" class="searchbtn">
+
+            <a href="index.php?c=category&amp;id=22" class="searchbtn1">在线咨询</a></span></td>
+                            </tr>
+                            <tr>
+                                <td class="fontcolor2" colspan="2">
+                                    <p>注：提供教育部或者地方教委注册登记的
+                                        民办院校办学资质信息查询。</p></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+
+            </div>
+            <!--全国民办院校资质查询结束-->
+            <a href="bmform">
+                <div  style="margin-top: 32px;width: 100%;background-image: url(static/images/xxrwsq.png);height: 44px;">
+                </div>
+            </a>
+        </div>
+        <!--侧栏结束-->
+        <div class="clearboth"></div>
+    </div>
+
+    <!--右下角弹窗-->
+    <div class="tipshow">
+        <div class="tipshowtiti">
+            民办教育信息网声明
+
+            <div class="tipshowclose">
+                <span onclick="hdietipshow()" style="font-size: 20px;">X</span>
+            </div>
+        </div>
+        <div class="ptext">
+            <p>本网站为民办公共信息展示服务平台，同时面向行业、企业、个人提供信息咨询、查询等等服务。<br />
+&nbsp; &nbsp; &nbsp; 本网站所有查询数据属于民办院校计划外非学历教育信息查询，信息不属于国家承认学历和（学信网）的查询数据部分可能相同，但性质不一样，（学信网）为国家承认且统一的学历查询网址。如遇到查询信息和（学信网）信息查询相同，请各企、事业单位严格以（学信网）为准。本网查询数据均来源于民办学校自愿申请入网，和部分持有证书的个人申请入网，如对所查询信息真实性有异议，请自主联系相关院校及个人，望各企事业用人单位及全国网民自行甄别。<br />
+&nbsp; &nbsp; &nbsp; 本网站查询服务系统为地方教育主管部门备案的民办本科院校、独立学院、高职高专院校、专修学院、研修学院等教育机构、国际合作办学院校计划外学生提供的结业证书管理查询平台。本网站对证书内容的真实性不进行审查且不对证书的真伪承担任何法律责任，如对证书的真实性存在疑问，请向发证单位或持证个人核实。</p>
+
+<p>本网站属于河南民教信息科技有限公司官方网址，所提供服务仅代表本公司，不代表行业特许单位，不属于国家及政府的服务型网站。本站仅对在教育主管部门批准或备案的实体民办学校、培训机构开通平台信息服务。也绝不参与任何涉及出售和制造民办学校证书的违法行为，敬请社会各界监督。</p>
+        </div>
+
+    </div>
+    <script>
+        function hdietipshow() {
+            $(".tipshow").remove(".tipshow")
+        }
+
+        $(document).ready(function () {
+            setTimeout(function () {
+                hdietipshow()
+            }, 120000);
+        })
+
+    </script>
+                <div class="footer">
+<div class="footer_t">
+<div id="zp_siteDiv_top">
+<ul>
+<li>主管单位</li>
+<li>行业协会</li>
+<li>科研院所</li>
+<li>合作院校</li>
+</ul>
+</div></div>
+<div class="footer_c">
+        
+<div id="zp_siteDiv_middle">
+<div id="con_six_1">
+<ul>
+ <li><a href="http://www.xjedu.gov.cn/" target="_blank">新疆教育厅</a></li>
+ <li><a href="http://www.xjedu.gov.cn/" target="_blank">陕西教育厅</a></li>
+ <li><a href="http://edu.hainan.gov.cn/" target="_blank">海南教育厅</a></li>
+ <li><a href="http://www.gzsjyt.gov.cn/" target="_blank">贵州教育厅</a></li>
+ <li><a href="http://www.qhedu.cn/" target="_blank">青海教育厅</a></li>
+ <li><a href="http://www.gsedu.gov.cn/" target="_blank">甘肃教育厅</a></li>
+ <li><a href="http://www.edugd.cn/" target="_blank">广东教育厅</a></li>
+ <li><a href="http://www.scedu.net/" target="_blank">四川教育厅</a></li>
+ <li><a href="http://www.nxedu.gov.cn/main/index.html" target="_blank">宁夏教育厅</a></li>
+ <li><a href="http://www.nmgov.edu.cn/" target="_blank">内蒙古教育厅</a></li>
+ <li><a href="http://www.sxedu.gov.cn/" target="_blank">山西教育厅</a></li>
+ <li><a href="http://www.hnedu.cn/index.html" target="_blank">湖南教育厅</a></li>
+ <li><a href="http://www.ahedu.gov.cn/" target="_blank">安徽教育厅</a></li>
+ <li><a href="http://www.hlje.net/" target="_blank">黑龙江教育厅</a></li>
+ <li><a href="http://www.lnen.cn/" target="_blank">辽宁教育厅</a></li>
+ <li><a href="http://www.ynjy.cn/" target="_blank">云南教育厅</a></li>
+ <li><a href="http://www.gxedu.gov.cn/" target="_blank">广西教育厅</a></li>
+ <li><a href="http://www.jxedu.gov.cn/" target="_blank">江西教育厅</a></li>
+ <li><a href="http://www.fjedu.gov.cn/" target="_blank">河北教育厅</a></li>
+ <li><a href="http://www.hbe.gov.cn/" target="_blank">湖北教育厅</a></li>
+ <li><a href="http://www.haedu.gov.cn/" target="_blank">河南教育厅</a></li>
+ <li><a href="http://www.zjedu.gov.cn/gb/index1.html" target="_blank">浙江教育厅</a></li>
+ <li><a href="http://www.sdedu.gov.cn/" target="_blank">山东教育厅</a></li>
+ <li><a href="http://www.cqedu.cn/site/html/cqjwportal/portal/index/index.htm" target="_blank">重庆教委</a></li>
+ <li><a href="http://www.shmec.gov.cn/" target="_blank">上海教委</a></li>
+ <li><a href="http://www.bjedu.gov.cn/publish/portal27/" target="_blank">北京教委</a></li>
+ <div class="clearboth"></div>
+</ul>
+</div>
+<div id="con_six_2">
+<ul style="display:none">
+       
+<div class="clearboth"></div>
+</ul>
+</div>
+
+<div id="con_six_3">
+<ul style="display:none">
+ 
+<div class="clearboth"></div>
+</ul>
+</div>
+<div id="con_six_4">
+<ul style="display:none">
+           
+<div class="clearboth"></div>
+</ul>
+</div>
+           
+           
+</div></div></div>        <div class="footer2">
+    <div class="dbmume">
+        <a href="person/21">首 页</a>
+        <a>|</a>
+        <a href="list/16">平台介绍</a>
+        <a>|</a>
+        <a href="list/17">资质批文</a>
+        <a>|</a>
+        <a href="list/18">主管单位</a>
+        <a>|</a>
+        <a href="list/5">通知公告</a>
+        <a>|</a>
+        <a href="list/22">客服中心</a>
+        <a>|</a>
+        <a href="list/23">版权声明</a>
+        <a>|</a>
+        <a href="bgsqform">办公合作申请</a>
+    </div>
+
+<div class="copybq">
+<p>公安局备案号:2021031956号 &nbsp; 备案编号：
+                          <a href="https://beian.miit.gov.cn">豫ICP备2021031956号-2</a>
+        </p><p>办公地址：河南省郑州市高新技术产业开发区瑞达路96号商务中心　邮政编码:454000 &nbsp; &nbsp;通信地址：河南省100005-019信箱</p><p>主办单位：河南民教信息科技有限公司 &nbsp; &nbsp;指导：全国民办高等教育学生信息咨询与就业指导中心　</p>
+<a id="_pingansec_bottomimagesmall_shiming" target="_blank" href="https://si.trustutn.org/info?sn=313211119040899888649&amp;certType=1"><img src="https://v.trustutn.org/images/cert/bottom_small_img.png"/></a>
+<a target="_blank" href="https://xinyong.yunaq.com/certificate?domain=www.cmhsi.com.cn"><img style="width:110px;height:40px" src="static/images/label_lg_90020.png"></a>
+
+<dd><img src="static/picture/dbpic.png"></dd>
+</div>
+
+
+<script type="text/javascript" src="static/js/jquery-1.9.1.min.js">
+</script>
+
+<script type="text/javascript" src="static/js/slides.js">
+</script>
+
+<script type="text/javascript" src="static/js/flexslider.js">
+</script>
+
+<script type="text/javascript">
+
+</div>
+        
+        
+
+        </div>
+    </div>
+</body>
+</html>

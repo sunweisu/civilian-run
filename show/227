@@ -1,0 +1,343 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>民教网_民办教育服务信息网</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="民办教育服务信息网,民教网,中国民办高等教育学生信息网,民办网官网"/>
+<meta name="description" content="民教网是民办教育服务信息网的简称，又称民教官网，由民办教育机构，行业协会，科研院所和有关专家学者共同组建，是民办高等教育机构学生信息服务官方网站。"/>
+    <link type="text/css" rel="stylesheet" href="../static/css/style5.css">
+    <link href="../static/css/lbiao.css" type="text/css" rel="stylesheet">
+    <!--<script src="/static/js/tab.js" type="text/javascript"></script>-->
+    <script language="javascript" src="../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/tabpic.js"></script>
+
+</head>
+<body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrap {
+        width: 100%;
+        height: 50px;
+        background-color: #127de1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pics {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .text {
+        display: inline-block;
+        vertical-align: middle;
+        color: white;
+        font-size: 16px;
+    }
+
+    .you {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+
+<div class="wrap" id="toop">
+    <div class="zuo">
+        <div class="pics" style="background-image: url(../static/images/trusted-web1_01.png);width: 30px;height: 38px; background-size: 100%; background-repeat: no-repeat;"></div>
+        <h2 class="text">该网站工信部已备案,唯一百度官方认证(民教网)官方网站www.cmhxi.com.cn，请放心访问</h2>
+    </div>
+
+    <div class="you">
+        <div style="vertical-align: middle;">
+            <a href="../person/21">
+                <p class="aaa" style="color: #ffe6ae;font-size: 18px;">了解详情&gt;</p >
+            </a >
+        </div>
+        <div style="vertical-align: middle; margin-right: 10px;">
+            <a href="../person/21">
+                <img src="../static/images/trusted-real-name.png">
+            </a >
+        </div>
+        <div style="vertical-align: middle;">
+            <img id="toop2" src="../static/images/la.png" title="收起" style="width: 50px;height: 70px;" onclick="shou()">
+            <img id="toop3" src="../static/images/zhan.png" title="展开" style="width: 50px;height: 70px;display: none;" onclick="zhan()">
+        </div>
+    </div>
+</div>
+
+<div class="toop" style="display: none;">
+    <div class="topleft">欢迎光临中国民办高等教育学生信息网(中国民办教育学生信息网(官网)-民教信息网)www.cmhxi.com.cn！</div>
+    <div class="topright"></div>
+</div>
+<script>
+    function shou() {
+        $('.toop').css("display", "block");
+        $('#toop3').css("display", "block");
+        $('#toop').css("display", "none");
+        $('#toop2').css("display", "none");
+    }
+
+    function zhan() {
+        $('.toop').css("display", "none");
+        $('#toop3').css("display", "none");
+        $('#toop').css("display", "block");
+        $('#toop2').css("display", "block");
+    }
+</script>
+    <div class="beiji-01" style="background-color:#f1f1f1;background-image: url(https://www.cmhxi.com.cn/show/static/images/bj.jpeg);
+          background-size: cover;
+        background-repeat: no-repeat;">
+        <div style="background-color:#f1f1f1;width:1004px;margin:0 auto;">
+        <div class="box2">
+    <div id="banner">
+                    <img src="../static/images/banner1.png"/>
+            </div>
+    <style>
+        .t_nav {
+            width: 100%;
+            min-width: 1000px;
+            height: 40px;
+            line-height: 40px;
+            background: #2EAFBB;
+            color: #FFFFFF;
+            overflow: hidden;
+        }
+
+        .width1000 {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .t_nav li {
+            float: left;
+            display: inline;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .t_nav a, .t_nav a:link, .t_nav a:visited {
+            color: #FFFFFF;
+            font: 17px/38px "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", HELVETICA;
+        }
+    </style>
+    <div class="t_nav">
+        <ul class="width1000">
+            <li style="padding-left:40px;"><a href="../person/21" target="_parent">首页</a></li>
+            <li><a href="../list/3">平台介绍</a></li>
+            <li><a href="../list/17">资质批文</a></li>
+            <li><a href="../list/20">政策法规</a></li>
+            <li><a href="../list/5">通知公告</a></li>
+            <li><a href="../list/4">新闻中心</a></li>
+            <li><a href="../list/21">民教人物</a></li>
+            <li><a href="../list/6">院校列表</a></li>
+            <li style="padding-right: 0;"><a href="http://xy.cmhni.com.cn">查询中心</a></li>
+        </ul>
+    </div>
+    <div id="announ">
+        <div class="announ_l">
+            <em><img src="../static/picture/announce.gif" width="18" height="18"></em>
+            <b></b>
+            <div id="scrollDiv">
+                <script language="javascript">
+                    $(function () {
+                        //单行应用@Mr.Think
+                        var _wrap = $('ul.line');//定义滚动区域
+                        var _interval = 2000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时，停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                    $(function () {
+                        //多行应用@Mr.Think
+                        var _wrap = $('ul.mulitline');//定义滚动区域
+                        var _interval = 3000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时,停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                </script>
+                <ul class="line">
+                                            <li style="margin-top: 0px;"><a href="33"
+                                                        target="_blank">民教网声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="32"
+                                                        target="_blank">民教网免责严正声明！</a></li>
+                                            <li style="margin-top: 0px;"><a href="31"
+                                                        target="_blank">关于非法网站仿冒我司民教信息网严正声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="17"
+                                                        target="_blank">资质批文</a></li>
+                                    </ul>
+            </div>
+        </div>
+        <div class="clearboth"></div>
+    </div>
+</div>
+<style>
+    #trusted_container {
+        display: none;
+    }
+</style>
+        <div class="w960">
+
+
+
+            <div class="content">
+				<!-- Breadcrumb begin -->
+				<div class="breadcrumb" style="margin-top: 1px;"> <strong>当前位置：</strong><a href="../person/21">首页</a> &gt;&gt; <a href="../list/26">行业动态</a> &gt;&gt; 浏览文章</div>
+				<!-- 列表开始 -->
+				<div class="listbox">
+					<!--图文-->
+					<div class="single">
+						<h1>江苏拟逐步放开全省53所民办高校学历教育收费</h1>
+						<div class="meta singlemeta"><span>作者:admin</span>
+							<span>2019-08-27</span>
+							<span>来源:民教网 </span>
+							<span>浏览:<span id="mys_show_hits_16">2851</span></span> </div>
+						<!-- PostContent begin -->
+						<div class="entry">
+							<div class="entrycontent">
+								<!-- SingleAd begin -->
+								<div id="MyContent">
+                                <div id="MyContent">
+<p style="outline: none; box-sizing: border-box; margin-top: 15px; margin-bottom: 15px; padding: 0px; list-style: none; border: none; color: rgb(37, 37, 37); -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: 宋体; white-space: normal; background-color: rgb(247, 245, 237); text-align: center;"><img src="http://www.aphsi.com.cn/uploadfile/202009/6656e9a6e797972.jpg" alt="1906763993.jpg" style="outline: none; box-sizing: border-box; border: 0px; vertical-align: bottom; width: 645px; height: auto; display: block; margin-left: auto; margin-right: auto;"></p><p style="outline: none; box-sizing: border-box; margin-top: 15px; margin-bottom: 15px; padding: 0px; list-style: none; border: none; color: rgb(37, 37, 37); -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: 宋体; white-space: normal; background-color: rgb(247, 245, 237); text-align: justify;">记者从江苏省发改委官网获悉，近日，江苏省发展改革委发布《关于进一步推进民办高等学校学历教育收费改革的通知》（征求意见稿）（以下简称“征求意见稿”），面向社会公开征求意见。</p><p style="outline: none; box-sizing: border-box; margin-top: 15px; margin-bottom: 15px; padding: 0px; list-style: none; border: none; color: rgb(37, 37, 37); -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: 宋体; white-space: normal; background-color: rgb(247, 245, 237); text-align: justify;">根据征求意见稿，自2021年起至2023年，江苏拟逐步放开全省53所民办高等学校（含29所民办高校和24所独立学院）学历教育收费。</p><p style="outline: none; box-sizing: border-box; margin-top: 15px; margin-bottom: 15px; padding: 0px; list-style: none; border: none; color: rgb(37, 37, 37); -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: 宋体; white-space: normal; background-color: rgb(247, 245, 237); text-align: justify;">根据征求意见稿，江苏拟在2018年试点放开部分民办高校学历教育收费的基础上，进一步推进全省民办高等学校学历教育收费改革，包括逐步放开民办高校收费、从严规范民办高校收费行为、切实加强民办高校收费事中事后监管和扎实做好民办高校困难学生资助工作。</p><p style="outline: none; box-sizing: border-box; margin-top: 15px; margin-bottom: 15px; padding: 0px; list-style: none; border: none; color: rgb(37, 37, 37); -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: 宋体; white-space: normal; background-color: rgb(247, 245, 237); text-align: center;"><strong style="outline: none; box-sizing: border-box;">民办高校学历教育收费改革分“三步走”</strong></p><p style="outline: none; box-sizing: border-box; margin-top: 15px; margin-bottom: 15px; padding: 0px; list-style: none; border: none; color: rgb(37, 37, 37); -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: 宋体; white-space: normal; background-color: rgb(247, 245, 237); text-align: justify;">逐步放开民办高校收费。征求意见稿明确，自明年起至2023年，逐步放开全省53 所民办高等学校（含 29 所民办高校和 24 所独立学院）学历教育收费，并给出了三个阶段的时间表：</p><p style="outline: none; box-sizing: border-box; margin-top: 15px; margin-bottom: 15px; padding: 0px; list-style: none; border: none; color: rgb(37, 37, 37); -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: 宋体; white-space: normal; background-color: rgb(247, 245, 237); text-align: justify;">一是自2021年秋季学期起，放开26所独立设置的民办本专科院校（3 所试点高校和南京传媒学院共4所本科、22所专科）收费，由学校自主研究确定学费和住宿费标准。2018年试点的3所高校在2021年秋季学期前继续维持现行收费标准。</p><p style="outline: none; box-sizing: border-box; margin-top: 15px; margin-bottom: 15px; padding: 0px; list-style: none; border: none; color: rgb(37, 37, 37); -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: 宋体; white-space: normal; background-color: rgb(247, 245, 237); text-align: justify;">二是自2022年秋季学期起，放开中外合作办学性质的3所民办本专科院校（西交利物浦和昆山杜克两所本科、苏州百年职业学院 1 所专科）收费，由学校自主研究确定学费和住宿费标准。</p><p style="outline: none; box-sizing: border-box; margin-top: 15px; margin-bottom: 15px; padding: 0px; list-style: none; border: none; color: rgb(37, 37, 37); -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: 宋体; white-space: normal; background-color: rgb(247, 245, 237); text-align: justify;">三是2023年，根据24所独立学院的全面评估和办学性质重新登记情况，对划归公办的实行政府指导价管理，划归民办（与公办高校完全脱钩）的实行市场调节价管理，由学校自主研究确定学费和住宿费标准。</p><p style="outline: none; box-sizing: border-box; margin-top: 15px; margin-bottom: 15px; padding: 0px; list-style: none; border: none; color: rgb(37, 37, 37); -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: 宋体; white-space: normal; background-color: rgb(247, 245, 237); text-align: center;"><strong style="outline: none; box-sizing: border-box;">民办高校收费不得多频次、大幅度调整</strong></p><p style="outline: none; box-sizing: border-box; margin-top: 15px; margin-bottom: 15px; padding: 0px; list-style: none; border: none; color: rgb(37, 37, 37); -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: 宋体; white-space: normal; background-color: rgb(247, 245, 237); text-align: justify;">放开民办高等学校学历教育收费，不等于放任不管。征求意见稿明确，从严规范民办高校收费行为。其中拟要求，要充分考虑教育教学成本、学校发展需要以及经济发展水平和社会承受能力等因素，合理制定和调整学费和住宿费标准，并提前 3 个月向社会公示后执行，同时报省发展改革委、省教育厅。要切实保持学费和住宿费标准的相对稳定，原则上3-4年保持平稳，不得多频次、大幅度调整。</p><p style="outline: none; box-sizing: border-box; margin-top: 15px; margin-bottom: 15px; padding: 0px; list-style: none; border: none; color: rgb(37, 37, 37); -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: 宋体; white-space: normal; background-color: rgb(247, 245, 237); text-align: justify;">同时，调整收费标准实行“新生新办法，老生老办法”，学生入学时的学费和住宿费标准一经确定，在读期间不得提高。要严格落实收费公示制度。</p><p style="outline: none; box-sizing: border-box; margin-top: 15px; margin-bottom: 15px; padding: 0px; list-style: none; border: none; color: rgb(37, 37, 37); -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: 宋体; white-space: normal; background-color: rgb(247, 245, 237); text-align: justify;">征求意见稿还强调，各级发展改革和教育部门要跟踪了解民办高校收费政策执行情况，切实防止收费标准变动频繁、变动幅度过大等现象的发生。督促各民办高校严格落实收费公示等制度，及时查处超标准、超范围收费等各类违法违规收费行为，切实维护学生的合法权益。</p><p style="outline: none; box-sizing: border-box; margin-top: 15px; margin-bottom: 15px; padding: 0px; list-style: none; border: none; color: rgb(37, 37, 37); -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: 宋体; white-space: normal; background-color: rgb(247, 245, 237); text-align: center;"><strong style="outline: none; box-sizing: border-box;">江苏已试点放开3所民办普通本科院校收费</strong></p><p style="outline: none; box-sizing: border-box; margin-top: 15px; margin-bottom: 15px; padding: 0px; list-style: none; border: none; color: rgb(37, 37, 37); -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: 宋体; white-space: normal; background-color: rgb(247, 245, 237); text-align: justify;">目前，北京、上海、浙江、广东、山东、安徽等23个省区市已对民办高校（独立学院除外）学历教育收费全面实行市场调节价，由学校自主确定学费和住宿费标准。</p><p style="outline: none; box-sizing: border-box; margin-top: 15px; margin-bottom: 15px; padding: 0px; list-style: none; border: none; color: rgb(37, 37, 37); -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: 宋体; white-space: normal; background-color: rgb(247, 245, 237); text-align: justify;">2018年2月，江苏省政府印发《关于鼓励社会力量兴办教育促进民办教育健康发展的实施意见》（苏政发〔2018〕31 号），明确提出“在试点基础上有序放开部分学段非营利性民办学校学历教育收费”。 2018年5月，江苏试点放开三江学院、无锡太湖学院、南通理工学院3所独立设置民办普通本科院校收费。</p><p style="outline: none; box-sizing: border-box; margin-top: 15px; margin-bottom: 15px; padding: 0px; list-style: none; border: none; color: rgb(37, 37, 37); -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; font-family: 宋体; white-space: normal; background-color: rgb(247, 245, 237); text-align: justify;">民办高校全面实行市场调节价，也带来了更严格公示和监管要求。</p><p><br></p>
+</div>
+                                </div>
+								<!-- SingleAd end -->
+							</div>
+						</div>
+						<div class="postnavi">
+							<div class="previous_post">上一篇: <a href="https://www.cmhxi.com.cn/show/" title=""></a></div>
+							<div class="next_post">下一篇: <a href="228" title="">独立院校失去母体院校的支持，转变为民办院校，有其考量</a></div>
+						</div>
+						<!-- PageNavigation end -->
+					</div>
+				</div>
+			</div>
+
+
+
+
+            <div class="sidebar">
+    <ul>
+      <li class="mostviews">
+        <span class="intit"><a class="more" href="../list/30">更多&gt;&gt;</a><strong>一周热点新闻</strong></span>
+        <ul>
+         
+                                                <li><a href="33" target="_blank" title="民教网声明">民教网声明</a></li>
+                                                                <li><a href="32" target="_blank" title="民教网免责严正声明！">民教网免责严正声明！</a></li>
+                                                                <li><a href="31" target="_blank" title="关于非法网站仿冒我司民教信息网严正声明">关于非法网站仿冒我司民教信息网严正声明</a></li>
+                                                                <li><a href="17" target="_blank" title="资质批文">资质批文</a></li>
+                                    
+
+                                <li><a href="279" target="_blank" title="李克强主持召开国务院常务会议 部署深入推进大众创业万众创新 重点支持高校毕业生等群体就业创业">李克强主持召开国务院常务会议 部署深入推进大众创业万众创新 重点支持高校毕业生等群体就业创业</a></li>
+                                <li><a href="277" target="_blank" title="翁铁慧赴企业调研高校毕业生就业创业情况">翁铁慧赴企业调研高校毕业生就业创业情况</a></li>
+                                <li><a href="275" target="_blank" title="教育部启动实施全国高校与湖北高校毕业生就业创业工作“一帮一”行动">教育部启动实施全国高校与湖北高校毕业生就业创业工作“一帮一”行动</a></li>
+                                <li><a href="273" target="_blank" title="教育部启动高校毕业生就业状况核查工作">教育部启动高校毕业生就业状况核查工作</a></li>
+                                <li><a href="272" target="_blank" title="教育部推出四项“不断线”就业服务助力未就业毕业生尽早就业">教育部推出四项“不断线”就业服务助力未就业毕业生尽早就业</a></li>
+                 
+
+ 
+        </ul>
+      </li>
+      <li>
+        <div class="bar" style="margin-top:10px;"> <span class="intit"><a class="more" href="../list/21">更多&gt;&gt;</a><strong>会客厅</strong></span>
+           		  <div class="focus1" href="/person/77">                
+                <a href="../person/77">
+                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/e98838466bbb88812f747a996708eddf.jpg" width="74" height="56" border="0"> <span style="color: red;">顾明远</span></a>
+                <br><span>中共党员，教育部社会科学委员会副主任、北京师范大学教育学部顾问。</span>
+        </div>
+  
+          <ul>
+                                <li><a href="../person/77" target="_blank" title="顾明远">顾明远</a></li>
+                                <li><a href="../person/76" target="_blank" title="贾少华">贾少华</a></li>
+                                <li><a href="../person/75" target="_blank" title="杨东平">杨东平</a></li>
+                                <li><a href="../person/70" target="_blank" title="陈宝生">陈宝生</a></li>
+                                <li><a href="../person/68" target="_blank" title="孙春兰">孙春兰</a></li>
+                          </ul>
+  </div>
+</li>
+     <li>
+        <div class="bar"> <span class="intit"><a class="more" target="_blank" href="../list/25">更多&gt;&gt;</a><strong>民教网简报</strong></span>
+          <ul>
+                                <li><a href="11" target="_blank" title="2013年《民教网工作简报》第十一期">2013年《民教网工作简报》第十一期</a></li>
+                                <li><a href="10" target="_blank" title="2013年《民教网工作简报》第十期">2013年《民教网工作简报》第十期</a></li>
+                                <li><a href="9" target="_blank" title="2013年《民教网工作简报》第九期">2013年《民教网工作简报》第九期</a></li>
+                                <li><a href="8" target="_blank" title="2014年《民教网工作简报》第二期">2014年《民教网工作简报》第二期</a></li>
+                          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>            <div class="dbgd"></div>
+            <div class="footer2">
+    <div class="dbmume">
+        <a href="../person/21">首 页</a>
+        <a>|</a>
+        <a href="../list/16">平台介绍</a>
+        <a>|</a>
+        <a href="../list/17">资质批文</a>
+        <a>|</a>
+        <a href="../list/18">主管单位</a>
+        <a>|</a>
+        <a href="../list/5">通知公告</a>
+        <a>|</a>
+        <a href="../list/22">客服中心</a>
+        <a>|</a>
+        <a href="../list/23">版权声明</a>
+        <a>|</a>
+        <a href="../bgsqform">办公合作申请</a>
+    </div>
+
+<div class="copybq">
+<p>公安局备案号:2021031956号 &nbsp; 备案编号：
+                          <a href="https://beian.miit.gov.cn">豫ICP备2021031956号-2</a>
+        </p><p>办公地址：河南省郑州市高新技术产业开发区瑞达路96号商务中心　邮政编码:454000 &nbsp; &nbsp;通信地址：河南省100005-019信箱</p><p>主办单位：河南民教信息科技有限公司 &nbsp; &nbsp;指导：全国民办高等教育学生信息咨询与就业指导中心　</p>
+<a id="_pingansec_bottomimagesmall_shiming" target="_blank" href="https://si.trustutn.org/info?sn=313211119040899888649&amp;certType=1"><img src="https://v.trustutn.org/images/cert/bottom_small_img.png"/></a>
+<a target="_blank" href="https://xinyong.yunaq.com/certificate?domain=www.cmhsi.com.cn"><img style="width:110px;height:40px" src="../static/images/label_lg_90020.png"></a>
+
+<dd><img src="../static/picture/dbpic.png"></dd>
+</div>
+
+
+<script type="text/javascript" src="../static/js/jquery-1.9.1.min.js">
+</script>
+
+<script type="text/javascript" src="../static/js/slides.js">
+</script>
+
+<script type="text/javascript" src="../static/js/flexslider.js">
+</script>
+
+<script type="text/javascript">
+
+</div>
+
+</div>
+        
+        
+
+        </div>
+    </div>
+</body>
+</html>

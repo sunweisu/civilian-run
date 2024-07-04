@@ -1,0 +1,765 @@
+<head runat="server">
+    <title>民教网_民办教育服务信息网</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="民办教育服务信息网,民教网,中国民办高等教育学生信息网,民办网官网"/>
+    <meta name="description" content="民教网是民办教育服务信息网的简称，又称民教官网，由民办教育机构，行业协会，科研院所和有关专家学者共同组建，是民办高等教育机构学生信息服务官方网站。"/>
+    <link href="static/css/new-add.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="static/css/css.css"/>
+    <script src="static/js/html2canvas.js"></script>
+    <script src="static/js/config.js"></script>
+    <script type="text/javascript" src="static/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="static/js/jsencrypt.js"></script>
+    <script type="text/javascript" src="static/js/base64.js"></script>
+    <script src="static/js/config.js"></script>
+    <link type="text/css" rel="stylesheet" href="static/css/rz.css">
+    <link type="text/css" rel="stylesheet" href="static/css/style5.css"/>
+
+    <style type="text/css">
+        /* CSS样式制作 */
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #336699;
+        }
+
+        #tabcx {
+            width: 880px;
+            padding: 0px;
+            height: auto;
+            margin: 0px;
+            right: 10px;
+            background-position: left;
+            float: left;
+        }
+
+        #tabcx ul {
+            text-align: center;
+            list-style: none;
+            height: 29px;
+            line-height: 27px;
+            border-bottom-width: 0px;
+            border-bottom-style: none;
+            width: 880px;
+            margin-left: 20px;
+        }
+
+        #tabcx ul li {
+            border-top: 1px solid #2eafbb;
+            border-left: 1px solid #2eafbb;
+            border-right: 1px solid #2eafbb;
+            margin: 0 0 -1px -1px;
+            cursor: pointer;
+            float: left;
+            list-style: none;
+            height: 29px;
+            line-height: 28px;
+            width: 118px;
+            top: 5px;
+            clip: rect(5px, auto, auto, auto);
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        #tabcx ul li.on {
+            background: #2eafbb;
+            color: #ffffff;
+        }
+
+        #tabcx div {
+            height: 350px;
+            width: 850px;
+            line-height: 24px;
+            padding: 10px;
+            padding: 10px;
+            border: 1px solid #2eafbb;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .STYLE2 {
+            color: #FF0000;
+            font-size: 11px;
+        }
+
+        .STYLE3 {
+            font-weight: 500;
+            font-size: 14px;
+            color: #000000;
+            line-height: 27px;
+        }
+
+        h9 {
+            height: 30px;
+            line-height: 20px;
+            color: #0066CC;
+            font-size: 16px;
+            text-align: center;
+            font-weight: 600;
+            background-position: center;
+        }
+
+
+        .cn_table1 {
+            margin: 0 auto;
+            background-position: center;
+            border: 1px solid #a1d4e7;
+        }
+
+        .ftl {
+            float: left;
+        }
+
+        .mid {
+            text-align: center;
+        }
+
+        .pt10 {
+            padding-top: 10px;
+        }
+
+        .curb {
+            font-size: 14px;
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #ececec;
+            background: url(static/images/home.png) no-repeat left center;
+            text-indent: 30px;
+        }
+
+        .cxxt {
+            background: url(https://www.cmhxi.com.cn/img/cx_bg.jpg) repeat-x;
+            width: 650px;
+            height: 900px;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-right: auto;
+            margin-bottom: 0;
+            margin-left: auto;
+            padding-top: 0;
+            padding-right: 12px;
+            padding-bottom: 0;
+            padding-left: 12px;
+        }
+
+        .cxxt .title h2 {
+            height: 50px;
+            line-height: 50px;
+            color: #0033FF;
+            font-size: 18px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .table_cx .btn {
+            width: 100px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            border-radius: 3px;
+            margin: 20px 15px 20px;
+        }
+
+        .yz {
+            vertical-align: middle;
+            width: 78px;
+            height: 28px;
+            display: inline-block;
+        }
+
+        .btn_blue {
+            background: #2eafbb;
+            border: 1px solid #1673ca;
+            color: #fff;
+        }
+
+        .btn_gray {
+            background: #e1e1e1;
+            border: 1px solid #d5d5d5;
+            color: #939393;
+        }
+
+        .jy {
+            font-size: 12px;
+            line-height: 26px;
+            color: #393939;
+        }
+
+        .about_2 {
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 16px;
+            display: block;
+        }
+
+        .table_cx table {
+            font-size: 14px;
+            height: 781px;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .table_cx tr {
+            height: 56px;
+            margin-bottom: 10px;
+        }
+
+        .table_cx input {
+            display: inline-block;
+            height: 34px;
+            line-height: 34px;
+            padding: 0 4px;
+            border: 1px solid #ccc;
+            width: 160px;
+        }
+
+        .table_cx input.w112 {
+            width: 112px;
+            margin-right: 15px;
+        }
+
+        .table_cx input.w70 {
+            width: 70px;
+        }
+
+        #Dno {
+            color: #f00;
+            font-size: 16px;
+        }
+
+        .table_cx .btn {
+            width: 150px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 3px;
+            margin: 20px 20px 20px;
+        }
+
+        .table {
+            height: 692px;
+        }
+
+        .tableTitle {
+            clear: both;
+            font-size: 24px;
+            font-weight: normal;
+            text-align: center;
+            line-height: 40px;
+            padding: 10px 0;
+            color: #2EAFBB;
+        }
+
+        #tab ul {
+            list-style: none;
+            height: 29px;
+            line-height: 27px;
+            border-bottom-width: 0px;
+            border-bottom-style: none;
+            width: 698px;
+        }
+
+        #tab ul li {
+            cursor: pointer;
+            float: left;
+            list-style: none;
+            height: 29px;
+            line-height: 28px;
+            width: auto;
+            margin: 0 3px;
+            padding: 0 3px;
+            font-size: 12px;
+            color: #2EAFBB;
+            background-color: #FFFFFF;
+        }
+
+        .strborder {
+            border: 1px solid #2eafbb;
+            border-bottom: 0;
+        }
+
+        #tab ul li.on {
+            border-top-width: 2px;
+            border-bottom-width: 2px;
+            border-top-style: solid;
+            border-bottom-style: solid;
+            border-top-color: #2EAFBB;
+            border-bottom-color: #FFF;
+            top: 0px;
+        }
+
+        #tab div {
+
+            width: auto;
+            line-height: 24px;
+            padding: 10px;
+            border-top: 1px solid #2EAFBB;
+        }
+
+        .hide {
+            display: none;
+        }
+
+
+        #tab pic {
+            height: auto;
+            width: auto;
+            position: relative;
+            left: 540px;
+            border-top-width: 0px;
+            border-right-width: 0px;
+            border-bottom-width: 0px;
+            border-left-width: 0px;
+            border-top-style: none;
+            border-right-style: none;
+            border-bottom-style: none;
+            border-left-style: none;
+            padding: 0px;
+        }
+
+        .sdiv2 {
+            display: block;
+            height: 20px;
+            width: 70px;
+            background-color: red; /* 不支持线性的时候显示 */
+            background-image: linear-gradient(-90deg, #ead9e1 0%, #dcdef6 50%, #ead9e1 100%);
+            background: linear-gradient(-90deg, #ead9e1 0%, #dcdef6 50%, #ead9e1 100%);
+            position: relative;
+            z-index: 1;
+            margin-right: 20px;
+            box-sizing: border-box;
+            cursor: pointer;
+            box-shadow: 0 0 5px #ead9e1;
+        }
+
+        .sdiv {
+            position: absolute;
+            height: 20px;
+            width: 70px;
+            left: 0;
+            top: 0;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            background: linear-gradient(to right, #60536a 0%, #443736 25%, #53525d 50%, #706266 100%);
+            -webkit-background-clip: text;
+            color: transparent;
+            z-index: 2;
+            letter-spacing: 2px;
+        }
+
+        .t_nav {
+            width: 100%;
+            min-width: 1000px;
+            height: 40px;
+            line-height: 40px;
+            background: #2EAFBB;
+            color: #FFFFFF;
+            overflow: hidden;
+        }
+
+        .width1000 {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .t_nav li {
+            float: left;
+            display: inline;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .t_nav a, .t_nav a:link, .t_nav a:visited {
+            color: #FFFFFF;
+            font: 17px/38px "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", HELVETICA;
+        }
+
+        .wrap {
+            width: 100%;
+            height: 50px;
+            background-color: #127de1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .pics {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .text {
+            display: inline-block;
+            vertical-align: middle;
+            color: white;
+            font-size: 16px;
+        }
+
+        .you {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+    <script language="javascript">
+        function doPrint() {
+            bdhtml = window.document.body.innerHTML;
+            sprnstr = "<!--startprint-->";
+            eprnstr = "<!--endprint-->";
+            prnhtml = bdhtml.substr(bdhtml.indexOf(sprnstr) + 17);
+            prnhtml = prnhtml.substring(0, prnhtml.indexOf(eprnstr));
+            window.document.body.innerHTML = prnhtml;
+            window.print();
+        }
+    </script>
+</head>
+
+<body>
+
+<div class="mainContent2">
+    <div class="curb">
+        当前位置 &gt; <a href="bgsqform">办公合作申请</a>
+    </div>
+    <div class="cxxt2" style="height: 458px">
+        <div class="title" style="padding-top: 25px;display: flex;align-items: center;margin-left:315px">
+            <img src="static/images/logo11.png" style="width:50px;height:50px"/>
+            <h2 style="height:30px;line-height:30px;margin-left:15px">民办教育服务信息网</h2>
+        </div>
+        <div id="tabcx">
+            <ul>
+                <li class="on">办公合作申请</li>
+            </ul>
+        </div>
+        <div class="border-box" style="padding-right: 104px;;background: #ececec;">
+            <form  action="https://www.cmhxi.com.cn/bgsqforms" method="post" style="margin-left: 76px;" class="table_cx2 ftl" onsubmit="return from()">
+                <input type="hidden" name="_token" value="3o4Iq9lRv7GLZIdsTM3fqa8Xb6LyawVVU37ZhTV1">                <table width="714">
+                    <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>单位名称：</td>
+                        <td><input name="admission_time" id="admission_time" placeholder="请输入单位名称">
+                            <font color="red">*必填</font></td>
+
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>单位地址：</td>
+                        <td><input name="graduation_time" id="graduation_time" placeholder="请输入单位地址">
+                            <font color="red">*必填</font></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>单位电话：</td>
+                        <td><input name="reported_major" id="reported_major" placeholder="请输入单位电话">
+                            <font color="red">*必填</font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>申请人姓名：</td>
+                        <td><input name="name" id="xingming" placeholder="请输入姓名">
+                            <font color="red">*必填</font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>手机号：</td>
+                        <td><input name="telephone" id="telephone" placeholder="请输入手机号">
+                            <font color="red">*必填</font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>QQ号码：</td>
+                        <td><input name="qqnum" id="qqnum" placeholder="请输入QQ号码"></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>申请意向描述：</td>
+                        <td>
+                            <textarea name="remarks" id="remarks" cols="28" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>验证码：</td>
+                        <td style="position: relative;">
+                            <input placeholder="请输入验证码" class="w112" id="inputCode">
+                            <input type="hidden" id="code2" value="2403">
+                            <span class="sdiv2" style="position: absolute;right: 50px;bottom: 20px;"><span id="code"
+                                                                                                           class="sdiv">2403</span></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td><input type="checkbox" id="protocol"
+                                   style="width: 18%;margin-left: 79px;vertical-align:middle;"></td>
+                        <td>已阅读并同意<a  target="_blank" href="static/html/办公合作须知.html"
+                                     style="font-size:15px;color:#085990; text-decoration:underline; bottom:15px; left:235px; display:inline-block;">《必须知晓项》</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td><input type="submit" value="查询" class="btn_blue btn">
+                            &nbsp; &nbsp; &nbsp;| &nbsp; &nbsp; &nbsp;
+                            <a target="_blank" href="https://www.cmhsi.com.cn/"
+                               style=" font-size:15px;color:#085990; text-decoration:underline; bottom:15px; left:235px; display:inline-block;">返回首页</a>
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!---------------------------------------------------------------------------------------底部 begin -->
+<div class="footer2" style="margin-top: 330px">
+
+    <div class="copybq">
+        <p>公安局备案号:2021031956号 &nbsp; 备案编号：
+            <a href="https://beian.miit.gov.cn">豫ICP备2021031956号-2</a>
+        </p>
+        <p>办公地址：河南省郑州市高新技术产业开发区瑞达路96号商务中心　邮政编码:454000 &nbsp; &nbsp;通信地址：河南省100005-019信箱</p>
+        <p>主办单位：河南民教信息科技有限公司 &nbsp; &nbsp;指导：全国民办高等教育学生信息咨询与就业指导中心　</p>
+
+        <a target="cyxyv" href="https://v.yunaq.com/certificate?domain=www.cshci.com.cn&from=label&code=90020">
+            <img style="width: 117px;margin-bottom: -5px;" src="static/images/label_lg_90020.png">
+        </a>
+        <dd><img src="static/picture/dbpic.png"></dd>
+    </div>
+
+
+    <script type="text/javascript" src="static/js/jquery-1.9.1.min.js">
+    </script>
+
+    <script type="text/javascript" src="static/js/slides.js">
+    </script>
+
+    <script type="text/javascript" src="static/js/flexslider.js">
+    </script>
+    <script>
+        $(function () {
+            if ($('.tableTitle').length > 0) {
+                $('#aaa').css('display', 'none');
+
+            } else {
+                $('#aaa').css('display', 'block');
+
+            }
+        })
+    </script>
+    <script type="text/javascript">
+
+        $(function () {
+            /*focus*/
+            var sliderElement = $('.slider-carousel');
+            sliderElement.slidesjs({
+                play: {
+                    auto: true,
+                    effect: 'fade'
+                },
+                navigation: {
+                    effect: "fade"
+                },
+                pagination: {
+                    effect: "fade"
+                },
+                effect: {
+                    slide: {
+                        speed: 400
+                    }
+                }
+            });
+            var slidernav = sliderElement.find('.slidesjs-navigation');
+            sliderElement.hover(function () {
+                slidernav.stop().show()
+            }, function () {
+                slidernav.stop().hide()
+            });
+
+            /*要闻*/
+            $(".index_focus .rig_list ul li").hover(function () {
+                $(this).toggleClass("hover")
+            })
+
+            /*Tab*/
+            $(".index_tab").each(function () {
+                $(this).find(".tabmenu li").mouseover(function () {
+                    index = $(".index_tab .tabmenu li").index(this);
+                    $(this).addClass("selected").siblings().removeClass("selected");
+                    $(".tabox .tab_con").eq(index).show().siblings().hide();
+                });
+            })
+            $(".index_tab .index_list01 li").each(function () {
+                $(this).width(function () {
+                    return $(this).width();
+                })
+            })
+
+            //回应关切
+            $(".index_hygq ul li").each(function () {
+                index = $(".index_hygq ul li").index(this);
+                $(this).attr("class", "icos" + index)
+                $(this).hover(function () {
+                    $(this).addClass("hover").siblings().removeClass("hover")
+                }, function () {
+                    $(this).removeClass("hover")
+                })
+            })
+            $(".index_hygq ul li:eq(0)").addClass("hover")
+
+            //ico
+            $(".index_tab .fwcx .fw ul li").each(function () {
+                $(".index_tab .fwcx .fw ul li").hover(function () {
+                    $(this).find("img").stop().animate({
+                        "margin-top": 0
+                    })
+                }, function () {
+                    $(this).find("img").stop().animate({
+                        "margin-top": "5px"
+                    })
+                })
+            })
+            //
+            $('#demo01').flexslider({
+                slideshow: true,
+                animation: "slide",
+                direction: "horizontal",
+                easing: "swing",
+                controlNav: false,
+                directionNav: true
+            });
+            $('#demo02').flexslider({
+                slideshow: true,
+                animation: "slide",
+                direction: "horizontal",
+                easing: "swing",
+                controlNav: false,
+                directionNav: true
+            });
+            $(".flexslider").each(function () {
+                $(this).hover(function () {
+                    $(this).find(".flex-direction-nav").fadeIn("slow")
+                }, function () {
+                    $(this).find(".flex-direction-nav").hide()
+                })
+            })
+        })
+
+    </script>
+    <script>
+        (function () {
+            $('#headBox').load('nav.html');
+            $('#footerBox').load('footer.html');
+            $('#leftBox').load('left.html');
+            $("#imgcheckNo").attr('src', serverUrl + '/degree/pcrimg?num=' + Math.random());
+            $("#imgCheckNo1").attr('src', serverUrl + '/degrees/pcrimg?num=' + Math.random());
+        })()
+    </script>
+    <script>
+        var codeStr = '0123456789';
+        var oDiv = document.getElementById('code');
+
+        // 用来生成随机整数
+        function getRandom(n, m) { // param: (Number, Number)
+            n = Number(n);
+            m = Number(m);
+            // 确保 m 始终大于 n
+            if (n > m) {
+                var temp = n;
+                n = m;
+                m = temp;
+            }
+            return Math.floor(Math.random() * (m - n) + n);
+        }
+
+        // 将随机生成的整数下标对应的字母放入div中
+        function getCode() {
+            var str = '';
+            // 验证码有几位就循环几次
+            for (var i = 0; i < 4; i++) {
+                var ran = getRandom(0, 10);
+                str += codeStr.charAt(ran);
+            }
+            oDiv.innerHTML = str;
+            $("#code2").attr("value", str);
+
+        }
+
+        getCode();// 调用函数，页面刷新也会刷新验证码
+        // 点击刷新验证码
+        oDiv.onclick = function () {
+            getCode();
+        }
+    </script>
+    <script>
+        function from() {
+            let admission_time = $('#admission_time').val();
+            let graduation_time = $('#graduation_time').val();
+            let reported_major = $('#reported_major').val();
+            let name = $('#xingming').val();
+            let id_card = $('#id_card').val();
+            let telephone = $('#telephone').val();
+            let protocol = $('#protocol:checked').val();
+            let inputCode = $('#inputCode').val();
+            let code = $('#code2').val();
+
+            if (admission_time == "") {
+                alert("单位名称不能为空");
+                return false;
+            }
+            if (graduation_time == "") {
+                alert("单位地址不能为空");
+                return false;
+            }
+            if (reported_major == "") {
+                alert("单位电话不能为空");
+                return false;
+            }
+            if (name == "") {
+                alert("姓名不能为空");
+                return false;
+            }
+            if (telephone == "") {
+                alert("手机号不能为空");
+                return false;
+            }
+            if (protocol == null) {
+                alert("必须同意协议");
+                return false;
+            }
+            if (inputCode != code) {
+                alert("验证码错误");
+                return false;
+            }
+        }
+    </script>
+
+    <!-- GWD SHARE END -->
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------- 底部 end -->
+</body>
+</html>

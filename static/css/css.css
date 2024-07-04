@@ -1,0 +1,337 @@
+@charset "utf-8";
+/* CSS Document */
+@page {
+	size: auto;  /* auto is the initial value */
+	margin: 0mm; /* this affects the margin in the printer settings */
+}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,table,th,td,span{margin:0px 0px 0px 0px;
+padding:0px;font-weight:normal;font-size:14px;
+
+}
+	 
+ul,ul li{list-style:none;margin:0px;padding:0px}
+body{font-size:12px;font-family:"Microsoft YaHei", 微软雅黑, Arial, Helvetica, sans-serif,宋体,serif;}
+img{border:0px}
+.left{float:left}
+.right{float:right}
+.right0{float:right;padding-right:20px}
+.clearboth{clear:both;height:0px; line-height:0px;font-size:1px}
+a{text-decoration:none;color:#4D4D4D}
+a:hover{text-decoration:underline}
+.clear{clear: both;}
+.top{height: 47px;width:1004px;line-height: 47px;margin: 0 auto;}
+.top .topleft{color: #fff;font-size: 14px;float: left;}
+.top .topright{float:right;}
+.top .topright .dlu{background: url(https://www.cmhxi.com.cn/static/images/suo.png) no-repeat 0px 13px;color: #fff;height: 47px;padding-left: 20px;line-height: 47px;display: block;float: left;font-size: 14px;margin-right: 10px;}
+.top .topright .zce{background:url(https://www.cmhxi.com.cn/static/images/biao.png) no-repeat 0px 14px;color: #fff;height: 47px;padding-left:15px;line-height: 47px;display: block;float: left;font-size: 14px;}
+.head{width:1004px;margin: 0 auto;}
+.head .logo{float: left;margin-top: 20px;}
+.head .logo img{height: 119px;}
+.head .sear{float:right;}
+.head .sear .textbox{width: 265px;height:40px;border: 1px solid #dddddd;margin-top: 49px;color: #c4c4c4;font-size: 14px;padding-left: 10px;}
+.head .sear .inputButton{margin-left: -49px;margin-top: -5px;}
+#IDcard{font-size: 14px;}
+.toop {width: 1004px;margin: 0 auto;clear: both;background-color: #f9f9f9;border: 1px solid #ececec;height: 40px;line-height:40px;margin-bottom:5px;margin-top: 2px;}
+.toop .topleft{float:left;color: #333333;font-size: 14px;margin-left: 13px;}
+.toop .topright{float:right;margin-right:5px;}
+.toop .topright img{float: left;margin-top: 10px;}
+.toop .topright a{float: left;font-size: 14px;color: #333333;margin-right: 8px;margin-left: 15px;}
+
+/*-------背景---*/
+/*.beiji-01{ background:url(/static/images/pic.jpg) repeat-x;}新年背景*/
+.beiji-02{ background:url(https://www.cmhxi.com.cn/static/images/pic02.jpg); width:100%;height:337px;text-align:center;top: 0px;margin-top: 0px;padding-top:0px;margin-right: auto;margin-bottom: 0;margin-left: auto;background-repeat: no-repeat;background-position: center top;}
+/*-------head-------and----footer---*/
+.box{width:1004px;margin:0px auto}
+.box2{width:1004px;margin:0px auto}
+#banner{width:1004px;margin:0px auto;height:168px; overflow:hidden}
+#banner img{width:1004px;}
+#nav{width: 1004px;margin: 0px auto;border-top: 0px;height: 94px;background-image:url(../images/navbg.jpg);clear: both;}
+#nav0{width:1004px;margin:0px auto;background-repeat:no-repeat;height:94px;}
+#nav0 dl{float:left}
+#nav0 dl dt{float:left;width:35px;padding-top:8px; text-align:right}
+#nav0 dl dd{float:left;padding-top:5px}
+#nav0 .sylj{float:left;width: 60px;height: 66px;margin-top: 15px;margin-left: 16px;}
+#nav0 .sylj a{float:left;display: block;width: 100%;height: 100%;text-decoration: none;}
+#nav0 .sygk{float:left;margin-left: 4px;height: 66px;margin-top: 15px;width: 300px;}
+#nav0 .sygk ul{margin-left: 47px;}
+#nav0 .sygk ul li{float: left;width: 75px;text-align: center;margin-left:2px;line-height: 33px;}
+#nav0 .sygk ul li a{font-size:14px;color:#fff;}
+#nav0 .sygk ul li a:hover{color:#aff507;}
+#nav0 .syzx{float:left;margin-left:6px;height: 66px;margin-top: 15px;width: 300px;}
+#nav0 .syzx ul{margin-left:53px;}
+#nav0 .syzx ul li{float: left;width: 75px;text-align: center;margin-left:2px;line-height:32px;}
+#nav0 .syzx ul li a{font-size:14px;color:#fff;}
+#nav0 .syzx ul li a:hover{color:#aff507;}
+#nav0 .syfw{float:left;margin-left:6px;height: 66px;margin-top: 15px;width: 300px;}
+#nav0 .syfw ul{margin-left:50px;}
+#nav0 .syfw ul li{float: left;width: 75px;text-align: center;margin-left:2px;line-height: 33px;}
+#nav0 .syfw ul li a{font-size:14px;color:#fff;}
+#nav0 .syfw ul li a:hover{color:#aff507;}
+#printHtml{
+	background: #fff;
+}
+
+.sywidth{padding:0px 15px 0px 10px; text-align:center}
+#nav0 dl dd td{width:50px;height:24px; line-height:24px; background-image:url(https://www.cmhxi.com.cn/static/images/navtiao.jpg); background-repeat:no-repeat; background-position:right center;padding:0px 9px}
+#nav0 table tr td a{color:#ffffff}
+#nav0 table tr td.border0{ background-image:none}
+#announ{ background-color:#f6fafd;border:1px solid #b2d9f2;width:1004px;margin:0px auto;height:40px}
+.announ_l{float:left;}
+.announ_l em{float:left;padding-top:10px;padding-left:10px}
+.announ_l b{float:left; font-weight:normal;height:40px; line-height:40px;padding-left:10px}
+
+
+.footer{width:1002px;border:1px solid #c4e2f4;margin:17px auto;clear: both;}
+.footer_t{background: #fafcfe;width:100%;height:45px;clear: both;border-bottom: 1px #c4e2f4 solid;}
+.footer_t ul li{float:left;width:115px;text-align:center;height:35px;font-size: 16px;margin-top: 10px;margin-left: 10px;line-height: 35px;}
+.footer_t ul li.footerover{ background:url(https://www.cmhxi.com.cn/static/images/footerbg_tover.jpg);}
+.footer_c {width:99%;margin:0px auto;padding-top: 8px;padding-bottom: 5px;}
+.footer_c ul li{float:left;color: #414141;line-height: 26px;white-space: nowrap;margin-left: 5px;margin-right: 10px;}
+.footer_c ul li a{color:#373737;padding:0px 5px;font-size: 14px;}
+.footer2{width:1004px;margin:0px auto; line-height:22px; text-align:center;color:#414141;font-size:12px; font-weight:normal;background: #2eafbb;}
+.fontcolor4 a{color:#414141}
+.fontcolor3{color:#0082fc}
+.fontcolor3 a{color:#0082FC}
+
+
+.bottom{width:1004px;margin: 0 auto;margin-top: 20px;}
+.bottom .bottomnav{background: #116dd2;height: 40px;line-height: 40px;text-align: center;color: #fff;font-size: 14px;}
+.bottom .bottomnav a{color: #fff;font-size: 14px;padding-left: 4px;padding-right: 3px;}
+.bottom .copy{background:#f6f6f6;padding-bottom: 6px;}
+.bottom .copy dd{float:left;padding-top: 10px;}
+.bottom .copy dl{float: right;}
+.bottom .copy p{color:#696868;padding-left: 10px;line-height: 23px;}
+
+
+.dbmume {clear: both;width: 1004px;margin: 0 auto;padding-top: 20px;padding-bottom: 20px;}
+.dbmume a{font-size: 14px;color: #ededed;margin-left: 3px;margin-right: 3px;}
+.copybq{clear: both;width: 1004px;margin: 0 auto;}
+.copybq p{color: #a8faff;font-size: 12px;line-height: 25px;}
+.copybq p a{color: #a8faff;font-size: 12px;}
+.copybq dd{text-align: center;margin-top:8px;padding-bottom: 10px;}
+
+
+.hotbanner{ width:1004px; height:337px; position:relative; overflow:hidden;margin: 0 auto;}
+.hotbanner .hotimg{ width:1004px;}
+.hotbanner .hotimg ul{ width:9999999999px; position:absolute; left:0;}
+.hotbanner .hotimg ul li{ float:left; width:1004px; height:337px;}
+.hotbanner .hotimg ul li img{ width:100%;height:100%;}
+.hotbanner .hotimg ul li .title{ background:url(https://www.cmhxi.com.cn/static/images/titbg2.png) repeat-x left top; position:absolute; bottom:0; width:100%; color:#fff; height:120px; font-size:18px;}
+.hotbanner .hotimg ul li .title span{display:inline-block;line-height:48px; height:48px;overflow: hidden; text-overflow:ellipsis;white-space:nowrap; position:absolute; left:15px; bottom:5px; width:640px;font-size: 16px;}
+.hotbanner .hotdot{ position:absolute; bottom:10px; width:138px; text-align:right; height:20px; right:15px;}
+.hotbanner .hotdot a{ width:14px; height:14px; background:#f3f3f3; border-radius:10px; display:inline-block; margin:0 5px; cursor:pointer;}
+.hotbanner .hotdot a.on{ background:#e85d00;}
+
+.newlink{width:1004px;margin: 0 auto;}
+.newlink img{width: 1004px;margin-top: 6px;}
+.linkyq{width:1004px;margin: 0 auto;}
+.linkyq dl{color: #2172b3;font-size: 18px;font-weight: bold;float: left;border-left: 6px solid #246fa9;padding-left: 8px;width: 99px;}
+.linkyq dd{float: left;color: #626262;font-size: 14px;line-height: 25px;width:890px;}
+.linkyq .yqlj{width:1004px;margin: 0 auto;margin-top:23px;clear: both;}
+
+.rollBox .scrollcon{width: 650px;height: 125px;float: left;margin-top: 25px;margin-left: 45px;}
+.rollBox .ScrCont{width:10000000px;}
+.rollBox .Cont .pic{width: 135px;height:124px;overflow:hidden;float:left;}
+.rollBox .Cont .pic img{background:#fff;display:block;width: 125px;height: 130px;}
+.rollBox #List1, .rollBox #List2{float:left;}
+.rwtj_c {background-image: url(https://www.cmhxi.com.cn/static/images/tbtj.png);width: 985px;margin: 0 auto;height: 223px;overflow: hidden;margin-top: 19px; margin-bottom: 10px;}
+
+.rollBox{width: 705px;height: 170px;margin: 0px auto;}
+.rollBox .LeftBotton{height:34px;width:18px; background-image:url(https://www.cmhxi.com.cn/static/images/left.png);overflow:hidden;float:left;display:inline;margin:75px 20px 0px 0px;cursor:pointer;}
+.rollBox .RightBotton{height:34px;width:18px; background-image:url(https://www.cmhxi.com.cn/static/images/right.png);overflow:hidden;float:left;display:inline;margin:75px 20px 0px 0px;cursor:pointer;}
+
+.rollBox .Cont{width: 606px;overflow:hidden;float:left;}
+.rollBox .ScrCont{width: 705px;}
+.rollBox .ScrCont ul li{width: 128px;
+float: left;
+text-align: center;
+margin: 0px 4px;
+line-height: 20px;
+height: 168px;}
+.rollBox .ScrCont ul li a{color:#414141}
+.rollBox .ScrCont ul li img{border:1px solid #b1d6f4}
+.rollBox #List1,.rollBox #List2{float:left;}
+
+	/* 查询*/
+a{text-decoration:none;color: #3b3b3b; cursor: pointer;}
+.mainContent2{
+	width: 1004px;
+	font-size: 14px;
+	font-family: "microsoft yahei";
+	margin: 0 auto;
+	border:1px solid #ececec;
+	border-top: 0;
+}
+	.ftl{ float: left; }
+	.ftr{ float: right; }
+	.mid{ text-align: center; } 
+	.pt10{
+	padding-top: 10px;
+	font-size: 10px;
+}
+	.curb{
+	font-size: 14px;
+	height: 40px;
+	line-height: 40px;
+	background: url(../images/home.png) no-repeat left center;
+	text-indent: 30px;
+	border:1px solid #ececec;
+	border-top: 0;
+}
+	.cxxt2{
+	width: 910px;
+	height: 366px;
+	background: #f6f6f6;
+	margin: 15px auto 0 auto;
+	padding:15px 20px 50px 20px;
+}
+	.cxxt2 .title h2{ height: 50px; line-height: 30px; color: #2eafbb;font-size: 30px; text-align: center;font-weight: 500;}
+	.table_cx2 table{
+	font-size: 30px;
+	height: 140px;
+	padding:0 35px;
+	background: url(https://www.cmhxi.com.cn/static/images/line.png) no-repeat right center;
+	line-height: 30px;
+}
+	.table_cx2 tr{ height: 54px; margin-bottom: 8px; }
+	.table_cx2 td{
+	height: 54px;
+	margin-bottom: 8px;
+	font-size: 12px;
+}
+	.table_cx2 input{display: inline-block;height: 34px; line-height: 34px; padding:0 4px;border: 1px solid #e3e3e3;width: 240px;}
+	.table_cx2 input.w112{ width: 112px;margin-right: 15px; }
+    .table_cx2 .btn{ width: 100px; height: 38px;line-height: 38px; text-align: center;border-radius: 3px; margin:20px 10px 20px;  }
+    .yz{vertical-align: middle; width: 78px; height: 28px;display: inline-block;}
+    .btn_blue{ background: #2eafbb;border:1px solid #1673ca;color: #fff;}
+    .btn_gray{ background: #e1e1e1;border:1px solid #d5d5d5;color: #939393;}
+    .jy{font-size: 11px;line-height: 26px;color: #393939;}
+    .about_2{
+	border-bottom: 1px dashed #ccc;
+	padding-bottom: 16px;
+	display: block;
+	font-size: 11px;
+}
+    .w478{ width: 478px; }
+	#qrcode img{
+		width: 115px;
+	}
+	/* left.htm */
+mianzt{width:1004px;margin: 0 auto;}
+.mianzt .tabs {background-color: #fff;border-left: 1px #ddd solid;width:360px;margin-top: 16px;float: left;margin-right:15px;height: 334px;border-right: 1px #ddd solid;border-bottom:1px #ddd solid;}
+.mianzt .tabs-nav {background: url(https://www.cmhxi.com.cn/static/images/bt.png) repeat-x;height: 40px;line-height: 40px;width: 350px;}
+.mianzt .tabs-nav li {cursor: pointer;display: inline-block;width: 100px;font-size: 16px;text-align: center;}
+.mianzt .tabs-nav li.active {color:#ffffff;font-weight: bolder;background: #0c66cc;}
+.mianzt .tabs-nav a{float: right;color: #737373;font-size: 12px;padding-right:8px;}
+.mianzt .tabs-contents {display: none;}
+.tabs-contents .tabpic{margin-top: 16px;margin-left: 12px;width: 332px;float: left;margin-bottom:16px;height: 100px;}
+.tabs-contents .tabpic img{width: 112px;height: 92px;border: 1px #ddd solid;padding: 3px;float: left;}
+.tabs-contents .tabpic span{float: left;width: 197px;margin-left: 11px;text-align: justify;}
+.tabs-contents .tabpic span h2{color:#080808;font-size: 14px;font-weight: bold;line-height:32px;overflow: hidden;}
+.tabs-contents .tabpic span h6{color:#4e4e4e;font-size: 14px;line-height: 22px;height: 66px;overflow: hidden;}
+.tabs-contents ul{clear: both;border-top: 1px dashed #DCDCDC;padding-top: 7px;}
+.tabs-contents ul li{OVERFLOW: hidden;LINE-HEIGHT:29px;HEIGHT: 30px;background-image: url(https://www.cmhxi.com.cn/static/images/b.png);background-position: left 12px;background-repeat: no-repeat;text-indent:9px;text-align: left;margin-left: 11px;}
+.tabs-contents ul li a{color: #454545;font-size: 14px;}
+.tabs-contents ul li span{float: right;color: #a4a4a4;font-size: 13px;}
+.ztleft .tg{clear: both;width:739px;float: left;height: 88px;margin-top:17px;margin-bottom: 4px;}
+.ztleft .tg img{width:739px;float: left;height: 88px;}
+.mianzt .ztleft{float:left;width:754px;}
+.mianzt .zright{float:left;width:250px;margin-top: 16px;}
+.mianzt .zright .leader{width:250px;float:left;background: url(../images/rw.png) no-repeat;height: 235px;}
+.mianzt .zright .leader .titley{float: left;width:250px;height: 40px;line-height: 40px;}
+.mianzt .zright .leader .titley span{font-size: 16px;color: #286fbd;font-weight: bold;line-height: 40px;padding-left: 12px;}
+.mianzt .zright .leader .titley a{float:right;color: #737373;font-size: 12px;padding-right: 10px;}
+.mianzt .zright .leader ul{width: 250px;clear: both;}
+.mianzt .zright .leader ul li{float: left;width: 250px;margin-bottom: 14px;}
+.mianzt .zright .leader ul li img{width: 67px;height: 83px;float: left;margin-left: 12px;}
+.mianzt .zright .leader ul li span{float: left;margin-left: 12px;width: 150px;text-align: justify;}
+.mianzt .zright .leader ul li h2{color: #e12000;font-size: 14px;border-bottom: 1px dashed #e0dede;line-height: 28px;}
+.mianzt .zright .leader ul li h2 a{color: #e12000;}
+.mianzt .zright .leader ul li h6{color: #545454;font-size: 13px;line-height: 21px;padding-top: 5px;height: 45px;overflow: hidden;}
+.mianzt .zright .rsrm{width:250px;float:left;height:175px;margin-top: 20px;border-right: 1px #b1d8ef solid;border-bottom: 1px #b1d8ef solid;border-left: 1px #b1d8ef solid;}
+.mianzt .zright .rsrm .titley{float: left;width:250px;height: 40px;line-height: 40px;background: url(../images/xw.png) repeat-x;}
+.mianzt .zright .rsrm .titley span{font-size: 16px;color: #286fbd;font-weight: bold;line-height: 40px;padding-left: 12px;}
+.mianzt .zright .rsrm .titley a{float:right;color: #737373;font-size: 12px;padding-right: 10px;}
+.mianzt .zright .rsrm ul{clear: both;padding-top: 5px;}
+.mianzt .zright .rsrm ul li{width: 238px;line-height: 30px;height: 30px;background-image: url(https://www.cmhxi.com.cn/static/images/xb.png);background-repeat: no-repeat;background-position: left center;text-indent: 7px;float: left;margin-left: 9px;overflow: hidden;}
+.mianzt .zright .rsrm ul li a{font-size: 14px;color: #252525;}
+
+.mianzt .zright .dzfwpt{width:250px;float:left;height:340px;margin-top: 20px;border-right: 1px #b1d8ef solid;border-bottom: 1px #b1d8ef solid;border-left: 1px #b1d8ef solid;}
+.mianzt .zright .dzfwpt .titley{float: left;width:250px;height: 40px;line-height: 40px;background: url(../images/xw.png) repeat-x;}
+.mianzt .zright .dzfwpt .titley span{font-size: 16px;color: #286fbd;font-weight: bold;line-height: 40px;padding-left: 12px;}
+.mianzt .zright .dzfwpt .titley a{float:right;color: #737373;font-size: 12px;padding-right: 10px;}
+.mianzt .zright .dzfwpt ul {float: left;width: 228px;height: 275px;background: url(../images/bjt.png) no-repeat;margin-top: 12px;margin-left: 10px;}
+.mianzt .zright .dzfwpt ul li {float: left;width: 68px;height: 42px;line-height: 42px;margin:0 4px 5px 42px;overflow: hidden;}
+.mianzt .zright .dzfwpt ul li a{color: #6e6780;font-size: 14px;}
+
+/* 查询界面*/
+.clearfix::before{
+	content: '';
+	display: block;  
+	clear: both;
+}
+.cn_table{
+	margin:0 auto;
+	background-position: center;
+	border:1px solid #a1d4e7;
+	border-right: 0;
+	border-bottom: 0;
+}
+h10{ height: 30px; line-height:40px; color: #0000CC;font-size:24px; text-align: center;font-weight: 600;}
+.cn_table_noborder{
+	border-top:none;
+	color: #ececec;
+}
+
+.cn_table{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#000000;
+}
+.cn_table th{
+	text-align:center;
+	height:43px;
+	line-height: 20px;
+	border:1px solid #a1d4e7;
+	border-left: 0;
+	border-top: 0;
+}
+.cn_table td{
+	height:43px;
+	padding: 0 12px;
+	border:1px solid #a1d4e7;
+	border-left: 0;
+	border-top: 0;
+}
+th.cn_font1{letter-spacing:5px; text-align:left; padding-left:10px;}
+td.cn_font2{font-family:"Times New Roman", Times, serif;font-weight:bold;}
+
+
+.border-box{
+	padding: 10px;
+	float: left;
+    border: 1px solid #2eafbb;
+}
+.zysx{
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+.zysx table td{
+	border:0 !important;
+	padding:0 !important;
+	height:auto !important;
+	font-family:"宋体" !important;
+	font-size:14px !important;
+	text-align:left!important;
+	line-height:25px !important;
+}
+.cn_photo1{width:100px; height:140px; position:relative;}
+.cn_photo1 .cn_photo1_img{
+	position:absolute;
+	left:16px;
+	top:-80px;
+	width: 100px;
+	height: 140px;
+}

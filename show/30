@@ -1,0 +1,449 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>民教网_民办教育服务信息网</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="民办教育服务信息网,民教网,中国民办高等教育学生信息网,民办网官网"/>
+<meta name="description" content="民教网是民办教育服务信息网的简称，又称民教官网，由民办教育机构，行业协会，科研院所和有关专家学者共同组建，是民办高等教育机构学生信息服务官方网站。"/>
+    <link type="text/css" rel="stylesheet" href="../static/css/style5.css">
+    <link href="../static/css/lbiao.css" type="text/css" rel="stylesheet">
+    <!--<script src="/static/js/tab.js" type="text/javascript"></script>-->
+    <script language="javascript" src="../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/tabpic.js"></script>
+
+</head>
+<body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrap {
+        width: 100%;
+        height: 50px;
+        background-color: #127de1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pics {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .text {
+        display: inline-block;
+        vertical-align: middle;
+        color: white;
+        font-size: 16px;
+    }
+
+    .you {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+
+<div class="wrap" id="toop">
+    <div class="zuo">
+        <div class="pics" style="background-image: url(../static/images/trusted-web1_01.png);width: 30px;height: 38px; background-size: 100%; background-repeat: no-repeat;"></div>
+        <h2 class="text">该网站工信部已备案,唯一百度官方认证(民教网)官方网站www.cmhxi.com.cn，请放心访问</h2>
+    </div>
+
+    <div class="you">
+        <div style="vertical-align: middle;">
+            <a href="../person/21">
+                <p class="aaa" style="color: #ffe6ae;font-size: 18px;">了解详情&gt;</p >
+            </a >
+        </div>
+        <div style="vertical-align: middle; margin-right: 10px;">
+            <a href="../person/21">
+                <img src="../static/images/trusted-real-name.png">
+            </a >
+        </div>
+        <div style="vertical-align: middle;">
+            <img id="toop2" src="../static/images/la.png" title="收起" style="width: 50px;height: 70px;" onclick="shou()">
+            <img id="toop3" src="../static/images/zhan.png" title="展开" style="width: 50px;height: 70px;display: none;" onclick="zhan()">
+        </div>
+    </div>
+</div>
+
+<div class="toop" style="display: none;">
+    <div class="topleft">欢迎光临中国民办高等教育学生信息网(中国民办教育学生信息网(官网)-民教信息网)www.cmhxi.com.cn！</div>
+    <div class="topright"></div>
+</div>
+<script>
+    function shou() {
+        $('.toop').css("display", "block");
+        $('#toop3').css("display", "block");
+        $('#toop').css("display", "none");
+        $('#toop2').css("display", "none");
+    }
+
+    function zhan() {
+        $('.toop').css("display", "none");
+        $('#toop3').css("display", "none");
+        $('#toop').css("display", "block");
+        $('#toop2').css("display", "block");
+    }
+</script>
+    <div class="beiji-01" style="background-color:#f1f1f1;background-image: url(https://www.cmhxi.com.cn/show/static/images/bj.jpeg);
+          background-size: cover;
+        background-repeat: no-repeat;">
+        <div style="background-color:#f1f1f1;width:1004px;margin:0 auto;">
+        <div class="box2">
+    <div id="banner">
+                    <img src="../static/images/banner1.png"/>
+            </div>
+    <style>
+        .t_nav {
+            width: 100%;
+            min-width: 1000px;
+            height: 40px;
+            line-height: 40px;
+            background: #2EAFBB;
+            color: #FFFFFF;
+            overflow: hidden;
+        }
+
+        .width1000 {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .t_nav li {
+            float: left;
+            display: inline;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .t_nav a, .t_nav a:link, .t_nav a:visited {
+            color: #FFFFFF;
+            font: 17px/38px "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", HELVETICA;
+        }
+    </style>
+    <div class="t_nav">
+        <ul class="width1000">
+            <li style="padding-left:40px;"><a href="../person/21" target="_parent">首页</a></li>
+            <li><a href="../list/3">平台介绍</a></li>
+            <li><a href="../list/17">资质批文</a></li>
+            <li><a href="../list/20">政策法规</a></li>
+            <li><a href="../list/5">通知公告</a></li>
+            <li><a href="../list/4">新闻中心</a></li>
+            <li><a href="../list/21">民教人物</a></li>
+            <li><a href="../list/6">院校列表</a></li>
+            <li style="padding-right: 0;"><a href="http://xy.cmhni.com.cn">查询中心</a></li>
+        </ul>
+    </div>
+    <div id="announ">
+        <div class="announ_l">
+            <em><img src="../static/picture/announce.gif" width="18" height="18"></em>
+            <b></b>
+            <div id="scrollDiv">
+                <script language="javascript">
+                    $(function () {
+                        //单行应用@Mr.Think
+                        var _wrap = $('ul.line');//定义滚动区域
+                        var _interval = 2000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时，停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                    $(function () {
+                        //多行应用@Mr.Think
+                        var _wrap = $('ul.mulitline');//定义滚动区域
+                        var _interval = 3000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时,停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                </script>
+                <ul class="line">
+                                            <li style="margin-top: 0px;"><a href="33"
+                                                        target="_blank">民教网声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="32"
+                                                        target="_blank">民教网免责严正声明！</a></li>
+                                            <li style="margin-top: 0px;"><a href="31"
+                                                        target="_blank">关于非法网站仿冒我司民教信息网严正声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="17"
+                                                        target="_blank">资质批文</a></li>
+                                    </ul>
+            </div>
+        </div>
+        <div class="clearboth"></div>
+    </div>
+</div>
+<style>
+    #trusted_container {
+        display: none;
+    }
+</style>
+        <div class="w960">
+
+
+
+            <div class="content">
+				<!-- Breadcrumb begin -->
+				<div class="breadcrumb" style="margin-top: 1px;"> <strong>当前位置：</strong><a href="../person/21">首页</a> &gt;&gt; <a href="../list/8">教育时评</a> &gt;&gt; 浏览文章</div>
+				<!-- 列表开始 -->
+				<div class="listbox">
+					<!--图文-->
+					<div class="single">
+						<h1>民教网时评谁在投资民办教育？</h1>
+						<div class="meta singlemeta"><span>作者:admin</span>
+							<span>2019-08-27</span>
+							<span>来源:民教网 </span>
+							<span>浏览:<span id="mys_show_hits_16">5664</span></span> </div>
+						<!-- PostContent begin -->
+						<div class="entry">
+							<div class="entrycontent">
+								<!-- SingleAd begin -->
+								<div id="MyContent">
+                                <p><strong>&nbsp;</strong><strong>三所<a href="../person/21">民办</a>学校</strong></p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>我国<a href="../person/21">民办</a>教育在近二十年来发展迅猛，发展的主阵地在县乡村三级，服务对象主要是来自乡村的孩子，目前数量最多的是<a href="../person/21">民办</a>幼儿园，小学和初高中<a href="../person/21">民办</a>学校也与日俱增，不断分割公办教育的生源。</strong>笔者在桂东南B县调研时，探访了三所<a href="../person/21">民办</a>学校，分别为X幼儿园、F小学和Q学校（高完中）。尽管教育年段不同，但发展有相似之处，他们的成功与挫折呈现出<a href="../person/21">民办</a>教育发展的一般性问题。</p>
+
+<p>&nbsp;&nbsp;&nbsp; 下面简要介绍三所学校的情况。</p>
+
+<p>&nbsp;&nbsp;&nbsp; X幼儿园由W园长（1987年生）于2008年在母亲的支持下投资创办。幼儿园发展经历了两个阶段，第一阶段是2008年-2015年在街上租房办园的阶段，期间多次搬家，2008年学生人数只有70多小朋友，4位专任教师，后来因幼儿园名气增大学生人数亦逐年增长，到2015年发展到200多人。</p>
+
+<p>&nbsp;&nbsp;&nbsp; 第二阶段是2015年至今搬至新建幼儿园发展的阶段，2015年W投资100多万元新建了三层保教楼，购买3辆校车共计60万元，学生人数增长到310人，四个年级八个班，18位专任教师。X幼儿园所在的L镇，总共有28家幼儿园，其中25家是<a href="../person/21">民办</a>幼儿园，仅3家是公办幼儿园，另有5家幼儿园已经倒闭。</p>
+
+<p>&nbsp;&nbsp;&nbsp; F小学由Z校长于1998年创办，投资人为Z校长的姐夫，此人读过高中生，曾经做过几年代课教师，后来做生意赚了一些钱，遂拿出一部分资金投资办教育。1998年创办时只是一所幼儿园为希望幼儿园，在2002年开办小学。Z校长自1998年-2012年担任校长，随后由创办人的儿媳妇张某接任校长。</p>
+
+<p>&nbsp;&nbsp;&nbsp; 最初创办小学时，小学人数不多，2002-2003年约有200多人，2004年由于推行了免费义务教育，学校人数降至60多人。目前，小学部有602人，幼儿园有278人，全部教师共50人。F小学在全镇闻名，该校的成绩在全县341所学校中，最好成绩可以排名到第15名。</p>
+
+<p>&nbsp;&nbsp;&nbsp; Q学校是高完中，于2003年由著名商人官某等人联合投资建校，最初投资3000万元。学校发展以2013年为节点，2012年实行网上填报志愿招生，对高中学校实行分等级招生以后，该校的高中生源急剧下降，作为第三等级的学校，生源质量降低，高考成绩一年不如一年，由此影响了生源的数量。2009年该校可以招收2300人，一直维持到2013年，但现在学生人数下降至1800人，其中高中生600人，初中生1100多人。</p>
+
+<p>&nbsp;&nbsp;&nbsp; Q学校现在面临着发展困境，一是高中发展乏力的问题，每年高考几乎无上本科的学生，初中还能够勉强维持，但早已不如当地最好的中学；二是董事长因房地产行业不景气，影响了对学校的资金投入，在教师福利待遇、学生奖励激励措施、学校建设上的投入都减少了很多。因此，学校面临着较大的发展瓶颈和挑战。</p>
+
+<p>&nbsp;&nbsp;&nbsp; 上述三所<a href="../person/21">民办</a>学校都是自主投资办学，政府的扶持力度小（当然对于他们不规范的操作也是模糊处理的），学校建设发展的自主性强。对于他们而言，学校发展既获得了一些内生优势，同样面临着难以超越的瓶颈和限制。</p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>财务与绩效</strong></p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong><a href="../person/21">民办</a>学校与公办学校不一样，前者与政府的关系相对于后者更加疏离，政府对于<a href="../person/21">民办</a>学校的管控更加宽松，<a href="../person/21">民办</a>学校可以借助宽松环境发展自身。<a href="../person/21">民办</a>学校的发展优势有财务支配权、人事管理权、生源选择权、班级分配权、学校发展权等，这些自主权力作为学校的发展优势，为<a href="../person/21">民办</a>学校的崛起提供了莫大的空间。</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp; 学校发展的关键是管理好教师与学生，<strong>学校的财务支配权的意义在于，一是可以利用高昂的工资待遇吸引优秀教师到<a href="../person/21">民办</a>学校教学，同时可以通过各种奖励制度吸引贫寒的优秀学生到该校就学，用以支撑学校发展的门面。</strong>Q学校在创办初期，为了吸引优质教师充实教师队伍，该校回到全国各地优秀的师范学校招聘教师，开出的工资水平高于市场价三倍，这一工资水平也吸引了当地的优秀公立教师。</p>
+
+<p>&nbsp;&nbsp;&nbsp; X幼儿园可以根据幼儿园发展的需求招收年轻女性，尽管该园的工资待遇与当地其他行业相差不大，但园长会经常组织活动，比如带老师们去唱歌、野炊、旅游等，教师的各类消遣福利比较多，年轻教师们对于学校的感情也比较深，以此竞争超越公立学校，当地流行小朋友的一句话&ldquo;我们要年轻阿姨教，不要奶奶教&rdquo;（奶奶是指公办幼儿园里年级偏大的公办教师，因闲置多余被分配到幼儿园教学）。</p>
+
+<p>&nbsp;&nbsp;&nbsp; Q学校为了招收好生源，到各个乡镇招揽优秀学生，各乡镇小考前10名的学生，3年学费全免，且在每学期考试后，分年级设置奖学金，一等奖5名各奖励2000元，二等奖6名各奖励1000元，三等奖9名，各奖励500元。另设有单科奖，为单科状元奖励500元。由于该校成绩优异的学生多是家境贫寒的子女，这笔奖励对于他们的奖励意义非常明显。</p>
+
+<p>&nbsp;&nbsp;&nbsp; 二是可以利用资金自主支配权设置绩效工资奖励，用于调动教师竞争和教学积极性。F小学出台了清晰的教师管理制度，通过量化管理评分设置奖金奖励教师，比如期末学术奖，具体制度如下：</p>
+
+<p>&nbsp;&nbsp;&nbsp; 以达标分为最低分，每项最低奖金60元，每提升一个5%（或5分）加奖金20 元，最高奖金120元；</p>
+
+<p>&nbsp;&nbsp;&nbsp; 以上期成绩为基础，每提升一个5%（或5分）加奖金20 元。（语、数老师平均双优、双及奖金）；</p>
+
+<p>&nbsp;&nbsp;&nbsp; 以达标分为基础，每下降一个5%（或5分）倒扣奖金20 元；上期成绩不达标，本期成绩在上期成绩的基础上每下降一个5%（或5分）倒扣奖金20 元；</p>
+
+<p>&nbsp;&nbsp;&nbsp; 一．三年级第一期以达标分为准进行奖惩，每提升或下降一个5%（或5分）加奖金或倒扣20 元，最高奖金100元；</p>
+
+<p>&nbsp;&nbsp;&nbsp; 六年级毕业学期，按学校期终和毕业检测两次成绩进行奖励；不得在工资上扣除学术奖金，双优、双及不倒扣；</p>
+
+<p>&nbsp;&nbsp;&nbsp; 不能跨班倒扣奖金；</p>
+
+<p>&nbsp;&nbsp;&nbsp; 对有作弊行为（期终检测考试、评卷）或期末评卷有查卷行为的，取消学期奖金和评先进资格。</p>
+
+<p>&nbsp;&nbsp;&nbsp; 该条例以及其他制度对于学校教师的积极性调动意义极大，F小学的教师各个抢先干活，且教师队伍非常稳定，该校小学部学校教书超过8年以上的教师接近20人。</p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>教师与学生</strong></p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong><a href="../person/21">民办</a>学校的教师队伍要依靠自身解决，享有人事管理权，意味着学校一是可以按照自己的需求招聘教师。</strong>公办学校面临着教师补充不匹配的困境，即我需要音乐教师，但补充过来的是语文教师，且经常面临教师补给不充分的问题。但<a href="../person/21">民办</a>学校在招收教师时，可以按照自己需求招聘教师，需要哪科教师就招聘哪科教师，既可以招聘综合型教师，也可以招聘专业型教师。</p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>二是可以最大化的使用教师</strong>，公办学校普遍存在教师激励不足的问题，学校校长难以调动教师的教学积极性，但<a href="../person/21">民办</a>学校可以依靠激励制度调动，如果不能调动，学校可以解聘教师，重新再招聘新教师，要想留在学校继续从教，就必须服从学校的管理规定。<a href="../person/21">民办</a>学校拥有人事管理权，能够最大效率配置和调用教师资源。</p>
+
+<p>&nbsp;&nbsp;&nbsp; 生源选择权主要是指<a href="../person/21">民办</a>学校有权利选择学校接受哪些学生，不接受哪些学生入学。生源选择权的意义在于，学校为了自身发展考虑，可以拒绝接受那些有安全隐患和破坏作用的学生，可以在学生违纪违规屡教不改的情况下勒令学生退学。</p>
+
+<p>&nbsp;&nbsp;&nbsp; 在公办学校，由于学生管理制度日益完善，对于未成年人的保护过重，使得学校丧失了管理学生的手段与条件，不敢惩治越轨学生，更不能开除学生，以至于学校教师被调皮学生折腾得劳累不堪。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../person/21">民办</a>学校在招收学生时有自身的优势，<strong>一是可以有条件的筛选</strong>，Q学校和F小学在招生时都会进行简单的面试，Q会针对小考分数低于200分的学生进行面试，考察他们的行为习惯、言谈和为人处世能力，学校会拒收太调皮或没有学习动力的学生，避免教育上拖后腿。</p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>二是可以开除违规违纪的学生</strong>。比如该校初三学生宾某在利用帮老师拿东西进入老师办公室，偷盗老师的手机，在发现后认错态度不好，学校给予他劝退处分。对于影响学校风气的学生，学校可以采取强硬措施进行处理。</p>
+
+<p>班级分配权是指学校在如何分配班级和师资力量上的自主权。当前，教育部门提倡均衡分班以推进教育的均衡发展，但在应试教育的成绩比较下，均衡分班的效率不如分类管理的效率高，教学成绩会受到一定的影响，尤其是乡村学校因生源质量差异大受到的影响最大。</p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>在<a href="../person/21">民办</a>学校，学校可以不按照教育部门均衡分班的要求对学生均衡分配至每个班级，可以设置实验班和普通班，在不同班级的师资投入上有所侧重，这样就能够保障学校快速高效地取得教学成绩。</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp; 学校发展权指的是学校发展导向和学校发展目标确定的权力。公办学校的发展方向由教育部门指定，要求按照应试教育的要求就得按照应试教育的要求发展，要转向素质教育就必须立马进行转向。<strong>对于<a href="../person/21">民办</a>学校而言，学校发展方向的确立与学校创办人的理念相关，也与学校发展的整体利益相关，<a href="../person/21">民办</a>学校会根据市场需求（即家长要求）判断学校发展的方向和赢利点。</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp; 比如F小学在乡镇，就依靠学生成绩作为学校发展的卖点，通过各种方式提高教师的积极性以提高学生的成绩，但学校基础设施的建设严重不足，学生学习环境和教师办公条件非常差。</p>
+
+<p>&nbsp;&nbsp;&nbsp; Q学校在县城，主要依靠素质教育作为学校发展的优势，学校基础设施建设非常齐全完善，20年前是全县最好的建筑，至今仍属于比较先进的建筑，且学校依靠各种丰富多彩的活动推进素质教育，学生在学校里能够受到教养和规训，因此能够吸引城市富裕家庭的青睐。</p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong><a href="../person/21">民办</a>学校依靠上述发展自主权，能够在教师招聘、学生招收、师生管理、成绩取得等方面获得相应的优势，相比于公办学校日益行政化和低效化的倾向，<a href="../person/21">民办</a>学校利用上述优势可以获得长足的发展。</strong></p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>三重压力</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../person/21">民办</a>学校作为一个自负盈亏的独立法人，学校自主出资办学，因此学校的发展压力全部由学校自主承担。<strong>学校发展压力至少表现在三个方面：一是资金压力，二是教师稳定压力，三是学生招收压力。</strong></p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>资金压力包括学校基础设施建设、维护和改善方面的压力、教师工资开支压力等。</strong>一般<a href="../person/21">民办</a>学校的基础设施的起点高，意味着学校在维修、管理、改善上的成本也会相对较高，而<a href="../person/21">民办</a>学校教师是聘用制，如果学校不能比市场劳动力的工资更高，教师流失的可能性就比较大。</p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>教师稳定压力来源于三方面，一是来自于工资待遇问题，</strong>如果工资不能适时提高，就会引发教师不满甚至离职。<strong>二是来自于教师工作压力，</strong><a href="../person/21">民办</a>学校作为类企业组织，在教师使用上都是实行效率最大化原则，他们普遍比公办教师更累，压力更大。<strong>三是来源于聘用教师没有编制保障的不安全感，</strong>许多年轻教师应聘到<a href="../person/21">民办</a>学校积累经验之后，就考编到公办学校了。</p>
+
+<p>&nbsp;&nbsp;&nbsp; 目前，Q学校由于创办人的房地产行业不景气，学校的现金收入用于填补房地产项目发展的问题，结果导致学校建设和教师待遇改善不足，从而影响了学校的长足发展。F小学虽然教师队伍稳定，但学校不敢招聘年轻教师，因担心年轻教师的流失问题，而老教师就存在教学活力和后劲不足的问题，在知识的更新上会存在一定的困难。</p>
+
+<p>&nbsp;&nbsp;&nbsp; 学生招收压力是学校发展自始至终最为重要的问题，学校没有足够的生源就无从发展，因此从办学起，学校就必须设法吸引生源。由于公办学校有国家政策性保障，以及累积的百姓信任，招生问题不大（乡村学校学生流失问题另说）。<a href="../person/21">民办</a>学校要从公办学校争取生源，需要拥有足够的实力和影响力。</p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong><a href="../person/21">民办</a>学校的招生困境在于，他们难以招收到优质生源，</strong>因优质生源一般都会选择当地最好的公办学校，他们可以招收一些富家纨绔子弟，但纨绔子弟一是管理难，二是会影响学校风气以至于抑制更多的人选择填报该学校。所以<a href="../person/21">民办</a>学校在招生中需要一直在两难中进行平衡。随着社会经济的发展，优秀学生的家庭一般也不再贫困，<a href="../person/21">民办</a>学校对于农村优秀学生的奖励也不再有吸引力，学校在招收优质生源上的难度则不断加大。</p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong><a href="../person/21">民办</a>教育本土化？</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp; 我国<a href="../person/21">民办</a>教育发展的土壤与西方存在截然不同的差异。西方<a href="../person/21">民办</a>教育发展是国家与社会责任分配的结果，学校发展依靠社会支持和家庭购买，其发展不是营利性的需求，而是着眼于教育本身的发展。</p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>中国<a href="../person/21">民办</a>教育的发展是伴随着社会转型时期公办教育发展不足而家庭对于优质教育的追求（更好的基础设施，更好的教育环境，更优的教育质量）发展起来的，学校举办者多为投资办学，有一定的营利需求（甚至可以说有极强的营利冲动），学校发展需要在营利和教育两重目标之间进行权衡。</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp; 在这种情况下，我们就必须反思我国<a href="../person/21">民办</a>教育发展的本土化问题，一是是否要大力推广，二是<a href="../person/21">民办</a>教育要解决什么样的问题，三是<a href="../person/21">民办</a>教育如何生存的问题。</p>
+
+<p>&nbsp;&nbsp;&nbsp; 回答第一个问题，需要明确的是，<a href="../person/21">民办</a>教育需要支付一定的学费，学校越好，支付的成本越高。如果大力发展<a href="../person/21">民办</a>学校，就意味着教育资源的享受层次将与经济层次等价，处于经济上层的人，能够享受到最好的教育资源，而低于经济底层的人，只能接受最差的教育资源。</p>
+
+<p>&nbsp;&nbsp;&nbsp; 大力发展<a href="../person/21">民办</a>教育的风险在于，一是抑制和冲击公办学校的发展，使得学校的公共性和公正性丧失，二是通过教育实现阶层的区隔，抑制阶层的流动，从而产生底层失序甚至暴乱的风险。因此，从中国的社会结构来看，中国的底层人数众多，如果大力发展<a href="../person/21">民办</a>教育，将会制造出底层危机。</p>
+
+<p>&nbsp;&nbsp;&nbsp; 回答第二个问题，需要结合当前我国城市化的状况与教育发展的状况来看，<a href="../person/21">民办</a>教育的优势在于作为市场主体，具有极强的市场嗅觉和敏锐力，能够把握不同群体的教育需求。就当前来看，<a href="../person/21">民办</a>教育能够解决也正在解决的问题有留守问题即弥补家庭教育发展不足的问题、基于应试教育的教育发展问题、地方财政不足导致的办学投资不足的问题。<a href="../person/21">民办</a>学校正是借助家庭教育不足、家庭教育需求和政府财力不足等问题谋取空间得以发展起来的。</p>
+
+<p>&nbsp;&nbsp;&nbsp; 第三个问题涉及到<a href="../person/21">民办</a>教育长足发展的考虑。现在能够持续发展的<a href="../person/21">民办</a>学校并不多，许多学校在资金链断裂或教育部门出台某项政策后，学校发展后劲就丧失，甚至面临着倒闭的结局。</p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong><strong>政府可以考虑引用社会资本发展<a href="../person/21">民办</a>学校，通过政府与社会力量联合办学，利用<a href="../person/21">民办</a>学校解决当前家庭和政府所面临的问题，政府对<a href="../person/21">民办</a>学校实行一定的监管，并给予一定的政策扶持，使得<a href="../person/21">民办</a>学校能够既为地方解决问题，又能够通过社会认可和获得收益保障长足发展。</strong></p>
+
+<p>&nbsp;&nbsp;&nbsp; 本文转载自微信公众号&ldquo;行业研习&rdquo;。文章为作者独立观点，不代表芥末堆立场，转载请联系原作者。</p>
+
+<p>&nbsp;</p>
+                                </div>
+								<!-- SingleAd end -->
+							</div>
+						</div>
+						<div class="postnavi">
+							<div class="previous_post">上一篇: <a href="29" title="">民教网时评山西：坚持改革创新 破解发展难题 提升治理水平</a></div>
+							<div class="next_post">下一篇: <a href="https://www.cmhxi.com.cn/show/" title=""></a></div>
+						</div>
+						<!-- PageNavigation end -->
+					</div>
+				</div>
+			</div>
+
+
+
+
+            <div class="sidebar">
+    <ul>
+      <li class="mostviews">
+        <span class="intit"><a class="more" href="../list/30">更多&gt;&gt;</a><strong>一周热点新闻</strong></span>
+        <ul>
+         
+                                                <li><a href="33" target="_blank" title="民教网声明">民教网声明</a></li>
+                                                                <li><a href="32" target="_blank" title="民教网免责严正声明！">民教网免责严正声明！</a></li>
+                                                                <li><a href="31" target="_blank" title="关于非法网站仿冒我司民教信息网严正声明">关于非法网站仿冒我司民教信息网严正声明</a></li>
+                                                                <li><a href="17" target="_blank" title="资质批文">资质批文</a></li>
+                                    
+
+                                <li><a href="279" target="_blank" title="李克强主持召开国务院常务会议 部署深入推进大众创业万众创新 重点支持高校毕业生等群体就业创业">李克强主持召开国务院常务会议 部署深入推进大众创业万众创新 重点支持高校毕业生等群体就业创业</a></li>
+                                <li><a href="277" target="_blank" title="翁铁慧赴企业调研高校毕业生就业创业情况">翁铁慧赴企业调研高校毕业生就业创业情况</a></li>
+                                <li><a href="275" target="_blank" title="教育部启动实施全国高校与湖北高校毕业生就业创业工作“一帮一”行动">教育部启动实施全国高校与湖北高校毕业生就业创业工作“一帮一”行动</a></li>
+                                <li><a href="273" target="_blank" title="教育部启动高校毕业生就业状况核查工作">教育部启动高校毕业生就业状况核查工作</a></li>
+                                <li><a href="272" target="_blank" title="教育部推出四项“不断线”就业服务助力未就业毕业生尽早就业">教育部推出四项“不断线”就业服务助力未就业毕业生尽早就业</a></li>
+                 
+
+ 
+        </ul>
+      </li>
+      <li>
+        <div class="bar" style="margin-top:10px;"> <span class="intit"><a class="more" href="../list/21">更多&gt;&gt;</a><strong>会客厅</strong></span>
+           		  <div class="focus1" href="/person/77">                
+                <a href="../person/77">
+                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/e98838466bbb88812f747a996708eddf.jpg" width="74" height="56" border="0"> <span style="color: red;">顾明远</span></a>
+                <br><span>中共党员，教育部社会科学委员会副主任、北京师范大学教育学部顾问。</span>
+        </div>
+  
+          <ul>
+                                <li><a href="../person/77" target="_blank" title="顾明远">顾明远</a></li>
+                                <li><a href="../person/76" target="_blank" title="贾少华">贾少华</a></li>
+                                <li><a href="../person/75" target="_blank" title="杨东平">杨东平</a></li>
+                                <li><a href="../person/70" target="_blank" title="陈宝生">陈宝生</a></li>
+                                <li><a href="../person/68" target="_blank" title="孙春兰">孙春兰</a></li>
+                          </ul>
+  </div>
+</li>
+     <li>
+        <div class="bar"> <span class="intit"><a class="more" target="_blank" href="../list/25">更多&gt;&gt;</a><strong>民教网简报</strong></span>
+          <ul>
+                                <li><a href="11" target="_blank" title="2013年《民教网工作简报》第十一期">2013年《民教网工作简报》第十一期</a></li>
+                                <li><a href="10" target="_blank" title="2013年《民教网工作简报》第十期">2013年《民教网工作简报》第十期</a></li>
+                                <li><a href="9" target="_blank" title="2013年《民教网工作简报》第九期">2013年《民教网工作简报》第九期</a></li>
+                                <li><a href="8" target="_blank" title="2014年《民教网工作简报》第二期">2014年《民教网工作简报》第二期</a></li>
+                          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>            <div class="dbgd"></div>
+            <div class="footer2">
+    <div class="dbmume">
+        <a href="../person/21">首 页</a>
+        <a>|</a>
+        <a href="../list/16">平台介绍</a>
+        <a>|</a>
+        <a href="../list/17">资质批文</a>
+        <a>|</a>
+        <a href="../list/18">主管单位</a>
+        <a>|</a>
+        <a href="../list/5">通知公告</a>
+        <a>|</a>
+        <a href="../list/22">客服中心</a>
+        <a>|</a>
+        <a href="../list/23">版权声明</a>
+        <a>|</a>
+        <a href="../bgsqform">办公合作申请</a>
+    </div>
+
+<div class="copybq">
+<p>公安局备案号:2021031956号 &nbsp; 备案编号：
+                          <a href="https://beian.miit.gov.cn">豫ICP备2021031956号-2</a>
+        </p><p>办公地址：河南省郑州市高新技术产业开发区瑞达路96号商务中心　邮政编码:454000 &nbsp; &nbsp;通信地址：河南省100005-019信箱</p><p>主办单位：河南民教信息科技有限公司 &nbsp; &nbsp;指导：全国民办高等教育学生信息咨询与就业指导中心　</p>
+<a id="_pingansec_bottomimagesmall_shiming" target="_blank" href="https://si.trustutn.org/info?sn=313211119040899888649&amp;certType=1"><img src="https://v.trustutn.org/images/cert/bottom_small_img.png"/></a>
+<a target="_blank" href="https://xinyong.yunaq.com/certificate?domain=www.cmhsi.com.cn"><img style="width:110px;height:40px" src="../static/images/label_lg_90020.png"></a>
+
+<dd><img src="../static/picture/dbpic.png"></dd>
+</div>
+
+
+<script type="text/javascript" src="../static/js/jquery-1.9.1.min.js">
+</script>
+
+<script type="text/javascript" src="../static/js/slides.js">
+</script>
+
+<script type="text/javascript" src="../static/js/flexslider.js">
+</script>
+
+<script type="text/javascript">
+
+</div>
+
+</div>
+        
+        
+
+        </div>
+    </div>
+</body>
+</html>

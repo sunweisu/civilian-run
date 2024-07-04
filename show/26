@@ -1,0 +1,379 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>民教网_民办教育服务信息网</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="民办教育服务信息网,民教网,中国民办高等教育学生信息网,民办网官网"/>
+<meta name="description" content="民教网是民办教育服务信息网的简称，又称民教官网，由民办教育机构，行业协会，科研院所和有关专家学者共同组建，是民办高等教育机构学生信息服务官方网站。"/>
+    <link type="text/css" rel="stylesheet" href="../static/css/style5.css">
+    <link href="../static/css/lbiao.css" type="text/css" rel="stylesheet">
+    <!--<script src="/static/js/tab.js" type="text/javascript"></script>-->
+    <script language="javascript" src="../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/tabpic.js"></script>
+
+</head>
+<body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrap {
+        width: 100%;
+        height: 50px;
+        background-color: #127de1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pics {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .text {
+        display: inline-block;
+        vertical-align: middle;
+        color: white;
+        font-size: 16px;
+    }
+
+    .you {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+
+<div class="wrap" id="toop">
+    <div class="zuo">
+        <div class="pics" style="background-image: url(../static/images/trusted-web1_01.png);width: 30px;height: 38px; background-size: 100%; background-repeat: no-repeat;"></div>
+        <h2 class="text">该网站工信部已备案,唯一百度官方认证(民教网)官方网站www.cmhxi.com.cn，请放心访问</h2>
+    </div>
+
+    <div class="you">
+        <div style="vertical-align: middle;">
+            <a href="../person/21">
+                <p class="aaa" style="color: #ffe6ae;font-size: 18px;">了解详情&gt;</p >
+            </a >
+        </div>
+        <div style="vertical-align: middle; margin-right: 10px;">
+            <a href="../person/21">
+                <img src="../static/images/trusted-real-name.png">
+            </a >
+        </div>
+        <div style="vertical-align: middle;">
+            <img id="toop2" src="../static/images/la.png" title="收起" style="width: 50px;height: 70px;" onclick="shou()">
+            <img id="toop3" src="../static/images/zhan.png" title="展开" style="width: 50px;height: 70px;display: none;" onclick="zhan()">
+        </div>
+    </div>
+</div>
+
+<div class="toop" style="display: none;">
+    <div class="topleft">欢迎光临中国民办高等教育学生信息网(中国民办教育学生信息网(官网)-民教信息网)www.cmhxi.com.cn！</div>
+    <div class="topright"></div>
+</div>
+<script>
+    function shou() {
+        $('.toop').css("display", "block");
+        $('#toop3').css("display", "block");
+        $('#toop').css("display", "none");
+        $('#toop2').css("display", "none");
+    }
+
+    function zhan() {
+        $('.toop').css("display", "none");
+        $('#toop3').css("display", "none");
+        $('#toop').css("display", "block");
+        $('#toop2').css("display", "block");
+    }
+</script>
+    <div class="beiji-01" style="background-color:#f1f1f1;background-image: url(https://www.cmhxi.com.cn/show/static/images/bj.jpeg);
+          background-size: cover;
+        background-repeat: no-repeat;">
+        <div style="background-color:#f1f1f1;width:1004px;margin:0 auto;">
+        <div class="box2">
+    <div id="banner">
+                    <img src="../static/images/banner1.png"/>
+            </div>
+    <style>
+        .t_nav {
+            width: 100%;
+            min-width: 1000px;
+            height: 40px;
+            line-height: 40px;
+            background: #2EAFBB;
+            color: #FFFFFF;
+            overflow: hidden;
+        }
+
+        .width1000 {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .t_nav li {
+            float: left;
+            display: inline;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .t_nav a, .t_nav a:link, .t_nav a:visited {
+            color: #FFFFFF;
+            font: 17px/38px "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", HELVETICA;
+        }
+    </style>
+    <div class="t_nav">
+        <ul class="width1000">
+            <li style="padding-left:40px;"><a href="../person/21" target="_parent">首页</a></li>
+            <li><a href="../list/3">平台介绍</a></li>
+            <li><a href="../list/17">资质批文</a></li>
+            <li><a href="../list/20">政策法规</a></li>
+            <li><a href="../list/5">通知公告</a></li>
+            <li><a href="../list/4">新闻中心</a></li>
+            <li><a href="../list/21">民教人物</a></li>
+            <li><a href="../list/6">院校列表</a></li>
+            <li style="padding-right: 0;"><a href="http://xy.cmhni.com.cn">查询中心</a></li>
+        </ul>
+    </div>
+    <div id="announ">
+        <div class="announ_l">
+            <em><img src="../static/picture/announce.gif" width="18" height="18"></em>
+            <b></b>
+            <div id="scrollDiv">
+                <script language="javascript">
+                    $(function () {
+                        //单行应用@Mr.Think
+                        var _wrap = $('ul.line');//定义滚动区域
+                        var _interval = 2000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时，停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                    $(function () {
+                        //多行应用@Mr.Think
+                        var _wrap = $('ul.mulitline');//定义滚动区域
+                        var _interval = 3000;//定义滚动间隙时间
+                        var _moving;//需要清除的动画
+                        _wrap.hover(function () {
+                            clearInterval(_moving);//当鼠标在滚动区域中时,停止滚动
+                        }, function () {
+                            _moving = setInterval(function () {
+                                var _field = _wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h = _field.height();//取得每次滚动高度
+                                _field.animate({marginTop: -_h + 'px'}, 600, function () {//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop', 0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                            }, _interval)//滚动间隔时间取决于_interval
+                        }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                    });
+                </script>
+                <ul class="line">
+                                            <li style="margin-top: 0px;"><a href="33"
+                                                        target="_blank">民教网声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="32"
+                                                        target="_blank">民教网免责严正声明！</a></li>
+                                            <li style="margin-top: 0px;"><a href="31"
+                                                        target="_blank">关于非法网站仿冒我司民教信息网严正声明</a></li>
+                                            <li style="margin-top: 0px;"><a href="17"
+                                                        target="_blank">资质批文</a></li>
+                                    </ul>
+            </div>
+        </div>
+        <div class="clearboth"></div>
+    </div>
+</div>
+<style>
+    #trusted_container {
+        display: none;
+    }
+</style>
+        <div class="w960">
+
+
+
+            <div class="content">
+				<!-- Breadcrumb begin -->
+				<div class="breadcrumb" style="margin-top: 1px;"> <strong>当前位置：</strong><a href="../person/21">首页</a> &gt;&gt; <a href="../list/8">教育时评</a> &gt;&gt; 浏览文章</div>
+				<!-- 列表开始 -->
+				<div class="listbox">
+					<!--图文-->
+					<div class="single">
+						<h1>中国民教网【互联网冲击传统教育行业】时评</h1>
+						<div class="meta singlemeta"><span>作者:admin</span>
+							<span>2019-08-27</span>
+							<span>来源:民教网 </span>
+							<span>浏览:<span id="mys_show_hits_16">3771</span></span> </div>
+						<!-- PostContent begin -->
+						<div class="entry">
+							<div class="entrycontent">
+								<!-- SingleAd begin -->
+								<div id="MyContent">
+                                <p><strong>新东方的夏天有点冷</strong></p>
+
+<p>对于国内规模最大的教育培训机构来说，新东方的这个暑期有点冷。</p>
+
+<p>7月22日，公司发布了2014财年（2013年6月1日至2014年5月31日）的业绩。尽管报告期间营收和净利润增幅均超出预期，但公司股价依然应声下跌，两天时间跌幅接近20%。</p>
+
+<p>坏消息是公司业绩增速正在放缓。暑假期间是培训行业的传统旺季，但新东方6月的招生情况非常糟糕，其中优能英语夏令营和高中英语报名人数同比下降了近30%，因此预期2014年6月至9月的营收涨幅仅相当于去年同期的一半。</p>
+
+<p>&ldquo;可以想见的原因是高考改革传闻导致大量父母认为英语更容易了，所以他们不再让孩子参加暑期英语训练营。另外一个原因是二三线竞争加剧，学生开始不需要再来北京或上海学习了。&rdquo;新东方CFO谢冬萤在随后的电话会议上这样解释。</p>
+
+<p>业界认为谢冬萤没有提及的另一个原由是来自线上英语教育的竞争。今年2月，语音游戏起家的YY成立在线教育平台&ldquo;100教育&rdquo;，矛头直指英语教育，这是新东方业务板块最大的&ldquo;现金牛&rdquo;。据YY方面称，凭借免费的模式，&ldquo;100教育&rdquo;在第一次托福雅思(微博)强化班开课时有2万人报名。</p>
+
+<p>除此以外，人才的流失也是传统培训的另一个心腹之患。在很长时间里，新东方通过搭班教学、树立榜样等方式巧妙地留住了大量优秀教师，成为行业学习的&ldquo;标杆&rdquo;。但从2014年以来，公司内部高层的离职速度相当惊人，而流向最多的就是在线教育行业。1月，前执行总裁陈向东(微博)离开，几个月后低调创办在线教育平台&ldquo;跟谁学&rdquo;；5月，新东方前途出国总裁助理韦晓亮、批改网创始人翟少成等20名业务骨干高调离职，宣布加入&ldquo;智课网&rdquo;；7月，前高级副总裁沙云龙离职，去向不明。</p>
+
+<p><strong>实现教育公平成为可能</strong></p>
+
+<p>&ldquo;在中国，真正能颠覆传统教育培训的新玩法还没有出现。教育培训行业因其需要强制力，使其采用完全线上模式困难重重。&rdquo;在行业观察人士梁晓辰的设想中，未来伟大的教育产品一定像一款经典游戏一样，能够激发学习者的学习兴趣，并通过在线社交平台为客户提供良好的交互感，才能让在线学习行为长久持续，并提升效率。</p>
+
+<p>尽管在线教育培训的&ldquo;春天&rdquo;还没有真正到来，但申万零售行业分析师刘章明认为，互联网行业正在推动传统教育整体技术升级和模式创新，而且一些细分领域里正在发生着令人惊讶的变化。&ldquo;基础教育阶段，学生自主学习能力差，并处于性格完善、能力培养阶段，关注、互动、社交都是必备，因此无论是义务教育还是课外培训，线下老师的互动教育是基础，如何通过信息化手段和产品创新来提高学生学习效率是努力的方向；而在职业教育和高等教育阶段，学生自学能力强，互联网革新的关键是解决教育资源不均，促进教育公平。&rdquo;</p>
+
+<p>在后一个领域，近期在全球火爆的大规模在线开放课程（MOOC）就是一个不错的尝试。2012年，麻省理工大学和哈佛大学联手创办了在线教育平台&ldquo;edX&rdquo;,为全球免费提供知名高校的课程视频。一年之后，北京大学、清华大学(微博)、香港科技大学、香港大学等高校也纷纷加入了&ldquo;edX&rdquo;平台，分享自己的教育课程。</p>
+
+<p>轻点鼠标，足不出户即可学习名校课程,项目理所当然地受到了青年学子的高度追捧。&ldquo;与以往任何在线教育形式不同，MOOC对高等教育体系影响深刻。随着全球顶级高等教育资源扩散，人们公平、透明享受的教育资源成为可能。&rdquo;刘章明说。</p>
+
+<p><strong>免费不是&ldquo;一招鲜&rdquo;</strong></p>
+
+<p>在线教育究竟有多火？91外教网创始人龚海燕前不久做过一个估算，平均每天新诞生的在线教育公司超过2家。</p>
+
+<p>创业的热情来自我国教育市场巨大的潜能和较低的市场集中度。据德勤发布的相关数据，2013年我国教育市场总规模为9900亿元，而新东方的市场份额也就0.7%。按照国际经验，未来教育机构规模扩张是必然趋势，万亿级的市场规模着实让人垂涎。</p>
+
+<p>2009年以来，传统行业信息化改造的潮流似乎让各领域的后发者都&ldquo;疯狂&rdquo;起来。&ldquo;不谈盈利，积攒人气，互联网思维成为他们无坚不摧的思想&lsquo;武器&rsquo;。&rdquo;梁晓辰和业内许多创业者都聊过，&ldquo;在许多创业者眼里，教育培训是一个&lsquo;低门槛&rsquo;的行业。他们当中又或多或少有一部分人认为，不久后的将来，教育领域必然掀起一波革命浪潮，线下教育模式将被线上取代，这与商场沦为电商的试衣间是一个道理。&rdquo;</p>
+
+<p>当然，对用户免费是互联网&ldquo;颠覆&rdquo;传统行业的经典打法，不过对于这样的&ldquo;一招鲜&rdquo;，新东方集团网络运营总监祖腾有自己的看法。本身就有多年互联网公司从业经验，在他看来，培训教育市场和普通行业相比还有一些特殊性，用户对价格其实并不很敏感，他们更加看重的是教育质量。</p>
+
+<p>&ldquo;免费在短期内或许能够吸引眼球，但目前线上培训机构提供的教育产品往往参差不齐，没有高质量的服务体系，尤其对于考试者来说，这样的&lsquo;试错成本&rsquo;太高。&rdquo;</p>
+
+<p>据祖腾介绍，目前自己带领的线上业务团队，主要围绕本身的教育培训优势来做延伸布局，一方面，线上产品配合线下教育，提升客户整体满意度；另一方面，通过线上业务提升教育资源的产能和效率。&ldquo;未来，通过线上业务和线下配合，新东方希望能够打造整套教育服务体系，提高学生学习效率和效果。&rdquo;此外，新东方也模仿&ldquo;颠覆者们&rdquo;提供一些免费的线上产品，比如，在移动互联网端推出背单词利器&ldquo;乐词&rdquo;。&ldquo;对于这样的线上产品，主要是通过各种渠道来获取用户，并促使他们由线上走到线下，打造O2O的闭环。&rdquo;记者 郭文鹃</p>
+
+<p>&nbsp;</p>
+                                </div>
+								<!-- SingleAd end -->
+							</div>
+						</div>
+						<div class="postnavi">
+							<div class="previous_post">上一篇: <a href="https://www.cmhxi.com.cn/show/" title=""></a></div>
+							<div class="next_post">下一篇: <a href="27" title="">民教网时评东莞：多元优质民办教育助力城市品质提升</a></div>
+						</div>
+						<!-- PageNavigation end -->
+					</div>
+				</div>
+			</div>
+
+
+
+
+            <div class="sidebar">
+    <ul>
+      <li class="mostviews">
+        <span class="intit"><a class="more" href="../list/30">更多&gt;&gt;</a><strong>一周热点新闻</strong></span>
+        <ul>
+         
+                                                <li><a href="33" target="_blank" title="民教网声明">民教网声明</a></li>
+                                                                <li><a href="32" target="_blank" title="民教网免责严正声明！">民教网免责严正声明！</a></li>
+                                                                <li><a href="31" target="_blank" title="关于非法网站仿冒我司民教信息网严正声明">关于非法网站仿冒我司民教信息网严正声明</a></li>
+                                                                <li><a href="17" target="_blank" title="资质批文">资质批文</a></li>
+                                    
+
+                                <li><a href="279" target="_blank" title="李克强主持召开国务院常务会议 部署深入推进大众创业万众创新 重点支持高校毕业生等群体就业创业">李克强主持召开国务院常务会议 部署深入推进大众创业万众创新 重点支持高校毕业生等群体就业创业</a></li>
+                                <li><a href="277" target="_blank" title="翁铁慧赴企业调研高校毕业生就业创业情况">翁铁慧赴企业调研高校毕业生就业创业情况</a></li>
+                                <li><a href="275" target="_blank" title="教育部启动实施全国高校与湖北高校毕业生就业创业工作“一帮一”行动">教育部启动实施全国高校与湖北高校毕业生就业创业工作“一帮一”行动</a></li>
+                                <li><a href="273" target="_blank" title="教育部启动高校毕业生就业状况核查工作">教育部启动高校毕业生就业状况核查工作</a></li>
+                                <li><a href="272" target="_blank" title="教育部推出四项“不断线”就业服务助力未就业毕业生尽早就业">教育部推出四项“不断线”就业服务助力未就业毕业生尽早就业</a></li>
+                 
+
+ 
+        </ul>
+      </li>
+      <li>
+        <div class="bar" style="margin-top:10px;"> <span class="intit"><a class="more" href="../list/21">更多&gt;&gt;</a><strong>会客厅</strong></span>
+           		  <div class="focus1" href="/person/77">                
+                <a href="../person/77">
+                <img src="https://web-data-base.oss-cn-beijing.aliyuncs.com/images/e98838466bbb88812f747a996708eddf.jpg" width="74" height="56" border="0"> <span style="color: red;">顾明远</span></a>
+                <br><span>中共党员，教育部社会科学委员会副主任、北京师范大学教育学部顾问。</span>
+        </div>
+  
+          <ul>
+                                <li><a href="../person/77" target="_blank" title="顾明远">顾明远</a></li>
+                                <li><a href="../person/76" target="_blank" title="贾少华">贾少华</a></li>
+                                <li><a href="../person/75" target="_blank" title="杨东平">杨东平</a></li>
+                                <li><a href="../person/70" target="_blank" title="陈宝生">陈宝生</a></li>
+                                <li><a href="../person/68" target="_blank" title="孙春兰">孙春兰</a></li>
+                          </ul>
+  </div>
+</li>
+     <li>
+        <div class="bar"> <span class="intit"><a class="more" target="_blank" href="../list/25">更多&gt;&gt;</a><strong>民教网简报</strong></span>
+          <ul>
+                                <li><a href="11" target="_blank" title="2013年《民教网工作简报》第十一期">2013年《民教网工作简报》第十一期</a></li>
+                                <li><a href="10" target="_blank" title="2013年《民教网工作简报》第十期">2013年《民教网工作简报》第十期</a></li>
+                                <li><a href="9" target="_blank" title="2013年《民教网工作简报》第九期">2013年《民教网工作简报》第九期</a></li>
+                                <li><a href="8" target="_blank" title="2014年《民教网工作简报》第二期">2014年《民教网工作简报》第二期</a></li>
+                          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>            <div class="dbgd"></div>
+            <div class="footer2">
+    <div class="dbmume">
+        <a href="../person/21">首 页</a>
+        <a>|</a>
+        <a href="../list/16">平台介绍</a>
+        <a>|</a>
+        <a href="../list/17">资质批文</a>
+        <a>|</a>
+        <a href="../list/18">主管单位</a>
+        <a>|</a>
+        <a href="../list/5">通知公告</a>
+        <a>|</a>
+        <a href="../list/22">客服中心</a>
+        <a>|</a>
+        <a href="../list/23">版权声明</a>
+        <a>|</a>
+        <a href="../bgsqform">办公合作申请</a>
+    </div>
+
+<div class="copybq">
+<p>公安局备案号:2021031956号 &nbsp; 备案编号：
+                          <a href="https://beian.miit.gov.cn">豫ICP备2021031956号-2</a>
+        </p><p>办公地址：河南省郑州市高新技术产业开发区瑞达路96号商务中心　邮政编码:454000 &nbsp; &nbsp;通信地址：河南省100005-019信箱</p><p>主办单位：河南民教信息科技有限公司 &nbsp; &nbsp;指导：全国民办高等教育学生信息咨询与就业指导中心　</p>
+<a id="_pingansec_bottomimagesmall_shiming" target="_blank" href="https://si.trustutn.org/info?sn=313211119040899888649&amp;certType=1"><img src="https://v.trustutn.org/images/cert/bottom_small_img.png"/></a>
+<a target="_blank" href="https://xinyong.yunaq.com/certificate?domain=www.cmhsi.com.cn"><img style="width:110px;height:40px" src="../static/images/label_lg_90020.png"></a>
+
+<dd><img src="../static/picture/dbpic.png"></dd>
+</div>
+
+
+<script type="text/javascript" src="../static/js/jquery-1.9.1.min.js">
+</script>
+
+<script type="text/javascript" src="../static/js/slides.js">
+</script>
+
+<script type="text/javascript" src="../static/js/flexslider.js">
+</script>
+
+<script type="text/javascript">
+
+</div>
+
+</div>
+        
+        
+
+        </div>
+    </div>
+</body>
+</html>
